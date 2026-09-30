@@ -1,6 +1,6 @@
 # TM265 — SAP Joule for Consultants: Unified Knowledge for Requirements and Designs
 ## Hands-On Session: MM Consultant Edition — From Workshop to Specification
-### Powered by Scope Item 19J · Requisitioning & Direct Procurement
+### Powered by Scope Item 18J · Requisitioning & Direct Procurement
 
 > **Session Code:** TM265
 > **Session Duration:** 🕓 ~100 minutes
@@ -14,7 +14,7 @@
 
 In this hands-on session, you will follow **Raj Kumar** — an MM consultant who just walked out of a 56-minute Fit-to-Standard workshop — as he uses every major J4C capability to turn a raw transcript into a complete documentation package: user stories, sprint backlog, functional specification, pseudo code, and a steering committee deck.
 
-Every feature is grounded in a real MM consulting scenario on SAP best practice scope item **19J — Requisitioning and Direct Procurement**.
+Every feature is grounded in a real MM consulting scenario on SAP best practice scope item **18J — Requisitioning and Direct Procurement**.
 
 ---
 
@@ -41,7 +41,7 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 
 > **📍 Raj's Story** | *Today, 57 minutes after the workshop ended*
 >
-> The 19J Fit-to-Standard workshop just wrapped. 56 minutes, 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Raj Kumar closes his notebook and opens his laptop. He has a commitment to Ankit: functional specification drafts before the 22nd. He has a recording transcript and J4C.
+> The 18J Fit-to-Standard workshop just wrapped. 56 minutes, 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Raj Kumar closes his notebook and opens his laptop. He has a commitment to Ankit: functional specification drafts before the 22nd. He has a recording transcript and J4C.
 >
 > He opens Joule for Consultants. This is where the documentation work begins.
 
@@ -76,7 +76,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 │                    │                                               │
 │   PROJECT /        ┤  Expert Workspace File Upload                 │
 │   ENGAGEMENT       │  · Persistent across all conversations        │
-│                    │  · 19J workshop artefacts, BAdI specs         │
+│                    │  · 18J workshop artefacts, BAdI specs         │
 │                    │                                               │
 │   CONVERSATION     ┤  Prompt-Level File Upload                     │
 │                    │  · This conversation only, 7-day auto-delete  │
@@ -113,22 +113,22 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 
 > **📍 Raj's Story** | *Monday, 1:00 PM*
 >
-> The 19J workshop just ended. 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Every FIT/GAP call Raj made in that room — the logic, the rationale, the clean core judgements — lives only in his head. The junior consultant joining next week will need those same answers. So will the customer's project manager when they challenge a GAP decision.
+> The 18J workshop just ended. 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Every FIT/GAP call Raj made in that room — the logic, the rationale, the clean core judgements — lives only in his head. The junior consultant joining next week will need those same answers. So will the customer's project manager when they challenge a GAP decision.
 >
-> Raj's first move: codify what he learned. He creates the 19J Fit-to-Standard Analyst Expert so anyone on the team can open a new conversation, ask "is this a fit?", and get a consistent, scoped answer — without needing to have been in the room.
+> Raj's first move: codify what he learned. He creates the 18J Fit-to-Standard Analyst Expert so anyone on the team can open a new conversation, ask "is this a fit?", and get a consistent, scoped answer — without needing to have been in the room.
 
 ### Exercise 1.1 — Create a Fit-to-Standard Analyst Expert
 
-The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 19J standard capabilities consistently, every time.
+The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 18J standard capabilities consistently, every time.
 
 1. Navigate to **Console → Expert Workspace**.
 2. Click the **Expert Library** tab.
 3. Select **"Fit-to-Standard Analyst"** template, or use a **Starter Template** to build from scratch.
-4. Name it *"19J Fit-to-Standard Analyst"* and click **Save**.
+4. Name it *"18J Fit-to-Standard Analyst"* and click **Save**.
 5. Click **Edit Instructions** and apply this structure:
 
 ```
-ROLE: You are an SAP MM Fit-to-Standard analyst specialising in scope item 19J — Requisitioning and Direct Procurement on SAP S/4HANA Cloud Private Edition. Your job is to map customer requirements against SAP standard capabilities and produce clear FIT / PARTIAL FIT / GAP classifications with rationale.
+ROLE: You are an SAP MM Fit-to-Standard analyst specialising in scope item 18J — Requisitioning and Direct Procurement on SAP S/4HANA Cloud Private Edition. Your job is to map customer requirements against SAP standard capabilities and produce clear FIT / PARTIAL FIT / GAP classifications with rationale.
 
 CONTEXT:
 - Customer: JouleTech Industries (B2B industrial equipment manufacturer)
@@ -159,11 +159,11 @@ CLASSIFICATION FORMAT — use for every requirement:
 This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
 1. Click **New Conversation** (top left).
-2. In the Expert picker, select **"19J Fit-to-Standard Analyst"**.
-3. Upload **`FTS-19J-Workshop-Transcript.docx`** using the attachment icon.
+2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
 4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
 
-   > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[19J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
+   > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[18J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
 
 5. Review the output — a structured table of ~14 user stories, each tagged **STANDARD** or **GAP**, with persona column.
 
@@ -172,9 +172,9 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 ### Exercise 1.3 — Share with the Team Next to You
 
-Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **19J Fit-to-Standard Analyst** Expert with them.
+Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
 
-1. From **My Experts**, find your **19J Fit-to-Standard Analyst** card and click **Share**.
+1. From **My Experts**, find your **18J Fit-to-Standard Analyst** card and click **Share**.
 2. Ask someone from the neighbouring team for their email address (same J4C tenant).
 3. Enter their email and click **Share**.
 4. If the neighbouring team shares their Expert back with you, open it and compare — notice how different instructions produce different classification behaviour.
@@ -208,11 +208,11 @@ Turn to the team sitting next to you. Ask one of them for their J4C email addres
 ### Exercise 2.1 — Analyse the Workshop Transcript
 
 1. Start a **new conversation** in J4C.
-2. Upload **`FTS-19J-Workshop-Transcript.docx`** using the attachment icon.
+2. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
 3. Submit:
 
    > **Example query:**
-   > *"This is the transcript from a Fit-to-Standard workshop on SAP scope item 19J — Requisitioning. Summarise the session in 5 bullet points: the process steps covered, the key FIT confirmations, the GAP items identified with the proposed BAdI approach for each, and any scope boundaries agreed."*
+   > *"This is the transcript from a Fit-to-Standard workshop on SAP scope item 18J — Requisitioning. Summarise the session in 5 bullet points: the process steps covered, the key FIT confirmations, the GAP items identified with the proposed BAdI approach for each, and any scope boundaries agreed."*
 
 4. Review the response. Notice how J4C picks up the exact scope boundary confirmed at the end of the session — vendor currency check scoped to Purchase Organisation YYYY only, document currency check applying to all of Company Code 2330.
 
@@ -227,7 +227,7 @@ Turn to the team sitting next to you. Ask one of them for their J4C email addres
 2. Select **"Prompt 1 — Extract User Stories from FTS Workshop Transcript"**.
 3. Go back to the conversation from Exercise 1.1 (where the transcript is loaded) and paste the prompt, filling in the placeholders:
    - `[WORKSTREAM]` → Procurement
-   - `[SCOPE ITEM ID AND NAME]` → 19J — Requisitioning and Direct Procurement
+   - `[SCOPE ITEM ID AND NAME]` → 18J — Requisitioning and Direct Procurement
 4. Submit and review the user story table.
 
    **Expected output:** ~14 user stories — 10 STANDARD FIT, 4 GAP (Enhancement-1 through Enhancement-4), each with BAdI reference and scope boundary note.
@@ -237,9 +237,9 @@ Turn to the team sitting next to you. Ask one of them for their J4C email addres
 
    **Expected output:** 4 backlog items (BI-01 through BI-04), sprint assignments, Fibonacci story points, dependencies.
 
-6. Star both MM/19J prompts for fast access on future 19J engagements.
+6. Star both MM/18J prompts for fast access on future 18J engagements.
 
-> **💡 How the JouleTech tab was created:** An admin uploaded `MM-19J-Prompt-Library.xlsx` via Console → **Manage Templates** → **Upload Templates**, then toggled status to **Published**. All tenant users see the tab immediately.
+> **💡 How the JouleTech tab was created:** An admin uploaded `MM-18J-Prompt-Library.xlsx` via Console → **Manage Templates** → **Upload Templates**, then toggled status to **Published**. All tenant users see the tab immediately.
 
 ### Exercise 2.3 — Multi-File Analysis *(Optional — if time permits)*
 
@@ -281,7 +281,7 @@ J4C can generate structured documents — Word (.docx) and PowerPoint (.pptx) �
 
    > **Prompt:**
    > *"Generate a Word document: a functional specification for Backlog Item BI-04 — Business Justification for Critical and Strategic Materials. Include the following 7 sections:*
-   > *1. Introduction (project background, scope item 19J, Company Code 2330 scope)*
+   > *1. Introduction (project background, scope item 18J, Company Code 2330 scope)*
    > *2. Purpose of Document*
    > *3. Why Development is Required (reference the workshop GAP finding)*
    > *4. Technical Details (BAdI ME_PROCESS_REQ_CUST, text type ZBUSJ, classification characteristic ZMAT_CRITICALITY class type 001, message class Z_MM_PROC_MSG message 003)*
@@ -296,12 +296,12 @@ J4C can generate structured documents — Word (.docx) and PowerPoint (.pptx) �
 1. In a **new conversation**, submit:
 
    > **Prompt:**
-   > *"Create a PowerPoint presentation for the JouleTech steering committee. Title: S/4HANA 19J Requisitioning — Fit-to-Standard Workshop Summary and Next Steps. Include slides: (1) Workshop Overview and Scope, (2) Process Coverage — FIT Confirmations (list all 10 standard user stories), (3) Gap Analysis — 4 Enhancement Items with BAdI approach for each, (4) Sprint Plan — BI-01 through BI-04 with sprint IDs and priorities, (5) Decisions Required from Steering Committee, (6) Next Steps and Timeline. Professional consulting tone. Add speaker notes to each slide."*
+   > *"Create a PowerPoint presentation for the JouleTech steering committee. Title: S/4HANA 18J Requisitioning — Fit-to-Standard Workshop Summary and Next Steps. Include slides: (1) Workshop Overview and Scope, (2) Process Coverage — FIT Confirmations (list all 10 standard user stories), (3) Gap Analysis — 4 Enhancement Items with BAdI approach for each, (4) Sprint Plan — BI-01 through BI-04 with sprint IDs and priorities, (5) Decisions Required from Steering Committee, (6) Next Steps and Timeline. Professional consulting tone. Add speaker notes to each slide."*
 
 2. Download and review the `.pptx`.
 3. Iterate:
 
-   > *"Add a slide after slide 2 showing the six 19J process steps as a numbered visual flow."*
+   > *"Add a slide after slide 2 showing the six 18J process steps as a numbered visual flow."*
 
 ### Exercise 3.3 — In-Conversation Technical Specification *(if time permits)*
 
@@ -377,7 +377,7 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 > - A sprint backlog with 4 items, story points, sprint assignments, and dependencies
 > - A functional specification for BI-04 — 7 sections, ready for Ankit's review
 > - A steering committee PowerPoint — 6 slides, speaker notes included
-> - A 19J Fit-to-Standard Analyst Expert the whole team can use to evaluate new requirements consistently
+> - A 18J Fit-to-Standard Analyst Expert the whole team can use to evaluate new requirements consistently
 > - A JouleTech Procurement Advisor his whole team can use for Realize phase work
 > - JouleTech's procurement policies accessible in every J4C answer
 >
@@ -387,14 +387,14 @@ By completing this session, you have walked in Raj's shoes across the full bread
 
 | Feature | What Raj Did | What You Practised |
 |---|---|---|
-| **Fit-to-Standard Expert** ⭐ | Created the 19J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently | Created, scoped, and tested a purpose-built FTS Expert |
+| **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently | Created, scoped, and tested a purpose-built FTS Expert |
 | **Custom Knowledge Grounding** | Queried JouleTech's grounded documents (WRICEF template, compliance policies) to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
 | **Prompt Library** | Ran all 6 prompts in sequence: user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Used the 6-prompt chain from the JouleTech tab in a single conversation |
 
 | **Expert Workspace** | Shared the FTS Expert with a session partner; received and compared their version | Shared an Expert, opened a received copy, compared instruction variations |
 
 
-| **File Upload** | Uploaded the 19J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
+| **File Upload** | Uploaded the 18J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
 
 ---
 
@@ -422,7 +422,7 @@ All six prompts run sequentially in the same conversation (transcript loaded in 
 
 ---
 
-## Appendix — Key SAP Procurement Transactions (19J Reference)
+## Appendix — Key SAP Procurement Transactions (18J Reference)
 
 | Activity | Transaction | Module |
 |---|---|---|
@@ -447,11 +447,11 @@ All six prompts run sequentially in the same conversation (transcript loaded in 
 
 | File | Used In | Purpose |
 |---|---|---|
-| `FTS-19J-Workshop-Transcript.docx` | Exercises 1.1, 2.3, 5.1 | Source transcript — upload once, use throughout |
+| `FTS-18J-Workshop-Transcript.docx` | Exercises 1.1, 2.3, 5.1 | Source transcript — upload once, use throughout |
 | `jouletech-material-master.csv` | Exercise 3.3 | Material master data for cross-table analysis |
 | `jouletech-open-orders.csv` | Exercise 3.3 | Open orders data for cross-table analysis |
 | `jouletech-internal-links.txt` | Exercise 1 (optional) | Procurement URL directory for Expert grounding |
-| `MM-19J-Prompt-Library.xlsx` | Admin pre-load | The 6 chained prompts for the JouleTech tab |
+| `MM-18J-Prompt-Library.xlsx` | Admin pre-load | The 6 chained prompts for the JouleTech tab |
 | `TechEd2026-Custom-Prompt-Library.xlsx` | Admin pre-load | The 8 general consulting prompts for the JouleTech tab |
 | `JouleTech-WRICEF-Enhancement-FS-Template.pdf` | Exercise 4 — grounding | JouleTech's standard Enhancement functional specification template (WRICEF-E) |
 | `JouleTech-Procurement-Compliance-Framework.pdf` | Exercise 4 — grounding | Mandatory approval gates and compliance checkpoints for procurement and custom developments |
