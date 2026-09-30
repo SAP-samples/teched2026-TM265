@@ -1,6 +1,8 @@
 # Workshop Transcript
 
-As a MM consultant, a fit to standard workshop is conducted in [Workstream] on business process scope item. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap.
+As a MM consultant, a fit to standard workshop is conducted in [Workstream] on business process scope item. 
+
+Based on attached fit to standard workshop transcript FTS_Workshop_19J_Transcript V3 Final.docx(/FTS_Workshop_19J_Transcript V3 Final.docx), extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap.
 
 ## Expected output
 
