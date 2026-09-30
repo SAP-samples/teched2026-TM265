@@ -1,26 +1,9 @@
-# Level 1 Heading
+# Workshop Transcript
 
-In this exercise, you will...
+As a MM consultant, a fit to standard workshop is conducted in [Workstream] on business process scope item. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap.
 
-## Level 2 Heading
+## Expected output
 
-After completing these steps you will have....
+It Should list users stories and tag them FIT STANDARD/FIT Configuration or Gap
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
-
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
-
-## Summary
-
-Now that you have ... 
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
