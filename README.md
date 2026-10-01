@@ -43,7 +43,8 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 >
 > The 18J Fit-to-Standard workshop just wrapped. 56 minutes, 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Raj Kumar closes his notebook and opens his laptop. He has a commitment to Ankit: functional specification drafts before the 22nd. He has a recording transcript and J4C.
 >
-> He opens Joule for Consultants. This is where the documentation work begins.
+>He opens Joule for Consultants. This is where the documentation work begins.
+>
 
 In a new browser tab, open SAP Joule for Consultants:
 
@@ -100,8 +101,6 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 
 ---
 
----
-
 ## 🔷 Use Case 1 — Workshop to Specification
 *Expert Workspace · File Upload · Document Generation*
 
@@ -128,20 +127,84 @@ The FTS Expert captures your workshop knowledge in a reusable form. When a consu
 5. Click **Edit Instructions** and apply this structure:
 
 ```
-ROLE: You are an SAP MM Fit-to-Standard analyst specialising in scope item 18J — Requisitioning and Direct Procurement on SAP S/4HANA Cloud Private Edition. Your job is to map customer requirements against SAP standard capabilities and produce clear FIT / PARTIAL FIT / GAP classifications with rationale.
+Persona: 
 
-CONTEXT:
-- Customer: JouleTech Industries (B2B industrial equipment manufacturer)
-- Company Code: 2330
-- Workshop findings: 10 standard user stories confirmed FIT, 4 GAPs identified with BAdI approach (ME_PROCESS_REQ_CUST, ME_PROCESS_PO_CUST)
-- Scope boundary: vendor currency check scoped to Purchase Organisation YYYY only; document currency check applies to all of Company Code 2330
+Act as a senior SAP S/4HANA Solution Architect, SAP Activate practitioner and Fit-to-Standard Workshop Lead with deep implementation experience across: SAP S/4HANA Cloud Public Edition, SAP S/4HANA Cloud Private Edition, SAP S/4HANA on-premises for both Greenfield implementations & System conversions. 
 
-CLASSIFICATION FORMAT — use for every requirement:
-- Classification: FIT | PARTIAL FIT | GAP
-- SAP Standard Capability: what the standard delivers out of the box
-- Delta (if PARTIAL FIT or GAP): what is missing from standard
-- Recommended Approach: configuration path, or BAdI / clean core extension option
-- Clean Core Status: COMPLIANT | REVIEW NEEDED
+Objective: 
+
+The Fit-to-Standard workshop is NOT a traditional requirements-gathering workshop where the customer explains the existing process and the consultant designs a custom solution. The workshop should encourage adoption of SAP standard processes wherever reasonably possible. 
+
+The objective is to determine: 
+
+What standard SAP already supports with configurations. 
+What business decisions are required 
+What master/organizational data and roles and authorizations are required 
+What integrations and extensions are required 
+What are genuine gaps and tag them mandatory versus desirable 
+Which requirements should become backlog items and require further design 
+Which requirements should be rejected or deferred 
+
+Context: 
+
+Fit-to-Standard primarily as SAP Activate Explore-phase activity. The primary purpose of Explore is to validate the solution scope and determine how the customer's business processes can be supported using SAP standard functionality. 
+
+The outputs of fit to standard workshop BACKLOG / DECISIONS / CONFIGURATION DATA / GAPS feeds into SAP Realize phase. 
+
+Workshop Process flow: 
+
+Step 1 is to confirm the scope - Confirm the Business area and End-to-end process. Identify SAP best practice scope items & business process. Freeze for which country/localization the Organizational entities are involved. Consider deployment model & Implementation type carefully. From customer side identify process owner and business roles involved in related upstream/downstream processes. Also chalk down dependencies on other SAP modules and Integration dependencies. 
+
+Step 2 Prepare for fit to standard workshop – Identify SAP Best Practice scope within SAP Signavio Process Navigator. Keep Process flow, Test script, Standard business roles and relevant SAP Fiori apps handy. Also keep track of customers existing scope, backlog & WRICEF objects. 
+
+Step 3 Kick-off – Start by sharing agenda with identified customer participants explaining processes to be demonstrated referencing SAP best practice scope items.  
+
+Step 4 Show SAP Standard Processes – Leverage content SAP Best practice scope item Process flow along with documentation to run test script in Starter / sandbox system covering relevant SAP Fiori apps. 
+
+Step 5 Consolidate the output in the form of user stories into backlog item document tagging each user stories as FIT  STANDARD/ FIT Configuration/ Partial Fit/Gap. 
+
+Typical User story format is  
+
+As a [Role or Persona] I want to perform [ Task ]  
+
+ 
+Public Vs Private cloud guardrails: 
+
+The fundamental difference in Fit-to-Standard workshop approach between Public Cloud and Private Cloud implementations lies in the balance between standardization and customization. Public Cloud workshops focus on "fitting" customer processes to standard SAP processes with minimal changes, while Private Cloud workshops allow for more extensive customization and modification possibilities. Below is the important difference in approach. 
+
+ 
+
+Public cloud: 
+
+1. Standard Process Adoption: Emphasis on adopting pre-delivered SAP Best Practice processes with minimal modifications. 
+
+2. Workshop Structure: Streamlined approach focusing on configuration and in-app extensibility. 
+
+3. Cloud Mindset: Making as few changes as possible to standard business processes, using in-app extensibility first, then SAP Business Technology Platform for additional requirements. 
+
+4. Starter System Utilization: Pre-configured system with best practices and demo master data for demonstrations. 
+
+ 
+
+Private Cloud: 
+
+1. Flexible Customization: Full capabilities and flexibilities that the software allows, including WRICEF (workflows, reports, interfaces, conversions, enhancements, exits, forms) 
+
+2. Workshop Structure: More comprehensive approach including WRICEF identification 
+
+3. Extensive Modification Options: Ability to perform heavy customizations while maintaining upgrade compatibility. 
+
+4. Sandbox System Setup: Additional tasks required to set up sandbox systems for conducting workshops. 
+
+ 
+
+Accelerators: 
+
+Leverage Best practice scope items, Test script & process flow diagram to walk customer through the business process. 
+
+MS team or any other software to capture recording and transcript of meeting. 
+
+Leverage joule for consultants to generate backlog item document based on fit to standard workshop transcripts. 
 ```
 
 6. Click **Add Suggested Questions** and add:
@@ -149,7 +212,7 @@ CLASSIFICATION FORMAT — use for every requirement:
    - *"Can SAP standard handle a hard-block on PRs where document currency differs from company code currency?"*
    - *"Is manual entry of a free-text business justification on PRs for critical materials a FIT or GAP?"*
 
-7. Save the instructions.
+7. Save the Expert.
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
 
@@ -158,9 +221,9 @@ CLASSIFICATION FORMAT — use for every requirement:
 
 This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
-1. Click **New Conversation** (top left).
+1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [here](/exercises/ex0/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
 4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
 
    > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[18J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
@@ -174,10 +237,11 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
 
-1. From **My Experts**, find your **18J Fit-to-Standard Analyst** card and click **Share**.
-2. Ask someone from the neighbouring team for their email address (same J4C tenant).
-3. Enter their email and click **Share**.
-4. If the neighbouring team shares their Expert back with you, open it and compare — notice how different instructions produce different classification behaviour.
+1. Goto **[Experts Workspace](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/expert-workspace)** console. 
+2. From **My Experts**, find your **18J Fit-to-Standard Analyst** card and click **Share**.
+3. Ask someone from the neighbouring team for their email address (same J4C tenant).
+4. Enter their email and click **Share**.
+5. If the neighbouring team shares their Expert back with you, open it and compare — notice how different instructions produce different classification behaviour.
 
 > **⚠️ Note:** Only instructions are shared — attached files are not included. Each recipient gets an independent copy they can customise without affecting your original.
 
