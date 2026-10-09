@@ -207,23 +207,44 @@ MS team or any other software to capture recording and transcript of meeting.
 Leverage joule for consultants to generate backlog item document based on fit to standard workshop transcripts. 
 ```
 
-6. Click **Add Suggested Questions** and add:
-   - *"The customer wants PR approvals based on cost centre hierarchy — is this a FIT in SAP S/4HANA release strategy?"*
-   - *"Can SAP standard handle a hard-block on PRs where document currency differs from company code currency?"*
-   - *"Is manual entry of a free-text business justification on PRs for critical materials a FIT or GAP?"*
+6. Click **Add Starter Prompts** and add the following 3 prompts:
 
-7. Save the Expert.
+| Title | Prompt |
+| --- | --- |
+| Fit to standard workshop | What is a fit to standard workshop & how different it is from traditional requirements-gathering workshop. |
+| Fit to standard workshop approaches | Compare the approach to conducting Fit-to-Standard workshops in SAP S/4HANA Public Cloud vs. SAP S/4HANA Private Cloud, highlighting key differences in methodology and execution. Cover aspects such as scope of configuration, degree of customization allowed, use of SAP Best Practices, tools and stakeholder involvement. Present the comparison in a structured table with a brief explanation of the implications each difference has in workshop planning and delivery. |
+| Fit to standard workshop preparation | Generate a Fit-to-Standard pre-workshop document for an SAP S/4HANA implementation using SAP Activate methodology. Include a structured agenda with topics to be covered, workshop duration, and scheduled dates for each session. List the recommended participant personas (e.g. Business Process Owner, Key User, IT Lead, SAP Consultant) with their roles and responsibilities in the workshop. Summarize the Fit-to-Standard approach — covering objectives, ground rules, how standard SAP processes will be demonstrated, and how gaps will be captured. |
+| --- | --- |
+
+
+7. Create the Expert.
+> [!NOTE]
+> Expert creation takes few minutes as the custom instructions and starter prompts are being guardrailed. 
+
+
+8. Once the expert is succssfully created you will notice a 
+
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
 
+### Exercise 1.2 — Use the FTS Expert in a New Conversation with starter prompts
+This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
-### Exercise 1.2 — Use the FTS Expert in a New Conversation
+1. Open the Joule for consultant URl - https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapdas.cloud.sap/joule`
+2. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
+3. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
+4. Select one of the start prompt titles right below the expert title and watch the Expert in action. 
+5. You should see the query being fired and Joule for consultant is fetching the answer. 
+
+> Try out all the starter prompts, and play around changing the starter prompts in Expert Workspace. 
+
+### Exercise 1.3 — Use the FTS Expert in a New Conversation
 
 This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
 1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [here](/exercises/ex0/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [FTS_Workshop_18J_Transcript](/exercises/ex0/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
 4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
 
    > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[18J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
