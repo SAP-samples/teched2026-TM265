@@ -116,6 +116,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 >
 > Raj's first move: codify what he learned. He creates the 18J Fit-to-Standard Analyst Expert so anyone on the team can open a new conversation, ask "is this a fit?", and get a consistent, scoped answer — without needing to have been in the room.
 
+<br><br>
 ### Exercise 1.1 — Create a Fit-to-Standard Analyst Expert
 
 The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 18J standard capabilities consistently, every time.
@@ -206,7 +207,7 @@ MS team or any other software to capture recording and transcript of meeting.
 
 Leverage joule for consultants to generate backlog item document based on fit to standard workshop transcripts. 
 ```
-
+<br>
 6. Click **Add Starter Prompts** and add the following 3 prompts:
 
 | Title | Prompt |
@@ -214,8 +215,8 @@ Leverage joule for consultants to generate backlog item document based on fit to
 | Fit to standard workshop | What is a fit to standard workshop & how different it is from traditional requirements-gathering workshop. |
 | Fit to standard workshop approaches | Compare the approach to conducting Fit-to-Standard workshops in SAP S/4HANA Public Cloud vs. SAP S/4HANA Private Cloud, highlighting key differences in methodology and execution. Cover aspects such as scope of configuration, degree of customization allowed, use of SAP Best Practices, tools and stakeholder involvement. Present the comparison in a structured table with a brief explanation of the implications each difference has in workshop planning and delivery. |
 | Fit to standard workshop preparation | Generate a Fit-to-Standard pre-workshop document for an SAP S/4HANA implementation using SAP Activate methodology. Include a structured agenda with topics to be covered, workshop duration, and scheduled dates for each session. List the recommended participant personas (e.g. Business Process Owner, Key User, IT Lead, SAP Consultant) with their roles and responsibilities in the workshop. Summarize the Fit-to-Standard approach — covering objectives, ground rules, how standard SAP processes will be demonstrated, and how gaps will be captured. |
-| --- | --- |
-
+--- 
+<br>
 
 7. Create the Expert.
 > [!NOTE]
@@ -227,10 +228,12 @@ Leverage joule for consultants to generate backlog item document based on fit to
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
 
+<br>
+
 ### Exercise 1.2 — Use the FTS Expert in a New Conversation with starter prompts
 This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
-1. Open the Joule for consultant URl - https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapdas.cloud.sap/joule`
+1. Open the Joule for consultant URl - https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapdas.cloud.sap/joule
 2. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 3. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
 4. Select one of the start prompt titles right below the expert title and watch the Expert in action. 
@@ -238,9 +241,9 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 > Try out all the starter prompts, and play around changing the starter prompts in Expert Workspace. 
 
-### Exercise 1.3 — Use the FTS Expert in a New Conversation
+<br>
 
-This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
+### Exercise 1.3 — Use the FTS Expert in a New Conversation
 
 1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
@@ -253,8 +256,9 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 > **💡 The key insight:** The Expert's instructions shape how J4C reads the transcript. Without the FTS Expert active, the same prompt gives a generic summary. With the Expert, every response follows the FIT/PARTIAL FIT/GAP classification format you defined in Exercise 1.1.
 
+<br>
 
-### Exercise 1.3 — Share with the Team Next to You
+### Exercise 1.4 — Share with the Team Next to You
 
 Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
 
@@ -268,6 +272,9 @@ Turn to the team sitting next to you. Ask one of them for their J4C email addres
 
 
 ---
+___
+
+
 
 ## Exercise 2 — File Upload: Workshop Transcript
 
@@ -348,6 +355,10 @@ Turn to the team sitting next to you. Ask one of them for their J4C email addres
    > *"What is the total open order value by material group? Which group has the highest exposure?"*
 
 ---
+
+
+
+
 
 ## Exercise 3 — Document Generation
 
