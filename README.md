@@ -247,7 +247,7 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [FTS_Workshop_18J_Transcript](/exercises/ex0/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [FTS_Workshop_18J_Transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
 4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
 
    > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[18J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
@@ -282,7 +282,7 @@ ___
 
 > **📍 Raj's Story** | *Monday, 2:00 PM*
 >
-> The Expert is set up. The grounding pipeline is live with JouleTech's policy documents and the WRICEF template. Now Raj brings in the raw material: the workshop transcript. He uploads it to a new conversation and runs the six prompts — extracting user stories, tagging FIT and GAP, generating the sprint backlog, and producing the first draft functional specification. Each prompt builds on the previous one in the same conversation thread.
+> The Expert is set up. ~~The grounding pipeline is live with JouleTech's policy documents and the WRICEF template.~~ Now Raj brings in the raw material: the workshop transcript. He uploads it to a new conversation and runs the six prompts — extracting user stories, tagging FIT and GAP, generating the sprint backlog, and producing the first draft functional specification. Each prompt builds on the previous one in the same conversation thread.
 
 **Supported formats and limits:**
 
@@ -299,9 +299,10 @@ ___
 
 ### Exercise 2.1 — Analyse the Workshop Transcript
 
-1. Start a **new conversation** in J4C.
-2. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
-3. Submit:
+1. Start a **new conversation** in J4C. 
+2. Choose the expert **18J Fit-to-Standard Analyst**, from My Expert picker
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
+4. Submit:
 
    > **Example query:**
    > *"This is the transcript from a Fit-to-Standard workshop on SAP scope item 18J — Requisitioning. Summarise the session in 5 bullet points: the process steps covered, the key FIT confirmations, the GAP items identified with the proposed BAdI approach for each, and any scope boundaries agreed."*
@@ -310,28 +311,23 @@ ___
 
 > **💡 Keep this conversation open.** The transcript is loaded as context. Continue in this same conversation for Exercise 2.2 — the prompt library prompts pick up from here.
 
+<br>
 
-### Exercise 2.2 — Use the JouleTech Prompt Library — Use a Prompt from the JouleTech Custom Library
+### Exercise 2.2 — Generate FS/TS using the transcript
 
-> **Note:** The **JouleTech** custom prompt tab has been pre-loaded into this session's tenant — exactly as Raj found it.
+1. Start a new Conversation, Select the expert. 
+2. Run the below prompts in a sequence. 
 
-1. In the Prompt Library, click the **JouleTech** tab.
-2. Select **"Prompt 1 — Extract User Stories from FTS Workshop Transcript"**.
-3. Go back to the conversation from Exercise 1.1 (where the transcript is loaded) and paste the prompt, filling in the placeholders:
-   - `[WORKSTREAM]` → Procurement
-   - `[SCOPE ITEM ID AND NAME]` → 18J — Requisitioning and Direct Procurement
-4. Submit and review the user story table.
+| S. No | Prompt | Input | Output/Comments |
+|-------|--------|-------|-----------------|
+| 1 | As a MM consultant, a fit to standard workshop is conducted in procure to pay stream on business process scope item 18J Requisitioning. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap. | Attach the [Workshop transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx) | It should list user stories and tag them FIT STANDARD/FIT Configuration or Gap. This tagging is mentioned in Expert. Showcase expert is working alright and considered in prompting. |
+| 2 | Pick user stories tagged as gap and generate a backlog-item document, which can be used in sprint planning with actual start and end date, priority, sprint ID. |  | Generates a Backlog word document |
+| 3 | Generate a functional specification based on User Story tagged as gaps. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases 7. Document history. | | Generates a FS document. The quality of the document is not great. Need to work on Output. Also showcase that functional specification have sections described in prompt. |
+| 4 | Enrich the above functional specification in canvas mode with Pseudo code in section 4 of functional specification. |  | Use Canvas mode to add Pseudo code section. This prompt should enrich the functional specification with Pseudo code. |
+| 5 | Generate a detailed SAP technical specification for above functional specification which can act as reference for development. Please make sure the technical specification follows clean core principles. The document should include the business requirements, functional scope, and system landscape. Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | | TS document, however multiple issues observed — black box and numbering in TS is a problem. |
+| 6 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | | A |
+---
 
-   **Expected output:** ~14 user stories — 10 STANDARD FIT, 4 GAP (Enhancement-1 through Enhancement-4), each with BAdI reference and scope boundary note.
-
-5. Now use **"Prompt 2 — Generate Sprint Backlog from GAP User Stories"** as a follow-up in the **same conversation**:
-   - Fill in Sprint 1 start date: **25 Sep 2026**
-
-   **Expected output:** 4 backlog items (BI-01 through BI-04), sprint assignments, Fibonacci story points, dependencies.
-
-6. Star both MM/18J prompts for fast access on future 18J engagements.
-
-> **💡 How the JouleTech tab was created:** An admin uploaded `MM-18J-Prompt-Library.xlsx` via Console → **Manage Templates** → **Upload Templates**, then toggled status to **Published**. All tenant users see the tab immediately.
 
 ### Exercise 2.3 — Multi-File Analysis *(Optional — if time permits)*
 
@@ -372,7 +368,7 @@ J4C can generate structured documents — Word (.docx) and PowerPoint (.pptx) �
 
 ### Exercise 3.1 — Generate the Functional Specification (Word)
 
-1. Go back to the conversation from Exercise 3 (transcript loaded, user stories and backlog already generated).
+1. Go back to the conversation from Exercise 2 (transcript loaded, user stories and backlog already generated).
 2. Continue in the **same conversation** with Prompt 3 from the JouleTech prompt library:
 
    > **Prompt:**
@@ -407,10 +403,8 @@ Continue in the functional spec conversation and submit Prompt 4 (Pseudo Code), 
 
 ---
 
+<br>
 
----
-
----
 
 ## 🔶 Use Case 2 — Requirements from BPD to Specification
 *Custom Knowledge Grounding · Document Generation*
@@ -423,11 +417,11 @@ Continue in the functional spec conversation and submit Prompt 4 (Pseudo Code), 
 
 > **📍 The scenario**
 >
-> The customer — Nexstream — has provided their **Billing & Invoicing Business Requirements document** (`Business_Requirements_Billing_Invoicing_Nexstream.docx`). The session facilitators have uploaded this file to a SharePoint and connected it to J4C via Custom Knowledge Grounding. J4C can now answer questions directly from the BPD — surfacing how individual requirements map to standard S/4 HANA capabilities, identifying relationships between requirements, and generating functional specifications — without the consultant reading through the entire document.
+> The customer — Nexstream — has provided their **Billing & Invoicing Business Requirements document** ([`Business_Requirements_Billing_Invoicing_Nexstream.docx`](/exercises/Business%20Requirements_Billing_Invoicing_Nexstream.docx)). The session facilitators have uploaded this file to a AWS S3 and connected it to J4C via Custom Knowledge Grounding. J4C can now answer questions directly from the BPD — surfacing how individual requirements map to standard S/4 HANA capabilities, identifying relationships between requirements, and generating functional specifications — without the consultant reading through the entire document.
 
 ### Step 1 — Add the BPD to SharePoint
 
-> **📋 Facilitator pre-step (already done for this session):** Upload `Business_Requirements_Billing_Invoicing_Nexstream.docx` to the designated SharePoint site connected to the J4C Custom Knowledge Grounding pipeline.
+> **📋 Facilitator pre-step (already done for this session):** Upload `Business_Requirements_Billing_Invoicing_Nexstream.docx` to the designated AWS S3 site connected to the J4C Custom Knowledge Grounding pipeline.
 
 In your own engagement, the equivalent step is:
 1. Upload the customer's BPD to your SharePoint site (or other connected repository — AWS S3, Google Drive, SAP DMS).
@@ -443,19 +437,13 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 
    > *"How can REQ-09 can be addressed, the requirement is referred in S/4 HANA BRIM BPD"*
 
-   J4C retrieves REQ-09 from the Nexstream BPD, identifies where it maps to standard S/4 HANA capabilities, and explains the recommended approach — with a source citation referencing the document.
+   J4C retrieves REQ-09 from the Nexstream BPD( already grounded ), identifies where it maps to standard S/4 HANA capabilities, and explains the recommended approach — with a source citation referencing the document.
 
 3. Run **Prompt 2** as a follow-up in the **same conversation**:
 
-   > *"Club REQ-12, REQ-13 and REQ-09 and create a functional specification"*
+   > *"Generate a functional specification clubbing REQ-12, REQ-13 and REQ-09 as they are logically related. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. technical details 5.User stories 6. Test cases 7. Document history."*
 
    J4C surfaces the relationships between all three requirements from the BPD and produces a combined functional specification — without the consultant manually cross-referencing them.
-
-4. Run **Prompt 3** as a follow-up in the **same conversation**:
-
-   > *"List down design decision kept on hold for future phase"*
-
-   J4C scans the BPD and extracts all requirements or design decisions that have been deferred, flagged as out-of-scope, or marked for a future phase — giving the project team a ready-made backlog of deferred items without manually reviewing the full document.
 
 > **💡 Why this matters:** Requirements in a BPD are rarely standalone. REQ-09, REQ-12, and REQ-13 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BPD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
 
