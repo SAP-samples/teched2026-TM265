@@ -39,13 +39,6 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 
 **Estimated Time: 🕓 10 minutes**
 
-> **📍 Raj's Story** | *Today, 57 minutes after the workshop ended*
->
-> The 18J Fit-to-Standard workshop just wrapped. 56 minutes, 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Raj Kumar closes his notebook and opens his laptop. He has a commitment to Ankit: functional specification drafts before the 22nd. He has a recording transcript and J4C.
->
->He opens Joule for Consultants. This is where the documentation work begins.
->
-
 In a new browser tab, open SAP Joule for Consultants:
 
 > **URL:** `https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapdas.cloud.sap/joule`
@@ -53,6 +46,15 @@ In a new browser tab, open SAP Joule for Consultants:
 Log in using the credentials provided. You should land on the **J4C Home screen**.
 
 ---
+## Getting Started - Using Prompt Library
+**Estimated Time: 🕓 10 minutes**
+
+Let us use the Fit To standart prompt to prepare for the customer workshop. 
+
+..
+
+..
+
 
 ---
 
@@ -62,7 +64,7 @@ Log in using the credentials provided. You should land on the **J4C Home screen*
 
 > 📖 **Reference:** [SAP Joule for Consultants Gets Personal at SAP Sapphire 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-joule-for-consultants-gets-personal-at-sap-sapphire-2026/ba-p/14404400)
 
-Out of the box, J4C is grounded in SAP's 9 TB knowledge base. But every engagement is different. Raj's engagement has JouleTech-specific procurement policies, a just-completed workshop transcript, and four custom BAdI developments the SAP knowledge base has never seen.
+Out of the box, J4C is grounded in SAP's 9 TB knowledge base. But every engagement is different. There could be additional customer data or project specific data which Joule for consultant has not seen before. 
 
 At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-specific context into J4C. The right choice depends on how long you need the context to last and who needs access to it.
 
@@ -94,7 +96,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 | **Storage limit** | Up to 10 MB per file | 1 GB total / 10 MB per file | Depends on data repository |
 | **Supported formats** | PDF, TXT, DOCX, XLSX, CSV, MD · PNG, JPEG, JPG, WEBP | PDF, TXT, DOCX, XLSX, CSV, MD · PNG, JPEG, JPG, WEBP | PDF, DOCX, HTML, TXT · PNG, JPEG, JPG, TIFF, PPT |
 | **Best for** | Workshop transcript, one-off analysis | Recurring engagement context | Shared org standards, SOPs |
-| **Hands-on exercise** | Exercise 3 ↓ | Exercise 1 ↓ | Exercise 2 ↓ |
+| **Hands-on exercise** | Exercise 3 ↓ | Exercise 1 ↓ | Exercise 4 ↓ |
 
 
 ---
@@ -110,13 +112,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 
 **Estimated Time: 🕓 20 minutes**
 
-> **📍 Raj's Story** | *Monday, 1:00 PM*
->
-> The 18J workshop just ended. 14 user stories captured, four GAPs identified, four BAdI enhancements scoped. Every FIT/GAP call Raj made in that room — the logic, the rationale, the clean core judgements — lives only in his head. The junior consultant joining next week will need those same answers. So will the customer's project manager when they challenge a GAP decision.
->
-> Raj's first move: codify what he learned. He creates the 18J Fit-to-Standard Analyst Expert so anyone on the team can open a new conversation, ask "is this a fit?", and get a consistent, scoped answer — without needing to have been in the room.
 
-<br><br>
 ### Exercise 1.1 — Create a Fit-to-Standard Analyst Expert
 
 The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 18J standard capabilities consistently, every time.
@@ -208,6 +204,7 @@ MS team or any other software to capture recording and transcript of meeting.
 Leverage joule for consultants to generate backlog item document based on fit to standard workshop transcripts. 
 ```
 <br>
+
 6. Click **Add Starter Prompts** and add the following 3 prompts:
 
 | Title | Prompt |
@@ -223,7 +220,7 @@ Leverage joule for consultants to generate backlog item document based on fit to
 > Expert creation takes few minutes as the custom instructions and starter prompts are being guardrailed. 
 
 
-8. Once the expert is succssfully created you will notice a 
+8. Once the expert is succssfully created you will notice a ???
 
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
@@ -243,14 +240,14 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 <br>
 
-### Exercise 1.3 — Use the FTS Expert in a New Conversation
+### Exercise 1.3 — Use the FTS Expert in a New Conversation with file attachement
 
 1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
 2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
 3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [FTS_Workshop_18J_Transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
 4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
 
-   > *"As a MM consultant, a fit to standard workshop is conducted in **[Procurement]** on business process scope item **[18J — Requisitioning and Direct Procurement]**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
+   > *"As a MM consultant, a fit to standard workshop is conducted in **Procurement** on business process scope item **18J — Requisitioning and Direct Procurement**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
 
 5. Review the output — a structured table of ~14 user stories, each tagged **STANDARD** or **GAP**, with persona column.
 
@@ -280,9 +277,7 @@ ___
 
 **Estimated Time: 🕓 20 minutes**
 
-> **📍 Raj's Story** | *Monday, 2:00 PM*
->
-> The Expert is set up. ~~The grounding pipeline is live with JouleTech's policy documents and the WRICEF template.~~ Now Raj brings in the raw material: the workshop transcript. He uploads it to a new conversation and runs the six prompts — extracting user stories, tagging FIT and GAP, generating the sprint backlog, and producing the first draft functional specification. Each prompt builds on the previous one in the same conversation thread.
+File upload / attachment is supported in Joule for consultants. 
 
 **Supported formats and limits:**
 
@@ -301,11 +296,10 @@ ___
 
 1. Start a **new conversation** in J4C. 
 2. Choose the expert **18J Fit-to-Standard Analyst**, from My Expert picker
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon.
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment. The transcript is found here- [Workshop transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx)
 4. Submit:
 
-   > **Example query:**
-   > *"This is the transcript from a Fit-to-Standard workshop on SAP scope item 18J — Requisitioning. Summarise the session in 5 bullet points: the process steps covered, the key FIT confirmations, the GAP items identified with the proposed BAdI approach for each, and any scope boundaries agreed."*
+   > *"As a MM consultant, a fit to standard workshop is conducted in procure to pay stream on business process scope item 18J Requisitioning. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
 
 4. Review the response. Notice how J4C picks up the exact scope boundary confirmed at the end of the session — vendor currency check scoped to Purchase Organisation YYYY only, document currency check applying to all of Company Code 2330.
 
@@ -315,21 +309,19 @@ ___
 
 ### Exercise 2.2 — Generate FS/TS using the transcript
 
-1. Start a new Conversation, Select the expert. 
-2. Run the below prompts in a sequence. 
+1. Run the below prompts in a sequence. 
 
-| S. No | Prompt | Input | Output/Comments |
-|-------|--------|-------|-----------------|
-| 1 | As a MM consultant, a fit to standard workshop is conducted in procure to pay stream on business process scope item 18J Requisitioning. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap. | Attach the [Workshop transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx) | It should list user stories and tag them FIT STANDARD/FIT Configuration or Gap. This tagging is mentioned in Expert. Showcase expert is working alright and considered in prompting. |
-| 2 | Pick user stories tagged as gap and generate a backlog-item document, which can be used in sprint planning with actual start and end date, priority, sprint ID. |  | Generates a Backlog word document |
-| 3 | Generate a functional specification based on User Story tagged as gaps. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases 7. Document history. | | Generates a FS document. The quality of the document is not great. Need to work on Output. Also showcase that functional specification have sections described in prompt. |
-| 4 | Enrich the above functional specification in canvas mode with Pseudo code in section 4 of functional specification. |  | Use Canvas mode to add Pseudo code section. This prompt should enrich the functional specification with Pseudo code. |
-| 5 | Generate a detailed SAP technical specification for above functional specification which can act as reference for development. Please make sure the technical specification follows clean core principles. The document should include the business requirements, functional scope, and system landscape. Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | | TS document, however multiple issues observed — black box and numbering in TS is a problem. |
-| 6 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | | A |
+| S. No | Prompt | Output/Comments |
+|-------|--------|-----------------|
+| 1 | Pick user stories tagged as gap and generate a backlog-item document, which can be used in sprint planning with actual start and end date, priority, sprint ID. | Generates a Backlog word document |
+| 2 | Generate a functional specification based on User Story tagged as gaps. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases 7. Document history. | Generates a FS document. The quality of the document is not great. Need to work on Output. Also showcase that functional specification have sections described in prompt. |
+| 3 | Enrich the above functional specification in canvas mode with Pseudo code in section 4 of functional specification. | Use Canvas mode to add Pseudo code section. This prompt should enrich the functional specification with Pseudo code. |
+| 4 | Generate a detailed SAP technical specification for above functional specification which can act as reference for development. Please make sure the technical specification follows clean core principles. The document should include the business requirements, functional scope, and system landscape. Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | TS document, however multiple issues observed — black box and numbering in TS is a problem. |
+| 5 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | A |
 ---
 
 
-### Exercise 2.3 — Multi-File Analysis *(Optional — if time permits)*
+## Exercise 3 — Multi-File Analysis *(Optional — if time permits)*
 
 — Multi-File Cross-Table Analysis ⭐ Real Customer Use Case
 
@@ -350,66 +342,14 @@ ___
 
    > *"What is the total open order value by material group? Which group has the highest exposure?"*
 
----
-
-
-
-
-
-## Exercise 3 — Document Generation
-
-**Estimated Time: 🕓 15 minutes**
-
-> **📍 Raj's Story** | *Monday, 5:00 PM*
->
-> User stories extracted. Sprint backlog drafted. Now Raj moves to document generation. The transcript conversation is still open. He runs Prompt 3 — the functional specification — directly in the same thread.
-
-J4C can generate structured documents — Word (.docx) and PowerPoint (.pptx) — directly from a conversation, without a pre-defined template.
-
-### Exercise 3.1 — Generate the Functional Specification (Word)
-
-1. Go back to the conversation from Exercise 2 (transcript loaded, user stories and backlog already generated).
-2. Continue in the **same conversation** with Prompt 3 from the JouleTech prompt library:
-
-   > **Prompt:**
-   > *"Generate a Word document: a functional specification for Backlog Item BI-04 — Business Justification for Critical and Strategic Materials. Include the following 7 sections:*
-   > *1. Introduction (project background, scope item 18J, Company Code 2330 scope)*
-   > *2. Purpose of Document*
-   > *3. Why Development is Required (reference the workshop GAP finding)*
-   > *4. Technical Details (BAdI ME_PROCESS_REQ_CUST, text type ZBUSJ, classification characteristic ZMAT_CRITICALITY class type 001, message class Z_MM_PROC_MSG message 003)*
-   > *5. User Stories (in 'As a / I want / So that' format)*
-   > *6. Test Cases (5 test cases as a table: happy path, blank justification block, non-critical material bypass, integration with PR approval, audit log verification)*
-   > *7. Document History (Version 1.0, today's date, Author: Raj Kumar)"*
-
-3. Download the `.docx`. This is a production-ready first draft — grounded in the transcript, not fabricated.
-
-### Exercise 3.2 — Generate the Steering Committee Deck (PowerPoint)
-
-1. In a **new conversation**, submit:
-
-   > **Prompt:**
-   > *"Create a PowerPoint presentation for the JouleTech steering committee. Title: S/4HANA 18J Requisitioning — Fit-to-Standard Workshop Summary and Next Steps. Include slides: (1) Workshop Overview and Scope, (2) Process Coverage — FIT Confirmations (list all 10 standard user stories), (3) Gap Analysis — 4 Enhancement Items with BAdI approach for each, (4) Sprint Plan — BI-01 through BI-04 with sprint IDs and priorities, (5) Decisions Required from Steering Committee, (6) Next Steps and Timeline. Professional consulting tone. Add speaker notes to each slide."*
-
-2. Download and review the `.pptx`.
-3. Iterate:
-
-   > *"Add a slide after slide 2 showing the six 18J process steps as a numbered visual flow."*
-
-### Exercise 3.3 — In-Conversation Technical Specification *(if time permits)*
-
-Continue in the functional spec conversation and submit Prompt 4 (Pseudo Code), Prompt 5 (Technical Specification), and Prompt 6 (Unit Test Script) from the JouleTech prompt library. The full 9-section technical spec — data model, transport strategy, authorizations, exception handling — produced in two follow-up prompts.
-
-> **💡 The distinction:** Exercises 5.1 and 5.2 generate *files*. Exercise 5.3 generates *consulting content in the flow of the conversation* — which you then decide how to package. Both patterns have their place.
-
----
 
 <br>
 
 
-## 🔶 Use Case 2 — Requirements from BPD to Specification
-*Custom Knowledge Grounding · Document Generation*
 
----
+## 🔶 Use Case 2 — Requirements from BPD to Specification
+*Custom Knowledge Grounding*
+
 
 ## Exercise 4 — Custom Knowledge Grounding
 
@@ -447,104 +387,43 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 
 > **💡 Why this matters:** Requirements in a BPD are rarely standalone. REQ-09, REQ-12, and REQ-13 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BPD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
 
----
+
+<br>
+
+## Exercise 5 — Custom Knowledge Grounding - Project Manager persona
+
+Now as a project manager persona, how can Joule for consutant benifit you ? 
+Custom Knowledge Grounding is already enabled for this session's tenant.  Start a new conversation and run the following prompt, and notice how the answers are grounded to your data. 
+
+1. Click **New Conversation**.
+2. Run **Prompt**:
+
+   > *"As a Project manager, I need to know what open design decisions are pending. List down design decision kept on hold for future phase."*
+
+   This Prompt showcases, how a Project manager persona can track the status of open decisions.
 
 
----
+
+<br>
+ 
 
 ## Summary
 
-> **📍 Raj's Story** | *Wednesday, end of day*
->
-> Raj started Tuesday morning with a transcript. By Wednesday evening he had:
-> - A structured user story table — ready for the project tracker
-> - A sprint backlog with 4 items, story points, sprint assignments, and dependencies
-> - A functional specification for BI-04 — 7 sections, ready for Ankit's review
-> - A steering committee PowerPoint — 6 slides, speaker notes included
-> - A 18J Fit-to-Standard Analyst Expert the whole team can use to evaluate new requirements consistently
-> - A JouleTech Procurement Advisor his whole team can use for Realize phase work
-> - JouleTech's procurement policies accessible in every J4C answer
->
-> That's one workshop. One consultant. Five J4C features. Every deliverable the team needs for the next sprint.
 
-By completing this session, you have walked in Raj's shoes across the full breadth of J4C's latest capabilities:
+By completing this session, you have walked across the full breadth of J4C's latest capabilities:
 
 | Feature | What Raj Did | What You Practised |
 |---|---|---|
 | **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently | Created, scoped, and tested a purpose-built FTS Expert |
 | **Custom Knowledge Grounding** | Queried JouleTech's grounded documents (WRICEF template, compliance policies) to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
 | **Prompt Library** | Ran all 6 prompts in sequence: user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Used the 6-prompt chain from the JouleTech tab in a single conversation |
-
 | **Expert Workspace** | Shared the FTS Expert with a session partner; received and compared their version | Shared an Expert, opened a received copy, compared instruction variations |
-
-
 | **File Upload** | Uploaded the 18J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
 
----
-
-## The 6-Prompt Chain — Quick Reference
-
-All six prompts run sequentially in the same conversation (transcript loaded in Exercise 3). Access them from the **JouleTech** tab in the Prompt Library:
-
-| Prompt | Action | Output | Used In |
-|---|---|---|---|
-| 1 | Upload transcript → extract user stories | ~14 user stories, STANDARD/GAP tagged | Exercise 3.1 / 3.2 |
-| 2 | GAP stories → sprint backlog | 4 backlog items, sprint IDs, story points | Exercise 3.2 |
-| 3 | Backlog item → functional specification | 7-section Word document | Exercise 4.1 |
-| 4 | Functional spec → pseudo code | Clean Core annotated ABAP stubs | Exercise 4.3 |
-| 5 | Functional spec + pseudo code → technical specification | 9-section technical document | Exercise 4.3 |
-| 6 | Functional spec + technical spec → unit test script | Test script covering all user stories, expected vs actual results | Exercise 4.3 |
 
 ---
+<br>
 
-## Coming Soon (Not Yet Committed)
-
-| Feature | Description |
-|---|---|
-| **Document Library** | A centralised library within J4C where generated documents can be saved, organised, and retrieved across conversations |
-| **Process Diagram Generation** | AI-generated process flow diagrams (e.g., BPMN-style) directly within J4C |
-
----
-
-## Appendix — Key SAP Procurement Transactions (18J Reference)
-
-| Activity | Transaction | Module |
-|---|---|---|
-| Create Purchase Requisition | ME51N | MM-PUR |
-| Change / Display PR | ME52N / ME53N | MM-PUR |
-| Assign Source of Supply | ME57 | MM-PUR |
-| Create Purchase Order | ME21N | MM-PUR |
-| Release (Approve) PR | ME54N / ME55 | MM-PUR |
-| Monitor PRs | ME5A | MM-PUR |
-| Post Goods Receipt | MIGO | MM-IM |
-| Post Supplier Invoice | MIRO | FI-AP |
-| BAdI: PR Validation | ME_PROCESS_REQ_CUST | MM-PUR |
-| BAdI: PO Validation | ME_PROCESS_PO_CUST | MM-PUR |
-| ABAP Test Cockpit | ATC | Basis / ABAP |
-| Classification System | CL02 / CT04 | Cross-App |
-
-> **💡 Pro tip:** Include the transaction code in your J4C prompt — responses become significantly more specific and actionable.
-
----
-
-## Sample Files Reference
-
-| File | Used In | Purpose |
-|---|---|---|
-| `FTS-18J-Workshop-Transcript.docx` | Exercises 1.1, 2.3, 5.1 | Source transcript — upload once, use throughout |
-| `jouletech-material-master.csv` | Exercise 3.3 | Material master data for cross-table analysis |
-| `jouletech-open-orders.csv` | Exercise 3.3 | Open orders data for cross-table analysis |
-| `jouletech-internal-links.txt` | Exercise 1 (optional) | Procurement URL directory for Expert grounding |
-| `MM-18J-Prompt-Library.xlsx` | Admin pre-load | The 6 chained prompts for the JouleTech tab |
-| `TechEd2026-Custom-Prompt-Library.xlsx` | Admin pre-load | The 8 general consulting prompts for the JouleTech tab |
-| `JouleTech-WRICEF-Enhancement-FS-Template.pdf` | Exercise 4 — grounding | JouleTech's standard Enhancement functional specification template (WRICEF-E) |
-| `JouleTech-Procurement-Compliance-Framework.pdf` | Exercise 4 — grounding | Mandatory approval gates and compliance checkpoints for procurement and custom developments |
-| `JouleTech-Clean-Core-Exemption-Policy.pdf` | Exercise 4 — grounding | Approval chain and process for clean core exemptions (BAdI, custom ABAP) in Company Code 2330 |
-| `JouleTech-S4HANA-Project-Charter.docx` | Exercise 4 — grounding | Project scope, go-live date, sponsor approvals, and scope boundaries |
-| `JouleTech-Vendor-Management-Policy.pdf` | Exercise 4 — grounding | Vendor currency and bank account rules, approval thresholds by procurement organisation |
-| `JouleTech-Internal-Controls-Audit-Policy.pdf` | Exercise 4 — grounding | Audit log and evidence requirements for custom procurement enhancements going to production |
-
----
 
 ## Resources
 
@@ -558,13 +437,6 @@ All six prompts run sequentially in the same conversation (transcript loaded in 
 | Prompt Library — SAP Community Blog | [community.sap.com](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-sap-activate-prompt-library-curated-ai-prompts-for-your/ba-p/14436408) |
 
 ---
-
-## Navigation
-
-| Previous | Next |
-|---|---|
-| Overview | Wrap-up & Feedback |
-
 
 
 ## Code of Conduct
