@@ -23,7 +23,7 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 | Exercise | Topic | Est. Time |
 |---|---|---|
 | 0 | Access & Setup | 15 min |
-| — | **Concept: Three Ways to Make J4C Personal** | **5 min** |
+| — | **Concept: Try out Prompts & Understand Three Ways to Make J4C Personal** | **5 min** |
 | — | 🔷 **Use Case 1 — Workshop to Specification** | |
 | 1 | Expert Workspace: Create the Fit-to-Standard Workshop Expert | 20 min |
 | 2 | File Upload: Workshop Transcript | 15 min |
