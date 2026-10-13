@@ -240,7 +240,7 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 <br>
 
-### Exercise 1.4 — Share with the Team Next to You
+### Exercise 1.3 — Share with the Team Next to You
 
 Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
 
