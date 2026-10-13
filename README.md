@@ -380,7 +380,7 @@ By completing this session, you have walked across the full breadth of J4C's lat
 |---|---|---|
 | **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently | Created, scoped, and tested a purpose-built FTS Expert |
 | **Custom Knowledge Grounding** | Queried Business Requirement Document to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
-| **Prompt Library** | Ran all 6 prompts in sequence: user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Used the 6-prompt chain from the JouleTech tab in a single conversation |
+| **Prompt Library** | Ran all 5 prompts in sequence: user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Used the 6-prompt chain from the JouleTech tab in a single conversation |
 | **Expert Workspace** | Shared the FTS Expert with a session partner; received and compared their version | Shared an Expert, opened a received copy, compared instruction variations |
 | **File Upload** | Uploaded the 18J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
 
