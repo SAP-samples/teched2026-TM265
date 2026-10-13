@@ -240,21 +240,6 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 
 <br>
 
-### Exercise 1.3 — Use the FTS Expert in a New Conversation with file attachement
-
-1. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
-2. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment icon. (The meeting transcript file is found [FTS_Workshop_18J_Transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx))
-4. Submit **Prompt 1** from the JouleTech prompt library, filling in the placeholders:
-
-   > *"As a MM consultant, a fit to standard workshop is conducted in **Procurement** on business process scope item **18J — Requisitioning and Direct Procurement**. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
-
-5. Review the output — a structured table of ~14 user stories, each tagged **STANDARD** or **GAP**, with persona column.
-
-> **💡 The key insight:** The Expert's instructions shape how J4C reads the transcript. Without the FTS Expert active, the same prompt gives a generic summary. With the Expert, every response follows the FIT/PARTIAL FIT/GAP classification format you defined in Exercise 1.1.
-
-<br>
-
 ### Exercise 1.4 — Share with the Team Next to You
 
 Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
@@ -291,6 +276,7 @@ File upload / attachment is supported in Joule for consultants.
 | MD | 10 MB | ~600,000 chars | — |
 | PNG, JPEG, JPG, WEBP | 10 MB | Max 3072 × 3072 px | — |
 
+> **💡 The key insight:** The Expert's instructions shape how J4C reads the transcript. Without the FTS Expert active, the same prompt gives a generic summary. With the Expert, every response follows the FIT/PARTIAL FIT/GAP classification format you defined in Exercise 1.1.
 
 ### Exercise 2.1 — Analyse the Workshop Transcript
 
