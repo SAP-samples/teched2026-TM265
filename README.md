@@ -73,17 +73,17 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
-│   ORGANISATIONAL   ┤  Custom Knowledge Grounding                   │
-│                    │  · Entire J4C tenant                          │
-│                    │  · JouleTech procurement policy docs, SOPs    │
-│                    │                                               │
-│   PROJECT /        ┤  Expert Workspace File Upload                 │
-│   ENGAGEMENT       │  · Persistent across all conversations        │
-│                    │  · 18J workshop artefacts, BAdI specs         │
-│                    │                                               │
-│   CONVERSATION     ┤  Prompt-Level File Upload                     │
-│                    │  · This conversation only, 7-day auto-delete  │
-│                    │  · The transcript Raj just received           │
+│   ORGANISATIONAL   ┤  Custom Knowledge Grounding                    │
+│                    │  · Entire J4C tenant                           │
+│                    │  · Business Requirement Document               │
+│                    │                                                │
+│   PROJECT /        ┤  Expert Workspace File Upload                  │
+│   ENGAGEMENT       │  · Persistent across all conversations         │
+│                    │  · 18J workshop artefacts, BAdI specs          │
+│                    │                                                │
+│   CONVERSATION     ┤  Prompt-Level File Upload                      │
+│                    │  · This conversation only, 7-day auto-delete   │
+│                    │  · The transcript Raj just received            │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
@@ -117,9 +117,9 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 
 The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 18J standard capabilities consistently, every time.
 
-1. Navigate to **Console → Expert Workspace**.
+1. Navigate to upper left **New Conversation** → **Quick Links** → **Open Expert Workspace in Console**.
 2. Click the **Expert Library** tab.
-3. Select **"Fit-to-Standard Analyst"** template, or use a **Starter Template** to build from scratch.
+3. Use a **Custom Expert** then **Add to My Eperts** to build from a starter template or click **+ New Expert** upper right corner to build an Expert from scratch.
 4. Name it *"18J Fit-to-Standard Analyst"* and click **Save**.
 5. Click **Edit Instructions** and apply this structure:
 
@@ -320,29 +320,6 @@ File upload / attachment is supported in Joule for consultants.
 | 5 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | A |
 ---
 
-
-## Exercise 3 — Multi-File Analysis *(Optional — if time permits)*
-
-— Multi-File Cross-Table Analysis ⭐ Real Customer Use Case
-
-> **💡 Why this matters:** A real customer uploaded multiple SAP data exports and expected J4C to infer the table relationship — without being told how to join them.
-
-1. Start a **new conversation**.
-2. Upload **both files at once**:
-   - **`jouletech-material-master.csv`** — material master (MATNR, description, status)
-   - **`jouletech-open-orders.csv`** — open sales order line items (MATNR, customer, value)
-3. Do **not** explain the relationship. Submit:
-
-   > **Example query:**
-   > *"Which materials have open customer orders but are marked as discontinued or phased out? List the material, customer, order number, quantity, and value."*
-
-4. J4C should infer MATNR as the join key and return materials NT-1005 (MMSTA 30, Phased Out) and NT-1018 (MMSTA 99, Discontinued) — both with live orders.
-
-5. Follow up:
-
-   > *"What is the total open order value by material group? Which group has the highest exposure?"*
-
-
 <br>
 
 
@@ -351,7 +328,7 @@ File upload / attachment is supported in Joule for consultants.
 *Custom Knowledge Grounding*
 
 
-## Exercise 4 — Custom Knowledge Grounding
+## Exercise 3 — Custom Knowledge Grounding
 
 **Estimated Time: 🕓 15 minutes**
 
@@ -367,6 +344,7 @@ In your own engagement, the equivalent step is:
 1. Upload the customer's BPD to your SharePoint site (or other connected repository — AWS S3, Google Drive, SAP DMS).
 2. The grounding pipeline picks it up on its next refresh cycle (daily, or triggered manually).
 3. From that point, any J4C conversation can query the document.
+4. Detailed guide can be found: https://community.sap.com/t5/technology-blog-posts-by-sap/enhance-sap-joule-for-consultants-with-custom-knowledge-grounding/ba-p/14404721
 
 ### Step 2 — Query the BPD
 
@@ -390,7 +368,7 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 
 <br>
 
-## Exercise 5 — Custom Knowledge Grounding - Project Manager persona
+## Exercise 4 — Custom Knowledge Grounding - Project Manager persona
 
 Now as a project manager persona, how can Joule for consutant benifit you ? 
 Custom Knowledge Grounding is already enabled for this session's tenant.  Start a new conversation and run the following prompt, and notice how the answers are grounded to your data. 
@@ -415,7 +393,7 @@ By completing this session, you have walked across the full breadth of J4C's lat
 | Feature | What Raj Did | What You Practised |
 |---|---|---|
 | **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently | Created, scoped, and tested a purpose-built FTS Expert |
-| **Custom Knowledge Grounding** | Queried JouleTech's grounded documents (WRICEF template, compliance policies) to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
+| **Custom Knowledge Grounding** | Queried Business Requirement Document to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
 | **Prompt Library** | Ran all 6 prompts in sequence: user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Used the 6-prompt chain from the JouleTech tab in a single conversation |
 | **Expert Workspace** | Shared the FTS Expert with a session partner; received and compared their version | Shared an Expert, opened a received copy, compared instruction variations |
 | **File Upload** | Uploaded the 18J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
