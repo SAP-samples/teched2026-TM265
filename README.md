@@ -28,7 +28,7 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 | 1 | Expert Workspace: Create the Fit-to-Standard Workshop Expert | 20 min |
 | 2 | File Upload: Workshop Transcript | 15 min |
 | 3 | Document Generation | 15 min |
-| — | 🔶 **Use Case 2 — Requirements from BPD to Specification** | |
+| — | 🔶 **Use Case 2 — Requirements from BRD to Specification** | |
 | 4 | Custom Knowledge Grounding | 15 min |
 | — | Wrap-up & Q&A | 5 min |
 | **Total** | | **90 min** |
@@ -230,7 +230,7 @@ Leverage joule for consultants to generate backlog item document based on fit to
 > Expert creation takes few minutes as the custom instructions and starter prompts are being guardrailed. 
 
 
-8. Once the expert is succssfully created you will notice a ???
+8. Once the expert is succssfully created you will notice expert is ready for consumption.
 
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
@@ -309,18 +309,18 @@ File upload / attachment is supported in Joule for consultants.
 
 | S. No | Prompt | Output/Comments |
 |-------|--------|-----------------|
-| 1 | Pick user stories tagged as gap and generate a backlog-item document, which can be used in sprint planning with actual start and end date, priority, sprint ID. | Generates a Backlog word document |
-| 2 | Generate a functional specification based on User Story tagged as gaps. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases 7. Document history. | Generates a FS document. The quality of the document is not great. Need to work on Output. Also showcase that functional specification have sections described in prompt. |
-| 3 | Enrich the above functional specification in canvas mode with Pseudo code in section 4 of functional specification. | Use Canvas mode to add Pseudo code section. This prompt should enrich the functional specification with Pseudo code. |
-| 4 | Generate a detailed SAP technical specification for above functional specification which can act as reference for development. Please make sure the technical specification follows clean core principles. The document should include the business requirements, functional scope, and system landscape. Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | TS document, however multiple issues observed — black box and numbering in TS is a problem. |
-| 5 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | A |
+| 1 | Pick user stories tagged as gap and generate a backlog-item document, identified GAPs can be used in sprint planning with actual start and end date, priority, sprint ID. | Generates a Backlog word document |
+| 2 | Generate a functional specification in canvas mode based on User Stories tagged as gaps. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases 7. Document history. | Generates a FS document and showcase that functional specification has sections described in prompt. |
+| 3 | Enrich the above functional specification in canvas mode with Pseudo code within Section 4 Technical details and also add Appendix section at the end of  functional specification. | Use Canvas mode to add Pseudo code section. This prompt should enrich the functional specification with Pseudo code & appendix section. |
+| 4 | Generate a detailed SAP technical specification from above functional specification which can act as reference for development. Please make sure the technical specification follows clean core principles. Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | Technical specification document|
+| 5 | Generate unit test script document referencing functional specification & technical specification and all user stories. The document should have test steps description, Navigation path including transactions or FIORI apps, expected test result & actual test results, detailed test steps referring to user stories. | Test script document |
 ---
 
 <br>
 
 
 
-## 🔶 Use Case 2 — Requirements from BPD to Specification
+## 🔶 Use Case 2 — Requirements from BRD to Specification
 *Custom Knowledge Grounding*
 
 
@@ -330,36 +330,36 @@ File upload / attachment is supported in Joule for consultants.
 
 > **📍 The scenario**
 >
-> The customer — Nexstream — has provided their **Billing & Invoicing Business Requirements document** ([`Business_Requirements_Billing_Invoicing_Nexstream.docx`](/exercises/Business%20Requirements_Billing_Invoicing_Nexstream.docx)). The session facilitators have uploaded this file to a AWS S3 and connected it to J4C via Custom Knowledge Grounding. J4C can now answer questions directly from the BPD — surfacing how individual requirements map to standard S/4 HANA capabilities, identifying relationships between requirements, and generating functional specifications — without the consultant reading through the entire document.
+> The customer — Nexstream — has provided their **Billing & Invoicing Business requirement document** ([`Business_Requirements_Billing_Invoicing_Nexstream.docx`](/exercises/Business%20Requirements_Billing_Invoicing_Nexstream.docx)). The session facilitators have uploaded this file to a AWS S3 and connected it to J4C via Custom Knowledge Grounding. J4C can now answer questions directly from the BRD — surfacing how individual requirements map to standard S/4 HANA capabilities, identifying relationships between requirements, and generating functional specifications — without the consultant reading through the entire document.
 
-### Step 1 — Add the BPD to SharePoint
+### Step 1 — Add the BRD to SharePoint
 
 > **📋 Facilitator pre-step (already done for this session):** Upload `Business_Requirements_Billing_Invoicing_Nexstream.docx` to the designated AWS S3 site connected to the J4C Custom Knowledge Grounding pipeline.
 
 In your own engagement, the equivalent step is:
-1. Upload the customer's BPD to your SharePoint site (or other connected repository — AWS S3, Google Drive, SAP DMS).
+1. Upload the customer's BRD to your SharePoint site (or other connected repository — AWS S3, Google Drive, SAP DMS).
 2. The grounding pipeline picks it up on its next refresh cycle (daily, or triggered manually).
 3. From that point, any J4C conversation can query the document.
 4. Detailed guide can be found: https://community.sap.com/t5/technology-blog-posts-by-sap/enhance-sap-joule-for-consultants-with-custom-knowledge-grounding/ba-p/14404721
 
-### Step 2 — Query the BPD
+### Step 2 — Query the BRD
 
 Custom Knowledge Grounding is already enabled for this session's tenant. Start a new conversation and run both prompts.
 
 1. Click **New Conversation**.
 2. Run **Prompt 1**:
 
-   > *"How can REQ-09 can be addressed, the requirement is referred in S/4 HANA BRIM BPD"*
+   > *"How can REQ-09 be addressed in S/4 HANA BRIM solution, the requirement is referred in S/4 HANA BRIM BRD "*
 
-   J4C retrieves REQ-09 from the Nexstream BPD( already grounded ), identifies where it maps to standard S/4 HANA capabilities, and explains the recommended approach — with a source citation referencing the document.
+   J4C retrieves REQ-09 from the Nexstream BRD( already grounded ), identifies where it maps to standard S/4 HANA capabilities, and explains the recommended approach — with a source citation referencing the document.
 
 3. Run **Prompt 2** as a follow-up in the **same conversation**:
 
    > *"Generate a functional specification clubbing REQ-12, REQ-13 and REQ-09 as they are logically related. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. technical details 5.User stories 6. Test cases 7. Document history."*
 
-   J4C surfaces the relationships between all three requirements from the BPD and produces a combined functional specification — without the consultant manually cross-referencing them.
+   J4C surfaces the relationships between all three requirements from the BRD and produces a combined functional specification — without the consultant manually cross-referencing them.
 
-> **💡 Why this matters:** Requirements in a BPD are rarely standalone. REQ-09, REQ-12, and REQ-13 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BPD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
+> **💡 Why this matters:** Requirements in a BRD are rarely standalone. REQ-09, REQ-12, and REQ-13 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BRD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
 
 
 <br>
@@ -388,8 +388,8 @@ By completing this session, you have walked across the full breadth of J4C's lat
 
 | Feature | What Raj Did | What You Practised |
 |---|---|---|
-| **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Analyst Expert from workshop findings; used it in a new conversation to evaluate requirements consistently with 6 prompts in sequence : user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Created, scoped, and tested a purpose-built FTS Expert |
-| **Custom Knowledge Grounding** | Queried Business Requirement Document to retrieve company-specific content | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
+| **Fit-to-Standard Expert** ⭐ | Created the 18J FTS Workshop Expert; used it in a new conversation to evaluate requirements consistently with 6 prompts in sequence : user stories → backlog → functional spec → pseudo code → technical spec → unit test script | Created, scoped, and tested a purpose-built FTS workshop Expert |
+| **Custom Knowledge Grounding** | Queried Business Requirement Document to retrieve specific requirements and establish logical relationship between gathered requirements  | Retrieved answers citing source documents; understood what grounding adds vs. SAP base knowledge |
 | **Prompt Library** | Ran all 5 prompts to discover how to conduct a fit-to-standard workshop in sequence | Used the 5 -prompt chain from the "SAP TechEd" tab in a single conversation |
 | **File Upload** | Uploaded the 18J workshop transcript and ran the 6-prompt chain in a single conversation | Uploaded a DOCX, ran structured prompts, generated output documents |
 
