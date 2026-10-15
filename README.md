@@ -51,10 +51,20 @@ Log in using the credentials provided. You should land on the **J4C Home screen*
 
 Let us use the Fit To standart prompt to prepare for the customer workshop. 
 
-..
+1. Goto cosole [Prompt Library](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/prompt-library?source=SAP+Teched)
+2. Filter on 'SAP Teched'
 
-..
+![Prompt Library](<exercises/Assets/Prompt Lib.jpg>)
 
+3. Select the first prompt 'Generate a Fit-to-Standard Workshop Invitation'. 
+4. You may read the full prompt, and copy the same. 
+5. Open [Joule for consultant](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/joule) and paste the prompt and execute it. 
+6. Notice how an invite template is generated, including formal email template and document structure. 
+
+
+>Similarly, execute the prompts,**'Create a Fit-to-Standard Pre-Read document.'** and **'Compare Public Cloud versus Private Cloud Fit-to-Standard Workshops'**. 
+><br>
+>These prompts help you understand the context of a fit-to-standard workshop and would be helpful for rest of the exercises. 
 
 ---
 
