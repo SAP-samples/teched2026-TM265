@@ -128,7 +128,8 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 The FTS Expert captures your workshop knowledge in a reusable form. When a consultant — or the customer's project team — asks about a specific requirement, the Expert classifies it against SAP 18J standard capabilities consistently, every time.
 
 1. Navigate to upper left **New Conversation** → **Quick Links** → **Open Expert Workspace in Console**.
-2. Click the **Expert Library** tab.
+2. Click the **Expert Library** tab. 
+![Expert Library](exercises/Assets/Expert1.jpeg)
 3. Use a **Custom Expert** then **Add to My Eperts** to build from a starter template or click **+ New Expert** upper right corner to build an Expert from scratch.
 4. Name it *"18J Fit-to-Standard Analyst"* and click **Save**.
 5. Click **Edit Instructions** and apply this structure:
@@ -232,6 +233,7 @@ Leverage joule for consultants to generate backlog item document based on fit to
 
 8. Once the expert is succssfully created you will notice expert is ready for consumption.
 
+![Expert](exercises/Assets/18j.jpeg)
 
 > **💡 Expert lifecycle:** This is an Explore-phase Expert. Its value is highest during and immediately after Fit-to-Standard workshops — when requirements are being classified and GAPs are being scoped. Once Realize begins, the Procurement Advisor (Exercise 1 optional extension) takes over as the primary Expert.
 
@@ -240,11 +242,14 @@ Leverage joule for consultants to generate backlog item document based on fit to
 ### Exercise 1.2 — Use the FTS Expert in a New Conversation with starter prompts
 This is the core pattern: the Expert is built once, then consultants and the customer's project team open it in fresh conversations to extract and classify workshop findings — without re-explaining the context each time.
 
-1. Open the Joule for consultant URl - https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapdas.cloud.sap/joule
+1. Open the Joule for consultant URl - https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/joule
 2. Click **New Conversation** (top left) -> **Show Experts** (from quick links)
+![Experts](<exercises/Assets/Joule Message1.jpg>)
 3. In the Expert picker, select **"18J Fit-to-Standard Analyst"**.
 4. Select one of the start prompt titles right below the expert title and watch the Expert in action. 
+![List](<exercises/Assets/Expert 2.jpeg>)
 5. You should see the query being fired and Joule for consultant is fetching the answer. 
+
 
 > Try out all the starter prompts, and play around changing the starter prompts in Expert Workspace. 
 
@@ -255,7 +260,8 @@ This is the core pattern: the Expert is built once, then consultants and the cus
 Turn to the team sitting next to you. Ask one of them for their J4C email address and share your **18J Fit-to-Standard Analyst** Expert with them.
 
 1. Goto **[Experts Workspace](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/expert-workspace)** console. 
-2. From **My Experts**, find your **18J Fit-to-Standard Analyst** card and click **Share**.
+2. From **My Experts**, find your **18J Fit-to-Standard Analyst** card and click **Share Expert**.
+![Share](<exercises/Assets/Joule Share Expert 1.jpg>)
 3. Ask someone from the neighbouring team for their email address (same J4C tenant).
 4. Enter their email and click **Share**.
 5. If the neighbouring team shares their Expert back with you, open it and compare — notice how different instructions produce different classification behaviour.
