@@ -1,0 +1,138 @@
+- generic [ref=f9e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f9e7]:
+    - banner [ref=f9e8]:
+      - banner "Shell Bar" [ref=f9e9]:
+        - generic [ref=f9e10]:
+          - button "Back" [ref=f9e30] [cursor=pointer]:
+            - generic [ref=f9e31]: 
+          - button [ref=f9e11] [cursor=pointer]:
+            - img "SAP Logo" [ref=f9e12]
+          - button "Explore " [ref=f9e32] [cursor=pointer]
+          - generic [ref=f9e13] [cursor=pointer]:
+            - heading "Create Request" [level=1]
+            - button "Create Request" [ref=f9e55]:
+              - generic [aria-hidden] [ref=f9e36]: 
+        - generic [ref=f9e17]:
+          - button "Open Search" [ref=f9e38] [cursor=pointer]:
+            - generic [ref=f9e39]: 
+          - button "Joule" [ref=f9e43] [cursor=pointer]:
+            - generic [ref=f9e44]: 
+          - button "Open Help" [ref=f9e45] [cursor=pointer]:
+            - generic [ref=f9e46]: 
+          - button "supoort" [ref=f9e47] [cursor=pointer]:
+            - generic [ref=f9e48]: 
+          - button "Notifications" [ref=f9e40] [cursor=pointer]:
+            - generic [ref=f9e41]: 
+            - text: "2"
+          - button "Profile of Anantharaman Ravi" [ref=f9e18] [cursor=pointer]:
+            - generic: AR
+    - main "Content" [ref=f9e29]:
+      - iframe [active] [ref=f9e42]:
+        - application [ref=f10e1]:
+          - generic:
+            - status
+          - generic [ref=f10e7]:
+            - text:                                   
+            - region [ref=f10e466]:
+              - text: 
+              - main [ref=f10e467]:
+                - form [ref=f10e469]:
+                  - generic [ref=f10e470]:
+                    - heading "Leave Type Selection" [level=2] [ref=f10e472]
+                    - generic [ref=f10e475]:
+                      - generic "Leave Type" [ref=f10e477]: "Leave Type :"
+                      - generic [ref=f10e480] [cursor=pointer]:
+                        - combobox "Leave Type Calculating availability..." [ref=f10e729]: Annual Leave
+                        - textbox [aria-hidden] [ref=f10e482]: "0100"
+                        - generic [aria-hidden] [ref=f10e483]: Annual Leave
+                        - generic [aria-hidden] [ref=f10e484]: 
+                      - generic [ref=f10e486]: Calculating availability...
+                - form [ref=f10e730]:
+                  - generic [ref=f10e731]:
+                    - heading "General Data" [level=2] [ref=f10e733]
+                    - generic [ref=f10e736]:
+                      - radiogroup [ref=f10e739]:
+                        - radio "More than 1 day" [ref=f10e740]
+                        - radio "One day or less" [checked] [ref=f10e745]
+                      - generic "Date" [ref=f10e751]: "*Date :"
+                      - generic [ref=f10e754]:
+                        - textbox "Date" [ref=f10e755]:
+                          - /placeholder: e.g. 31.12.2026
+                          - text: 26.10.2026
+                        - generic [aria-hidden] [ref=f10e757] [cursor=pointer]: 
+                      - generic "Start Time" [ref=f10e759]: "Start Time :"
+                      - generic [ref=f10e762]:
+                        - textbox "Start Time e.g. 23:59" [ref=f10e763]:
+                          - /placeholder: e.g. 23:59
+                        - generic [aria-hidden] [ref=f10e765] [cursor=pointer]: 
+                      - generic "End Time" [ref=f10e767]: "End Time :"
+                      - generic [ref=f10e770]:
+                        - textbox "End Time e.g. 23:59" [ref=f10e771]:
+                          - /placeholder: e.g. 23:59
+                        - generic [aria-hidden] [ref=f10e773] [cursor=pointer]: 
+                      - generic "Duration in Hours" [ref=f10e775]: "Duration in Hours :"
+                      - textbox "Duration in Hours" [ref=f10e779]
+                      - generic [ref=f10e781]: Calculating leave duration...
+                      - generic "Approver" [ref=f10e784]: "Approver :"
+                      - generic [ref=f10e788]:
+                        - textbox "Approver" [ref=f10e789]: Fu Steven Peng Chen
+                        - generic [aria-hidden] [ref=f10e791] [cursor=pointer]: 
+                      - generic "New Note" [ref=f10e793]: "New Note :"
+                      - textbox "New Note" [ref=f10e797]
+                - form [ref=f10e799]:
+                  - generic [ref=f10e800]:
+                    - heading "Additional Data" [level=2] [ref=f10e802]
+                    - generic [ref=f10e805]:
+                      - generic "Days used by this absence" [ref=f10e807]: "Days used by this absence :"
+                      - textbox "Days used by this absence" [disabled] [ref=f10e811]: "0.00"
+              - region [ref=f10e571]:
+                - toolbar [ref=f10e572]:
+                  - button "Save" [ref=f10e574] [cursor=pointer]
+                  - button "Cancel" [active] [ref=f10e577] [cursor=pointer]
+  - generic [ref=f9e49]:
+    - generic:
+      - generic:
+        - navigation:
+          - tablist "Navigation menu":
+            - generic:
+              - tab "SAP Launchpad" [selected]
+              - tabpanel "SAP Launchpad SAP Launchpad SAP Launchpad Ask a Question Report an Issue Send Us Feedback Get Help":
+                - generic:
+                  - list:
+                    - listitem:
+                      - link "Ask a Question":
+                        - /url: https://sap.stackenterprise.co/questions/ask?tags=launchpad
+                        - generic:
+                          - text: Ask a Question
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Get answers about SAP Launchpad from the Stack@SAP community
+                    - listitem:
+                      - link "Report an Issue":
+                        - /url: /site#unifiedticketing-Display&/create/ZINE/IMAS_CLD_FLP/Issue%20with%20'Launchpad,%20SAP%20Build%20Work%20Zone,%20standard%20edition'/03/null/null/While%20accessing%20the%20app%20via%20the%20Launchpad
+                        - generic:
+                          - text: Report an Issue
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Create a ticket for our SAP Launchpad technical support team
+                    - listitem:
+                      - link "Send Us Feedback":
+                        - /url: /site#feedbackservice-Display&/topic/965e891a-b3e0-4bac-a04d-b7b1bec7ab47
+                        - generic:
+                          - text: Send Us Feedback
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Help us to improve the experience with your constructive feedback
+                    - listitem:
+                      - link "Get Help":
+                        - /url: https://sapit-cloud.int.sap/knowledgebase/processes/landscape/flp
+                        - generic:
+                          - text: Get Help
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Find help in our SAP Launchpad Knowledge Base
+            - generic:
+              - tab "Platforms"
+            - generic:
+              - tab "Get Support"
+  - generic:
+    - region "Notification"

@@ -1,0 +1,133 @@
+- generic [active] [ref=f39e1]:
+  - banner [ref=f39e2]:
+    - generic [ref=f39e3]:
+      - text: 
+      - link [ref=f39e5] [cursor=pointer]:
+        - /url: https://api.slack.com/
+        - img "Slack API" [ref=f39e6]
+      - generic [ref=f39e8]:
+        - link "Changelog" [ref=f39e9] [cursor=pointer]:
+          - /url: https://docs.slack.dev/changelog
+        - link "Documentation" [ref=f39e10] [cursor=pointer]:
+          - /url: /#read_the_docs
+        - link "Tutorials" [ref=f39e11] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Your Apps" [ref=f39e12] [cursor=pointer]:
+          - /url: /apps
+    - generic [ref=f39e14]:
+      - generic [ref=f39e15]: 
+      - text: Success!
+  - navigation [ref=f39e18]:
+    - generic [ref=f39e19] [cursor=pointer]:  Claude Assistant
+    - generic [ref=f39e21]:
+      - heading "Settings" [level=4] [ref=f39e22]
+      - list [ref=f39e23]:
+        - listitem [ref=f39e24]:
+          - link "Basic Information" [ref=f39e25] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/general
+        - listitem [ref=f39e26]:
+          - link "Collaborators" [ref=f39e27] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/collaborators
+        - listitem [ref=f39e28]:
+          - link "Socket Mode" [ref=f39e29] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/socket-mode
+        - listitem [ref=f39e30]:
+          - link "Install App" [ref=f39e31] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/install-on-team?
+        - listitem [ref=f39e32]:
+          - link "Manage Distribution" [ref=f39e33] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/distribute
+      - heading "Features" [level=4] [ref=f39e34]
+      - list [ref=f39e35]:
+        - listitem [ref=f39e36]:
+          - link "App Home" [ref=f39e37] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/app-home?
+        - listitem [ref=f39e38]:
+          - link "Agents" [ref=f39e39] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/app-assistant?
+        - listitem [ref=f39e40]:
+          - link "Work Object Previews New" [ref=f39e41] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/rich-previews?
+            - text: Work Object Previews
+            - generic [ref=f39e42]: New
+        - listitem [ref=f39e43]:
+          - link "Search Apps New" [ref=f39e44] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/search-app?
+            - text: Search Apps
+            - generic [ref=f39e45]: New
+        - listitem [ref=f39e46]:
+          - link "Workflow Steps" [ref=f39e47] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/functions
+        - listitem [ref=f39e48]:
+          - link "Org Level Apps" [ref=f39e49] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/org-level?
+        - listitem [ref=f39e50]:
+          - link "Incoming Webhooks" [ref=f39e51] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/incoming-webhooks?
+        - listitem [ref=f39e52]:
+          - link "Interactivity & Shortcuts" [ref=f39e53] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/interactive-messages?
+        - listitem [ref=f39e54]:
+          - link "Slash Commands" [ref=f39e55] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/slash-commands?
+        - listitem [ref=f39e56]:
+          - link "OAuth & Permissions" [ref=f39e57] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/oauth?
+        - listitem [ref=f39e58]:
+          - link "MCP Servers New" [ref=f39e59] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/mcp-servers
+            - text: MCP Servers
+            - generic [ref=f39e60]: New
+        - listitem [ref=f39e61]:
+          - link "Event Subscriptions" [ref=f39e62] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/event-subscriptions?
+        - listitem [ref=f39e63]:
+          - link "User ID Translation" [ref=f39e64] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/user-ids?
+        - listitem [ref=f39e65]:
+          - link "App Manifest" [ref=f39e66] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/app-manifest
+        - listitem [ref=f39e67]:
+          - link "Beta Features" [ref=f39e68] [cursor=pointer]:
+            - /url: /apps/A0CBCFMN9UP/developer-beta?
+      - heading "Submit to Slack Marketplace" [level=4] [ref=f39e69]
+      - list [ref=f39e70]:
+        - listitem [ref=f39e71]:
+          - link "Review & Submit" [ref=f39e72] [cursor=pointer]:
+            - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/submission
+    - generic [ref=f39e73]:
+      - paragraph
+      - link "Give feedback" [ref=f39e75] [cursor=pointer]:
+        - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+      - paragraph
+      - paragraph [ref=f39e76]:
+        - text: Slack
+        - generic [ref=f39e77]: 
+      - list [ref=f39e78]:
+        - listitem [ref=f39e79]:
+          - link "Help" [ref=f39e80] [cursor=pointer]:
+            - /url: https://slack.com/help
+        - listitem [ref=f39e81]:
+          - link "Contact" [ref=f39e82] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new
+        - listitem [ref=f39e83]:
+          - link "Policies" [ref=f39e84] [cursor=pointer]:
+            - /url: https://slack.com/terms-of-service
+        - listitem [ref=f39e85]:
+          - link "Our Blog" [ref=f39e86] [cursor=pointer]:
+            - /url: https://slackhq.com/
+  - generic [ref=f39e95]:
+    - alert [ref=f39e96]
+    - log [ref=f39e97]
+  - generic [ref=f39e98]:
+    - alert [ref=f39e99]
+    - log [ref=f39e100]
+  - generic [ref=f39e101]:
+    - alert [ref=f39e102]
+    - log [ref=f39e103]
+  - generic [ref=f39e104]:
+    - alert [ref=f39e105]
+    - log [ref=f39e106]
+  - generic [ref=f39e107]:
+    - alert [ref=f39e108]
+    - log [ref=f39e109]

@@ -1,0 +1,234 @@
+- generic [ref=f25e1]:
+  - generic [ref=f25e3]:
+    - banner [ref=f25e4]:
+      - generic [ref=f25e5]:
+        - link [ref=f25e228] [cursor=pointer]:
+          - /url: https://api.slack.com
+        - search [ref=f25e9]:
+          - generic [ref=f25e11]:
+            - generic [aria-hidden] [ref=f25e12]: 
+            - textbox [ref=f25e230]:
+              - /placeholder: Search
+        - generic [ref=f25e14]:
+          - link [ref=f25e231] [cursor=pointer]:
+            - /url: https://api.slack.com/#read_the_docs
+            - text: Documentation
+          - link [ref=f25e232] [cursor=pointer]:
+            - /url: https://api.slack.com/tutorials
+            - text: Tutorials
+          - link [ref=f25e233] [cursor=pointer]:
+            - /url: https://api.slack.com/apps
+            - text: Your Apps
+    - generic [ref=f25e18]:
+      - navigation [ref=f25e234]:
+        - combobox [ref=f25e235] [cursor=pointer]:
+          - generic [ref=f25e22]: Claude Assistant
+        - list [ref=f25e30]:
+          - heading [level=3] [ref=f25e236]: Settings
+          - menuitem [ref=f25e237] [cursor=pointer]: Basic Information
+          - menuitem [ref=f25e238] [cursor=pointer]: Collaborators
+          - menuitem [ref=f25e239] [cursor=pointer]: Socket Mode
+          - menuitem [ref=f25e240] [cursor=pointer]: Install App
+          - menuitem [ref=f25e241] [cursor=pointer]: Manage Distribution
+          - heading [level=3] [ref=f25e242]: Features
+          - menuitem [ref=f25e243] [cursor=pointer]: App Home
+          - menuitem [ref=f25e244] [cursor=pointer]: Agents
+          - menuitem [ref=f25e245] [cursor=pointer]:
+            - text: Search App
+            - generic [ref=f25e41]: New
+          - menuitem [ref=f25e246] [cursor=pointer]:
+            - text: Work Object Previews
+            - generic [ref=f25e44]: New
+          - menuitem [ref=f25e247] [cursor=pointer]: Workflow Steps
+          - menuitem [ref=f25e248] [cursor=pointer]: Org Level Apps
+          - menuitem [ref=f25e249] [cursor=pointer]: Incoming Webhooks
+          - menuitem [ref=f25e250] [cursor=pointer]: Interactivity & Shortcuts
+          - menuitem [ref=f25e251] [cursor=pointer]: Slash Commands
+          - menuitem [ref=f25e252] [cursor=pointer]: OAuth & Permissions
+          - menuitem [ref=f25e253] [cursor=pointer]:
+            - text: MCP Servers
+            - generic [ref=f25e53]: New
+          - menuitem [ref=f25e254] [cursor=pointer]: Event Subscriptions
+          - menuitem [ref=f25e255] [cursor=pointer]: User ID Translation
+          - menuitem [ref=f25e256] [cursor=pointer]: App Manifest
+          - menuitem [ref=f25e257] [cursor=pointer]: Beta Features
+          - heading [level=3] [ref=f25e258]: Submit to Slack Marketplace
+          - menuitem [ref=f25e259] [cursor=pointer]: Prepare & Submit
+          - menuitem [ref=f25e260]: 1. Your App Listing
+          - menuitem [ref=f25e261]: 2. Review scopes
+          - menuitem [ref=f25e262]: 3. Security and compliance
+          - menuitem [ref=f25e263]: 4. Testing information
+          - menuitem [ref=f25e264]: 5. Automated checks
+        - link [ref=f25e265] [cursor=pointer]:
+          - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+          - text: Give feedback
+        - list [ref=f25e68]:
+          - text: Slack
+          - generic [aria-hidden] [ref=f25e69]: 
+          - link [ref=f25e266] [cursor=pointer]:
+            - /url: https://slack.com/help
+            - text: Help
+          - link [ref=f25e267] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new
+            - text: Contact
+          - link [ref=f25e268] [cursor=pointer]:
+            - /url: https://slack.com/terms-of-service
+            - text: Policies
+          - link [ref=f25e269] [cursor=pointer]:
+            - /url: https://slackhq.com
+            - text: Our Blog
+      - main [ref=f25e74]:
+        - generic [ref=f25e75]:
+          - heading [level=1] [ref=f25e270]: Basic Information
+          - generic [ref=f25e78]:
+            - generic [ref=f25e80]:
+              - heading [level=2] [ref=f25e271]: App Credentials
+              - generic [ref=f25e82]: These credentials allow your app to access the Slack API. They are secret. Please don’t share your app credentials with anyone, include them in public code repositories, or store them in insecure ways.
+            - generic [ref=f25e83]:
+              - generic [ref=f25e84]:
+                - strong [ref=f25e86]: App ID
+                - textbox [ref=f25e272]: A0CBCFMN9UP
+              - generic [ref=f25e91]:
+                - strong [ref=f25e93]: Date of App Creation
+                - textbox [ref=f25e273]: October 24th, 2026
+            - generic [ref=f25e98]:
+              - strong [ref=f25e100]:
+                - generic [ref=f25e101]: Client ID
+              - textbox [ref=f25e274]: "9557279667.12386531757975"
+            - generic [ref=f25e106]:
+              - strong [ref=f25e108]:
+                - generic [ref=f25e109]:
+                  - text: Client Secret
+                  - button [ref=f25e275] [cursor=pointer]
+              - generic [ref=f25e115]:
+                - textbox [ref=f25e276]: 7ec6dcfee39b5fbeb44a97cc60d49acf
+                - generic [ref=f25e117]:
+                  - button [ref=f25e277] [cursor=pointer]: Show
+                  - button [ref=f25e278] [cursor=pointer]: Regenerate
+            - generic [ref=f25e120]:
+              - strong [ref=f25e122]:
+                - generic [ref=f25e123]:
+                  - text: Signing Secret
+                  - button [ref=f25e279] [cursor=pointer]
+              - generic [ref=f25e129]:
+                - textbox [ref=f25e280]: 996839d2ffaaf337a744b361406326d0
+                - generic [ref=f25e131]:
+                  - button [ref=f25e281] [cursor=pointer]: Show
+                  - button [ref=f25e282] [cursor=pointer]: Regenerate
+            - generic [ref=f25e134]:
+              - strong [ref=f25e136]:
+                - generic [ref=f25e137]:
+                  - text: Verification Token
+                  - button [ref=f25e283] [cursor=pointer]
+              - generic [ref=f25e143]:
+                - textbox [ref=f25e284]: 0nu7I7moxXsd1z3xaYdALSzu
+                - button [ref=f25e285] [cursor=pointer]: Regenerate
+          - generic [ref=f25e149]:
+            - heading [level=2] [ref=f25e286]: App-Level Tokens
+            - paragraph [ref=f25e153]:
+              - text: App-level tokens allow your app to use platform features that apply to multiple (or all) installations—for example, the
+              - link [ref=f25e287] [cursor=pointer]:
+                - /url: https://api.slack.com/apps/A0CBCFMN9UP/event-subscriptions
+                - text: API to list event authorizations
+              - text: . Features have distinct scopes, so request only the scopes for the features you need. Each app can have a maximum of 10 app-level tokens at one time.
+            - heading [level=4] [ref=f25e288]: Tokens
+            - generic [ref=f25e157]:
+              - generic [ref=f25e158]:
+                - heading [level=3] [ref=f25e289]: Token rotation
+                - switch [ref=f25e290] [cursor=pointer]
+                - text: 
+              - paragraph [ref=f25e161]: Opt in to rotating app-level tokens so new tokens automatically expire after they’re issued, for better security. This can’t be undone.
+            - button [ref=f25e291] [cursor=pointer]: Generate Token and Scopes
+          - generic [ref=f25e165]:
+            - generic [ref=f25e167]:
+              - heading [level=2] [ref=f25e292]: Display Information
+              - generic [ref=f25e169]:
+                - text: This information will be shown in the Slack Marketplace and in Slack. For more information, view our
+                - link [ref=f25e293] [cursor=pointer]:
+                  - /url: https://api.slack.com/start/distributing/guidelines
+                  - text: App Detail Guidelines
+                - text: .
+            - generic [ref=f25e171]:
+              - generic [ref=f25e175] [cursor=pointer]:
+                - generic [ref=f25e176]: App name
+                - textbox [ref=f25e294]:
+                  - /placeholder: An app name…
+                  - text: Claude Assistant
+              - generic [ref=f25e183] [cursor=pointer]:
+                - generic [ref=f25e184]: Short description
+                - textbox [ref=f25e295]:
+                  - /placeholder: Add a short description…
+                  - text: AI assistant powered by Claude via HAI proxy
+            - generic [ref=f25e188]:
+              - generic [ref=f25e190]:
+                - strong [ref=f25e192]: App icon & Preview
+                - generic [ref=f25e194]:
+                  - button [ref=f25e296] [cursor=pointer]:
+                    - generic [ref=f25e197]: + Add App Icon
+                  - generic [ref=f25e198]:
+                    - generic [ref=f25e199]:
+                      - generic [ref=f25e200]: Claude Assistant
+                      - generic [ref=f25e201]: APP
+                    - generic [ref=f25e202]: AI assistant powered by Claude via HAI proxy
+              - generic [ref=f25e204]:
+                - strong [ref=f25e206]: Background color
+                - generic [ref=f25e208]:
+                  - button [ref=f25e297] [cursor=pointer]
+                  - generic [ref=f25e210]: "#"
+                  - textbox [ref=f25e298]: 1A1A2E
+            - generic [ref=f25e213]:
+              - generic [ref=f25e214]: Long description
+              - textbox [ref=f25e299]:
+                - /placeholder: Add a long description that will show up on your App Detail page. You can format your description with bold text, lists and more.
+            - button [disabled]:
+              - generic: Save Changes
+          - generic [ref=f25e218]:
+            - heading [level=2] [ref=f25e300]: Delete App
+            - paragraph [ref=f25e222]: If your app is listed in the Slack Marketplace, please communicate any plans to deprecate it to your users, and be prepared to respond to questions and support requests after deleting it.
+            - paragraph [ref=f25e223]: Your app has 0 authed users.
+            - button [ref=f25e301] [cursor=pointer]: Delete App
+  - generic [ref=f25e225]:
+    - alert [ref=f25e226]
+    - log [ref=f25e227]
+  - dialog [ref=f25e303]:
+    - heading "Generate an app-level token" [level=1] [ref=f25e307]
+    - generic [ref=f25e310]:
+      - generic [ref=f25e311] [cursor=pointer]:
+        - generic [ref=f25e312]: Token Name
+        - textbox "Token Name" [ref=f25e315]:
+          - /placeholder: This will be how you refer to your token
+          - text: socket-token
+      - generic [ref=f25e316]: Scopes to be accessed by this token
+      - table [ref=f25e318]:
+        - rowgroup [ref=f25e319]:
+          - row "Scope Description" [ref=f25e320]:
+            - columnheader "Scope" [ref=f25e321] [cursor=pointer]
+            - columnheader "Description" [ref=f25e322] [cursor=pointer]
+            - generic [ref=f25e323] [cursor=pointer]
+        - rowgroup [ref=f25e324]:
+          - row "You haven’t added any scopes for your app-level token." [ref=f25e325]
+      - generic [ref=f25e335]:
+        - generic [ref=f25e336]:
+          - generic [ref=f25e337]:
+            - combobox "Select Scopes" [expanded] [active] [ref=f25e338]
+            - listbox "Select Scopes" [ref=f25e341]:
+              - option "connections:write Route your app’s interactions and event payloads over WebSockets" [ref=f25e342] [cursor=pointer]:
+                - generic [ref=f25e344]:
+                  - generic [ref=f25e345]: connections:write
+                  - generic [ref=f25e346]: Route your app’s interactions and event payloads over WebSockets
+              - option "authorizations:read View information about your app’s authorizations on installed teams" [ref=f25e347] [cursor=pointer]:
+                - generic [ref=f25e349]:
+                  - generic [ref=f25e350]: authorizations:read
+                  - generic [ref=f25e351]: View information about your app’s authorizations on installed teams
+              - option "app_configurations:write Configure your application" [ref=f25e352] [cursor=pointer]:
+                - generic [ref=f25e354]:
+                  - generic [ref=f25e355]: app_configurations:write
+                  - generic [ref=f25e356]: Configure your application
+          - generic [ref=f25e357] [cursor=pointer]
+        - button "Cancel adding an OAuth scope" [ref=f25e361] [cursor=pointer]
+      - generic [ref=f25e327]:
+        - button "Add Scope" [disabled]
+    - generic [ref=f25e330]:
+      - button "Cancel" [ref=f25e331] [cursor=pointer]
+      - button "Generate" [disabled]
+    - button "Close" [ref=f25e332] [cursor=pointer]

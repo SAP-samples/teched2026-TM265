@@ -1,0 +1,213 @@
+- generic [ref=f47e1]:
+  - banner [ref=f47e2]:
+    - generic [ref=f47e3]:
+      - text: 
+      - link [ref=f47e5] [cursor=pointer]:
+        - /url: https://api.slack.com/
+        - img "Slack API" [ref=f47e6]
+      - generic [ref=f47e8]:
+        - link "Changelog" [ref=f47e9] [cursor=pointer]:
+          - /url: https://docs.slack.dev/changelog
+        - link "Documentation" [ref=f47e10] [cursor=pointer]:
+          - /url: /#read_the_docs
+        - link "Tutorials" [ref=f47e11] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Your Apps" [ref=f47e12] [cursor=pointer]:
+          - /url: /apps
+  - generic [ref=f47e14]:
+    - generic:
+      - navigation [ref=f47e15]:
+        - generic [ref=f47e16] [cursor=pointer]:  Claude Assistant
+        - generic [ref=f47e18]:
+          - heading "Settings" [level=4] [ref=f47e19]
+          - list [ref=f47e20]:
+            - listitem [ref=f47e21]:
+              - link "Basic Information" [ref=f47e22] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/general
+            - listitem [ref=f47e23]:
+              - link "Collaborators" [ref=f47e24] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/collaborators
+            - listitem [ref=f47e25]:
+              - link "Socket Mode" [ref=f47e26] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/socket-mode
+            - listitem [ref=f47e27]:
+              - link "Install App" [ref=f47e28] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/install-on-team?
+            - listitem [ref=f47e29]:
+              - link "Manage Distribution" [ref=f47e30] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/distribute
+          - heading "Features" [level=4] [ref=f47e31]
+          - list [ref=f47e32]:
+            - listitem [ref=f47e33]:
+              - link "App Home" [ref=f47e34] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/app-home?
+            - listitem [ref=f47e35]:
+              - link "Agents" [ref=f47e36] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/app-assistant?
+            - listitem [ref=f47e37]:
+              - link "Work Object Previews New" [ref=f47e38] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/rich-previews?
+                - text: Work Object Previews
+                - generic [ref=f47e39]: New
+            - listitem [ref=f47e40]:
+              - link "Search Apps New" [ref=f47e41] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/search-app?
+                - text: Search Apps
+                - generic [ref=f47e42]: New
+            - listitem [ref=f47e43]:
+              - link "Workflow Steps" [ref=f47e44] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/functions
+            - listitem [ref=f47e45]:
+              - link "Org Level Apps" [ref=f47e46] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/org-level?
+            - listitem [ref=f47e47]:
+              - link "Incoming Webhooks" [ref=f47e48] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/incoming-webhooks?
+            - listitem [ref=f47e49]:
+              - link "Interactivity & Shortcuts" [ref=f47e50] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/interactive-messages?
+            - listitem [ref=f47e51]:
+              - link "Slash Commands" [ref=f47e52] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/slash-commands?
+            - listitem [ref=f47e53]:
+              - link "OAuth & Permissions" [ref=f47e54] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/oauth?
+            - listitem [ref=f47e55]:
+              - link "MCP Servers New" [ref=f47e56] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/mcp-servers
+                - text: MCP Servers
+                - generic [ref=f47e57]: New
+            - listitem [ref=f47e58]:
+              - link "Event Subscriptions" [ref=f47e59] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/event-subscriptions?
+            - listitem [ref=f47e60]:
+              - link "User ID Translation" [ref=f47e61] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/user-ids?
+            - listitem [ref=f47e62]:
+              - link "App Manifest" [ref=f47e63] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/app-manifest
+            - listitem [ref=f47e64]:
+              - link "Beta Features" [ref=f47e65] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/developer-beta?
+          - heading "Submit to Slack Marketplace" [level=4] [ref=f47e66]
+          - list [ref=f47e67]:
+            - listitem [ref=f47e68]:
+              - link "Review & Submit" [ref=f47e69] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/submission
+        - generic [ref=f47e70]:
+          - paragraph
+          - link "Give feedback" [ref=f47e72] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+          - paragraph
+          - paragraph [ref=f47e73]:
+            - text: Slack
+            - generic [ref=f47e74]: 
+          - list [ref=f47e75]:
+            - listitem [ref=f47e76]:
+              - link "Help" [ref=f47e77] [cursor=pointer]:
+                - /url: https://slack.com/help
+            - listitem [ref=f47e78]:
+              - link "Contact" [ref=f47e79] [cursor=pointer]:
+                - /url: https://slack.com/help/requests/new
+            - listitem [ref=f47e80]:
+              - link "Policies" [ref=f47e81] [cursor=pointer]:
+                - /url: https://slack.com/terms-of-service
+            - listitem [ref=f47e82]:
+              - link "Our Blog" [ref=f47e83] [cursor=pointer]:
+                - /url: https://slackhq.com/
+      - generic [ref=f47e84]:
+        - heading "App Home" [level=1] [ref=f47e85]
+        - generic [ref=f47e86]:
+          - generic [ref=f47e89]:
+            - generic [ref=f47e90]:
+              - heading "Where people find your app on Slack" [level=4] [ref=f47e91]
+              - paragraph [ref=f47e92]:
+                - text: Your app’s home includes three tabs (Home, Messages and About) that help people have richer interactions with your app and better understand its functionality.
+                - link "Learn more" [ref=f47e93] [cursor=pointer]:
+                  - /url: https://api.slack.com/reference/app-home
+            - img "App Home Image" [ref=f47e94]
+          - generic [ref=f47e95]:
+            - generic [ref=f47e96]:
+              - heading "Your App’s Presence in Slack" [level=4] [ref=f47e97]
+              - paragraph [ref=f47e98]: Your app display name and presence is how your users will see your app in Slack.
+              - generic [ref=f47e99]:
+                - generic [ref=f47e100]:
+                  - strong [ref=f47e101]: App Display Name
+                  - button "Edit" [ref=f47e102] [cursor=pointer]
+                - generic [ref=f47e103]:
+                  - generic [ref=f47e104]:
+                    - strong [ref=f47e105]: "Display Name (Bot Name):"
+                    - text: Claude Assistant
+                  - generic [ref=f47e106]:
+                    - strong [ref=f47e107]: "Default Name:"
+                    - text: claude_assistant
+              - generic [ref=f47e109]:
+                - strong [ref=f47e111]: Always Show My Bot as Online
+                - switch "Always Show My Bot as Online" [checked] [ref=f47e112] [cursor=pointer]
+                - text: 
+            - generic [ref=f47e113]:
+              - heading "Bot Token Added" [level=4] [ref=f47e114]
+              - paragraph [ref=f47e115]:
+                - text: A
+                - link "bot token" [ref=f47e116] [cursor=pointer]:
+                  - /url: /docs/token-types#bot
+                - text: in your app lets users at-mention it, add it to channels and conversations, and allows you to turn on tabs in your app’s home. It makes it possible for users to interact with your app in Slack. You can adjust your Bot Token’s permissions in
+                - link "OAuth & Permissions" [ref=f47e117] [cursor=pointer]:
+                  - /url: oauth
+                - text: .
+          - generic [ref=f47e119]:
+            - generic [ref=f47e120]:
+              - heading "Show Tabs" [level=3] [ref=f47e121]
+              - paragraph [ref=f47e122]: Turn on the Home tab and/or Message tab to display in your app home.
+              - generic [ref=f47e123]:
+                - generic [ref=f47e124]:
+                  - paragraph [ref=f47e125]: Home Tab
+                  - paragraph [ref=f47e126]: Block Kit components you add to this tab let people easily interact with this app.
+                - generic [ref=f47e127]:
+                  - switch "Display Home tab" [ref=f47e128] [cursor=pointer]
+                  - text: 
+              - generic [ref=f47e130]:
+                - generic [ref=f47e131]: Helpful links
+                - list [ref=f47e132]:
+                  - listitem [ref=f47e133]:
+                    - link "App Home documentation" [ref=f47e134] [cursor=pointer]:
+                      - /url: https://api.slack.com/surfaces/tabs
+                  - listitem [ref=f47e135]:
+                    - link "How to use Block Kit" [ref=f47e136] [cursor=pointer]:
+                      - /url: https://api.slack.com/block-kit
+                  - listitem [ref=f47e137]:
+                    - link "Block Kit Builder tool" [ref=f47e138] [cursor=pointer]:
+                      - /url: https://api.slack.com/tools/block-kit-builder
+            - generic [ref=f47e139]:
+              - generic [ref=f47e140]:
+                - generic [ref=f47e141]:
+                  - paragraph [ref=f47e142]: Messages Tab
+                  - paragraph [ref=f47e143]: Direct messages your app sends will show in this tab.
+                - generic [ref=f47e144]:
+                  - switch "Display Messages tab" [checked] [ref=f47e145] [cursor=pointer]
+                  - text: 
+              - generic [ref=f47e147] [cursor=pointer]:
+                - generic [ref=f47e148]: Allow users to send Slash commands and messages from the messages tab
+                - checkbox "Allow users to send Slash commands and messages from the messages tab" [checked] [active] [ref=f47e150]
+            - generic [ref=f47e152]:
+              - paragraph [ref=f47e153]: About Tab
+              - paragraph [ref=f47e154]:
+                - text: Helpful info about what this app does will show in this tab. You can edit this info in the app’s
+                - link "basic information" [ref=f47e155] [cursor=pointer]:
+                  - /url: /apps/A0CBCFMN9UP/general?
+                - text: section.
+  - generic [ref=f47e156]:
+    - alert [ref=f47e157]
+    - log [ref=f47e158]
+  - generic [ref=f47e159]:
+    - alert [ref=f47e160]
+    - log [ref=f47e161]
+  - generic [ref=f47e162]:
+    - alert [ref=f47e163]
+    - log [ref=f47e164]
+  - generic [ref=f47e165]:
+    - alert [ref=f47e166]
+    - log [ref=f47e167]
+  - generic [ref=f47e168]:
+    - alert [ref=f47e169]
+    - log [ref=f47e170]

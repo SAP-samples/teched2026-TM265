@@ -1,0 +1,39 @@
+- generic [active] [ref=f32e1]:
+  - navigation [ref=f32e2]:
+    - link "Slack" [ref=f32e3] [cursor=pointer]:
+      - /url: https://slack.com/
+  - generic [ref=f32e9]:
+    - generic [ref=f32e10]:
+      - img "Claude Assistant" [ref=f32e13]
+      - heading "Allow Claude Assistant to access Slack" [level=2] [ref=f32e14]
+      - paragraph [ref=f32e15]: App created by a member of your workspace, SAP Artificial Intelligence.
+      - generic [ref=f32e16]:
+        - heading "Where do you want to use Claude Assistant?" [level=3] [ref=f32e17]
+        - generic [ref=f32e19]:
+          - combobox "Where do you want to use Claude Assistant?" [disabled]:
+            - generic:
+              - generic:
+                - strong: SAP Artificial Intelligence
+    - generic [ref=f32e20]:
+      - generic [ref=f32e22]:
+        - generic [ref=f32e23]:
+          - heading "Information Claude Assistant can view" [level=3] [ref=f32e24]
+          - button "Content and info about channels & conversations" [ref=f32e31] [cursor=pointer]
+        - generic [ref=f32e36]:
+          - heading "Actions Claude Assistant can take" [level=3] [ref=f32e37]
+          - button "Perform actions in channels & conversations" [ref=f32e44] [cursor=pointer]
+      - generic [ref=f32e49]:
+        - text: Slack will share your granted permissions with Claude Assistant. View Slack’s
+        - link "privacy policy" [ref=f32e50] [cursor=pointer]:
+          - /url: /privacy-policy
+        - text: . By agreeing to allow Slack to share your granted permissions, you are also agreeing to Claude Assistant’s privacy agreement and terms of service. Please review Claude Assistant’s terms before installing.
+      - generic [ref=f32e51]:
+        - link "Cancel" [ref=f32e52] [cursor=pointer]:
+          - /url: /oauth/9557279667.279381821186.12386531757975?deny=1&crumb=s-1792815197-292ced94470edd59548abfa7acfdcd9cbda12d8995c523cb6bba61b2db2482ae-%E2%98%83&redirect_uri=https%3A%2F%2Fapi.slack.com%2Fapps%2FA0CBCFMN9UP%2Finstall-on-team&granular_bot_scope=1&client_id=9557279667.12386531757975&scope=app_mentions%3Aread%2Cchat%3Awrite%2Cchannels%3Ahistory%2Cim%3Ahistory%2Cim%3Awrite%2Cim%3Aread&user_scope=
+        - button "Allow" [ref=f32e53] [cursor=pointer]
+  - generic [ref=f32e55]:
+    - alert [ref=f32e56]
+    - log [ref=f32e57]
+  - generic [ref=f32e58]:
+    - alert [ref=f32e59]
+    - log [ref=f32e60]

@@ -1,0 +1,363 @@
+- generic [ref=f45e1]:
+  - generic [ref=f45e4]:
+    - application [ref=f45e6]
+    - toolbar "History Navigation" [ref=f45e8]:
+      - generic [ref=f45e10]:
+        - generic [ref=f45e13]:
+          - generic [ref=f45e14]:
+            - button "Back in history" [disabled] [ref=f45e15]
+            - button "Forward in history" [disabled] [ref=f45e18]
+          - button "Show history" [ref=f45e22] [cursor=pointer]
+        - button "Search" [ref=f45e27] [cursor=pointer]:
+          - generic [ref=f45e31]: Search SAP
+        - generic [ref=f45e33]:
+          - generic [ref=f45e671]:
+            - button "Open Hermes" [ref=f45e673] [cursor=pointer]
+            - button "More agents" [ref=f45e677] [cursor=pointer]
+          - button "Help" [ref=f45e36] [cursor=pointer]
+    - tabpanel "SAP" [ref=f45e40]:
+      - generic [ref=f45e41]:
+        - button "Switch workspaces… (SAP)" [ref=f45e44] [cursor=pointer]
+        - tablist "SAP" [ref=f45e48]:
+          - tab "Home" [selected] [ref=f45e51] [cursor=pointer]:
+            - generic [ref=f45e52]:
+              - generic [ref=f45e59]: Home
+              - generic [aria-hidden]: "1"
+          - tab "DMs" [ref=f45e61] [cursor=pointer]:
+            - generic [ref=f45e62]:
+              - generic [ref=f45e67]: DMs
+              - generic [aria-hidden]: "2"
+          - tab "Activity" [ref=f45e69] [cursor=pointer]:
+            - generic [ref=f45e70]:
+              - generic [ref=f45e77]: Activity
+              - generic [aria-hidden]: "3"
+          - tab "Files" [ref=f45e79] [cursor=pointer]:
+            - generic [ref=f45e80]:
+              - generic [ref=f45e85]: Files
+              - generic [aria-hidden]: "4"
+          - tab "Later" [ref=f45e88] [cursor=pointer]:
+            - generic [ref=f45e89]:
+              - generic [ref=f45e94]: Later
+              - generic [aria-hidden]: "5"
+          - tab "More…" [ref=f45e96] [cursor=pointer]:
+            - generic [ref=f45e97]:
+              - generic [ref=f45e102]: More
+              - generic [aria-hidden]: "0"
+      - generic [ref=f45e106]:
+        - tabpanel "Home" [ref=f45e107]:
+          - generic [ref=f45e109]:
+            - group "Home" [ref=f45e110]:
+              - generic [ref=f45e112]:
+                - toolbar "Actions" [ref=f45e113]:
+                  - button "SAP Actions" [ref=f45e116] [cursor=pointer]:
+                    - generic [ref=f45e117]: SAP
+                    - img "caret-down" [ref=f45e118]
+                  - generic [ref=f45e120]:
+                    - button "Manage my sidebar" [ref=f45e121] [cursor=pointer]
+                    - button "New message" [ref=f45e125] [cursor=pointer]
+                - searchbox "Channel or user name" [active] [ref=f45e132]
+                - generic [ref=f45e134]:
+                  - generic:
+                    - tree "Channels and direct messages" [ref=f45e135]:
+                      - treeitem "Unreads" [level=1] [ref=f45e136] [cursor=pointer]
+                      - treeitem "Threads" [level=1] [ref=f45e143] [cursor=pointer]
+                      - treeitem "Huddles" [level=1] [ref=f45e149] [cursor=pointer]
+                      - treeitem "Drafts & sent" [level=1] [ref=f45e157] [cursor=pointer]
+                      - treeitem "Directories" [level=1] [ref=f45e164] [cursor=pointer]
+                      - treeitem "My Team" [expanded] [level=1] [ref=f45e173]:
+                        - button [aria-hidden] [ref=f45e178] [cursor=pointer]:
+                          - generic [ref=f45e188]: My Team
+                        - group:
+                          - treeitem "ai-visual-inspection" [level=2] [ref=f45e190] [cursor=pointer]
+                          - treeitem "dgs-pipeline-sg" [level=2] [ref=f45e196] [cursor=pointer]
+                          - treeitem "j4c-info-dump" [level=2] [ref=f45e202] [cursor=pointer]
+                      - treeitem "External connections" [expanded] [level=1] [ref=f45e208]:
+                        - button [aria-hidden] [ref=f45e212] [cursor=pointer]:
+                          - generic [ref=f45e220]: External connections
+                        - group:
+                          - treeitem "ext-sap-unstructured" [level=2] [ref=f45e222] [cursor=pointer]
+                          - treeitem "ext-nv-sap" [level=2] [ref=f45e228] [cursor=pointer]
+                      - treeitem "Management" [expanded] [level=1] [ref=f45e234]:
+                        - button [aria-hidden] [ref=f45e238] [cursor=pointer]:
+                          - generic [ref=f45e248]: Management
+                        - group:
+                          - treeitem "mai-gong-bo-jio" [level=2] [ref=f45e250] [cursor=pointer]
+                          - treeitem "ai-sg-mgmt" [level=2] [ref=f45e256] [cursor=pointer]
+                          - treeitem "ai-singapore" [level=2] [ref=f45e262] [cursor=pointer]
+                      - treeitem "interest groups" [expanded] [level=1] [ref=f45e268]:
+                        - button [aria-hidden] [ref=f45e272] [cursor=pointer]:
+                          - generic [ref=f45e282]: interest groups
+                        - group:
+                          - treeitem "ai-sg-ds-community" [level=2] [ref=f45e284] [cursor=pointer]
+                          - treeitem "generalSAP Artificial Intelligence" [level=2] [ref=f45e290] [cursor=pointer]
+                          - treeitem "sap-announcements" [level=2] [ref=f45e296] [cursor=pointer]
+                          - treeitem "sap-cp-cf-users" [level=2] [ref=f45e302] [cursor=pointer]
+                          - treeitem "sap-machine-learning" [level=2] [ref=f45e308] [cursor=pointer]
+                      - treeitem "Starred" [expanded] [level=1] [ref=f45e314]:
+                        - button [aria-hidden] [ref=f45e318] [cursor=pointer]:
+                          - generic [ref=f45e326]: Starred
+                        - group:
+                          - treeitem "Althaf Ashraf, Rajesh Vellore Arumugam" [level=2] [ref=f45e681] [cursor=pointer]:
+                            - generic [ref=f45e329]:
+                              - generic [aria-hidden] [ref=f45e330]: 
+                              - generic [ref=f45e331]: Althaf Ashraf, Rajesh Vellore Arumugam
+                      - treeitem "My Cash App Team" [level=1] [ref=f45e333]:
+                        - button [aria-hidden] [ref=f45e337] [cursor=pointer]:
+                          - generic [ref=f45e347]: My Cash App Team
+                        - group
+                      - treeitem "AI-BUS" [expanded] [level=1] [ref=f45e349]:
+                        - button [aria-hidden] [ref=f45e353] [cursor=pointer]:
+                          - generic [ref=f45e363]: AI-BUS
+                        - group:
+                          - treeitem "ai-bus-engineering" [level=2] [ref=f45e365] [cursor=pointer]
+                          - treeitem "ml-jenkins" [level=2] [ref=f45e371] [cursor=pointer]
+                      - treeitem "Support channels" [expanded] [level=1] [ref=f45e377]:
+                        - button [aria-hidden] [ref=f45e381] [cursor=pointer]:
+                          - generic [ref=f45e391]: Support channels
+                        - group:
+                          - treeitem "aif-support" [level=2] [ref=f45e393] [cursor=pointer]
+                      - treeitem "Channels" [expanded] [level=1] [ref=f45e399]:
+                        - button [aria-hidden] [ref=f45e403] [cursor=pointer]:
+                          - generic [ref=f45e411]: Channels
+                        - group:
+                          - treeitem "ai-bus-commons" [level=2] [ref=f45e413] [cursor=pointer]
+                          - treeitem "ai-chatgpt-llms" [level=2] [ref=f45e419] [cursor=pointer]
+                          - treeitem "ai-cicd-help" [level=2] [ref=f45e425] [cursor=pointer]
+                          - treeitem "ai-daily-news" [level=2] [ref=f45e431] [cursor=pointer]
+                          - treeitem "aif-grounding-support" [level=2] [ref=f45e437] [cursor=pointer]
+                          - treeitem "btp-workspace-announcements" [level=2] [ref=f45e443] [cursor=pointer]
+                          - treeitem "generalConcur Blue" [level=2] [ref=f45e449] [cursor=pointer]
+                          - treeitem "generalStack@SAP" [level=2] [ref=f45e455] [cursor=pointer]
+                          - treeitem "ml-apps-24x7" [level=2] [ref=f45e461] [cursor=pointer]
+                          - treeitem "ml-rage-internal-prod-alerts-24x7" [level=2] [ref=f45e467] [cursor=pointer]
+                          - treeitem "sap-os-macos" [level=2] [ref=f45e473] [cursor=pointer]
+                          - treeitem "sap-random" [level=2] [ref=f45e479] [cursor=pointer]
+                          - treeitem "sap-tech-event-hub" [level=2] [ref=f45e485] [cursor=pointer]
+                          - treeitem "sap-tools-github" [level=2] [ref=f45e491] [cursor=pointer]
+                          - treeitem "sap-tools-xmake" [level=2] [ref=f45e497] [cursor=pointer]
+                          - treeitem "dg-devops" [level=2] [ref=f45e503] [cursor=pointer]
+                      - treeitem "Direct Messages" [expanded] [level=1] [ref=f45e509]:
+                        - button [aria-hidden] [ref=f45e513] [cursor=pointer]:
+                          - generic [ref=f45e521]: Direct messages
+                        - group:
+                          - treeitem "Active Chockalingam Kasi spiral calendar pad emoji" [level=2] [ref=f45e682] [cursor=pointer]:
+                            - generic [ref=f45e554]:
+                              - img "Active" [ref=f45e685]
+                              - generic [ref=f45e561]: Chockalingam Kasi
+                              - img "spiral calendar pad emoji" [ref=f45e689]
+                          - treeitem "Active, notifications snoozed Daniel Zhou" [level=2] [ref=f45e690] [cursor=pointer]:
+                            - generic [ref=f45e544]:
+                              - img "Active, notifications snoozed" [ref=f45e693]
+                              - generic [ref=f45e551]: Daniel Zhou
+                          - treeitem "Madhur Mayank Sharma, Steven Fu" [level=2] [ref=f45e695] [cursor=pointer]:
+                            - generic [ref=f45e604]:
+                              - generic [aria-hidden] [ref=f45e605]: 
+                              - generic [ref=f45e606]: Madhur Mayank Sharma, Steven Fu
+                          - treeitem "PagerDuty" [level=2] [ref=f45e696] [cursor=pointer]
+                          - treeitem "Away Shrey Vivek" [level=2] [ref=f45e699] [cursor=pointer]:
+                            - generic [ref=f45e584]:
+                              - img "Away" [ref=f45e589]
+                              - generic [ref=f45e591]: Shrey Vivek
+                          - treeitem "Active Steven Fu" [level=2] [ref=f45e702] [cursor=pointer]:
+                            - generic [ref=f45e534]:
+                              - img "Active" [ref=f45e705]
+                              - generic [ref=f45e541]: Steven Fu
+                          - treeitem "Away Wai Yan Thein spiral calendar pad emoji" [level=2] [ref=f45e707] [cursor=pointer]:
+                            - generic [ref=f45e574]:
+                              - img "Away" [ref=f45e579]
+                              - generic [ref=f45e581]: Wai Yan Thein
+                              - img "spiral calendar pad emoji" [ref=f45e712]
+                          - treeitem "Away Yanling Liu" [level=2] [ref=f45e713] [cursor=pointer]:
+                            - generic [ref=f45e564]:
+                              - img "Away" [ref=f45e569]
+                              - generic [ref=f45e571]: Yanling Liu
+                      - treeitem "Apps" [expanded] [level=1] [ref=f45e608]:
+                        - button [aria-hidden] [ref=f45e612] [cursor=pointer]:
+                          - generic [ref=f45e620]: Apps
+                        - group:
+                          - treeitem "Claude Assistant" [level=2] [ref=f45e716] [cursor=pointer]
+                          - treeitem "Claude Assistant" [level=2] [ref=f45e1087] [cursor=pointer]
+                          - treeitem "Polly" [level=2] [ref=f45e723] [cursor=pointer]
+                    - button [ref=f45e623] [cursor=pointer]
+            - slider "Sidebar width" [ref=f45e627]: "270"
+          - group "Channel general" [ref=f45e726]:
+            - generic [ref=f45e727]:
+              - toolbar "Primary view actions" [ref=f45e728]:
+                - button "Move channel" [ref=f45e731] [cursor=pointer]
+                - generic [ref=f45e734]:
+                  - 'button "Channel details for #general" [ref=f45e735] [cursor=pointer]':
+                    - generic [ref=f45e736]: general
+                  - button [ref=f45e742] [cursor=pointer]:
+                    - generic [ref=f45e744]:
+                      - text: "Everyone is a member here, please remember that. For questions on how to find things, services, or channels, try:"
+                      - link "#who-knows-about-this" [ref=f45e745]:
+                        - /url: https://sap.enterprise.slack.com/archives/C117DJX7U
+                - generic [ref=f45e746]:
+                  - button "View all 3,463 members. Includes Abhijit Nath, Sam Bates, and Barb Lewis-Homeier." [ref=f45e748] [cursor=pointer]:
+                    - generic [ref=f45e749]: 3,463
+                  - generic [ref=f45e760]:
+                    - button "Start huddle in general" [ref=f45e762] [cursor=pointer]
+                    - button "More call options" [ref=f45e765] [cursor=pointer]
+                  - button "Edit notifications" [ref=f45e768] [cursor=pointer]
+                  - button "Search in channel" [ref=f45e772] [cursor=pointer]
+                  - button "More channel actions" [ref=f45e775] [cursor=pointer]
+              - tablist "#general views" [ref=f45e781]:
+                - tab "Messages" [selected] [ref=f45e782] [cursor=pointer]
+                - tab "Channel Overview" [ref=f45e791] [cursor=pointer]
+                - tab "Files & links" [ref=f45e801] [cursor=pointer]
+                - tab "Pins" [ref=f45e810] [cursor=pointer]
+                - button "Add and Edit Channel Tabs" [ref=f45e819] [cursor=pointer]
+              - generic [ref=f45e825]: Canvas
+              - generic [ref=f45e826]: List
+              - generic [ref=f45e827]: Folder
+              - generic [ref=f45e829]:
+                - generic [ref=f45e831]:
+                  - generic:
+                    - listitem [ref=f45e832]:
+                      - button "Jump to date" [ref=f45e833] [cursor=pointer]: Saturday, September 26th
+                    - listitem [ref=f45e837]:
+                      - document [ref=f45e838]:
+                        - generic [ref=f45e840]:
+                          - button [aria-hidden] [ref=f45e841] [cursor=pointer]
+                          - button "Barb Lewis-Homeier" [ref=f45e845] [cursor=pointer]
+                          - link "Sep 26th at 4:33:05 AM" [ref=f45e846] [cursor=pointer]:
+                            - /url: https://concur-blue.slack.com/archives/C03EE7DDF/p1790368385481519
+                            - text: 4:33 AM
+                          - generic [ref=f45e852]:
+                            - link "#ask-profile" [ref=f45e853] [cursor=pointer]:
+                              - /url: https://sap.enterprise.slack.com/archives/C0ARTP7E56V
+                            - text: "McGraw Hill LLC Environment: us2, Entity Code: p00695285lac, Company ID 74557McGraw Hill LLC is an indirect travel only customer with GBT. They are a former expense customer. GBT placed an order for an indirect travel only HR Feed for them - that project was assigned to me. When we do this, we have to re enable the original entity ID. One of the requirements of an indirect travel only hr feed is that the Client SFA ID in CMC needs to say INDIRECT rather than the SFA ID alpha numerics in Salesforce. The feed is running successfully - and at initial implementation the users appeared via the application server login - and TOOLS was an available item in Company Admin. Once I made the change to INDIRECT, the users - while they still appear in user admin via travel logins - they do not appear in user admin if I use the application server login via CMC. TOOLS is also not available to the admin - or any user who had it previously assigned; I cannot access the users so I cannot verify / reassign any permissions. This means no one can view the error logs. This is not a new practice - we always use INDIRECT for new setups - and we change existing to INDIRECT as well. But for some reason this time, it has created an issue.Often this means a job chain issue - but it is active - or an extract to travel issue - but that is also scheduled.I requested assistance from my Technical Consultant counterparts and they verified the permissions - they also checked the below - and then advised I should check in with lifecycle management - so here I am. Please let me know what else I can share that will help you help me - thank you in advance. (lifecycle management suggested core-profile, core-profile suggested ask-profile)For your site, the CT_EMPLOYEE_ROLE_MAP table shows that the roles are still assigned to both regular users as well as Concur Admin. What's interesting is that beside the Expense User permission still being granted to the Concur Admin and Expense Module still being enabled in CTE, the Expense based admin UI is not available to the Concur Admin either.We can get to the Tools menu in the site using direct URL:"
+                            - link "Tools" [ref=f45e861] [cursor=pointer]:
+                              - /url: https://us2.concursolutions.com/expense/admin/expenseTools.asp
+                            - text: but it won't show the Import Extract Monitor. Trying to the Import/Extract UI using the direct URL (
+                            - link "Sign in to Concur | Concur Solutions" [ref=f45e864] [cursor=pointer]:
+                              - /url: https://us2.concursolutions.com/expense/admin/jobManagement.asp
+                            - text: ) will be denied is flagged as security breach:Performing a CUP XML import only enters the already existing permissions, so that does not fix it either (tried it), the underlying issue is the unavailability of the Expense portion of the site.
+                          - generic [ref=f45e866]:
+                            - link "Sign in to Concur - SAP Concur Welcome to Concur. Log in to your world class Concur solution here and begin managing business travel and expenses. us2.concursolutions.com us2.concursolutions.com" [ref=f45e867] [cursor=pointer]:
+                              - /url: https://us2.concursolutions.com/expense/admin/expenseTools.asp
+                              - generic [ref=f45e869]:
+                                - generic [ref=f45e870]: Sign in to Concur - SAP Concur
+                                - generic [ref=f45e872]: Welcome to Concur. Log in to your world class Concur solution here and begin managing business travel and expenses.
+                                - generic [ref=f45e874]:
+                                  - img "us2.concursolutions.com" [ref=f45e875]
+                                  - generic [ref=f45e876]: us2.concursolutions.com
+                            - link "Sign in to Concur - SAP Concur Welcome to Concur. Log in to your world class Concur solution here and begin managing business travel and expenses. us2.concursolutions.com us2.concursolutions.com" [ref=f45e879] [cursor=pointer]:
+                              - /url: https://us2.concursolutions.com/expense/admin/jobManagement.asp
+                              - generic [ref=f45e881]:
+                                - generic [ref=f45e882]: Sign in to Concur - SAP Concur
+                                - generic [ref=f45e884]: Welcome to Concur. Log in to your world class Concur solution here and begin managing business travel and expenses.
+                                - generic [ref=f45e886]:
+                                  - img "us2.concursolutions.com" [ref=f45e887]
+                                  - generic [ref=f45e888]: us2.concursolutions.com
+                          - group "Reactions" [ref=f45e891]:
+                            - generic [ref=f45e892]:
+                              - button "1 reaction, react with eyes emoji" [ref=f45e893] [cursor=pointer]:
+                                - img "eyes emoji" [ref=f45e894]
+                                - generic [ref=f45e895]: "1"
+                              - button "Add reaction…" [ref=f45e896] [cursor=pointer]
+                    - listitem [ref=f45e900]:
+                      - button "Jump to date" [ref=f45e901] [cursor=pointer]: Tuesday, September 29th
+                    - listitem [ref=f45e905]
+                    - listitem [ref=f45e908]:
+                      - document [ref=f45e909]:
+                        - generic [ref=f45e911]:
+                          - button [aria-hidden] [ref=f45e912] [cursor=pointer]
+                          - generic [ref=f45e915]:
+                            - button "Sam Bates" [ref=f45e916] [cursor=pointer]
+                            - img "face with thermometer emoji" [ref=f45e919]
+                          - link "Sep 29th at 10:19:35 PM" [ref=f45e920] [cursor=pointer]:
+                            - /url: https://concur-blue.slack.com/archives/C03EE7DDF/p1790691575173249
+                            - text: 10:19 PM
+                          - generic [ref=f45e921]: "Everyone,IT requested that I share this problem and solution with everyone, as they are currently overwhelmed with tickets for this issue. Cross-share as needed. Symptom: Mac users - Your working MS Authenticator passkey does not work with Salesforce. Scanning the QR code causes it to spin in the app until it times out. Solution: The sequence matters here, so, first attempt to log in with your passkey using Safari as the browser. The browser is the most important part of this instruction. If this is successful, then clear your cache and browser history in your preferred browser. Then attempt to log in on the preferred browser. Following this sequence should work, if not, you'll need to delete your existing passkey and set up a new one (details in thread) and then do the above steps with the new one."
+                          - generic [ref=f45e928] [cursor=pointer]
+                          - generic [ref=f45e931] [cursor=pointer]
+                          - generic [ref=f45e934] [cursor=pointer]
+                          - generic [ref=f45e937] [cursor=pointer]
+                          - button "4 replies" [ref=f45e940] [cursor=pointer]
+                          - generic [ref=f45e941] [cursor=pointer]: Last reply 23 days ago
+                          - generic [ref=f45e942] [cursor=pointer]
+                    - listitem [ref=f45e945]:
+                      - button "Jump to date" [ref=f45e946] [cursor=pointer]: Wednesday, October 7th
+                    - listitem [ref=f45e950]
+                    - 'listitem "Abhijit Nath: Hi , We have a Slack group with 9 members, and discussions are already taking place within it. Would it be possible to convert this group into a private Slack channel? 4:51 PM. 4 replies. Edited Wednesday, October 7th at 4:51 PM." [ref=f45e953]':
+                      - document [ref=f45e954]:
+                        - generic [ref=f45e956]:
+                          - button [aria-hidden] [ref=f45e957] [cursor=pointer]
+                          - generic [ref=f45e960]:
+                            - button "Abhijit Nath" [ref=f45e961] [cursor=pointer]
+                            - img "zzz emoji" [ref=f45e964]
+                          - link "Oct 7th at 4:51:32 PM" [ref=f45e965] [cursor=pointer]:
+                            - /url: https://concur-blue.slack.com/archives/C03EE7DDF/p1791363092383339
+                            - text: 4:51 PM
+                          - generic [ref=f45e971]:
+                            - text: Hi , We have a Slack group with 9 members, and discussions are already taking place within it. Would it be possible to convert this group into a private Slack channel?
+                            - generic [ref=f45e972]: (edited)
+                          - generic [ref=f45e973] [cursor=pointer]
+                          - generic [ref=f45e976] [cursor=pointer]
+                          - generic [ref=f45e979] [cursor=pointer]
+                          - button "4 replies" [ref=f45e982] [cursor=pointer]
+                          - generic [ref=f45e983] [cursor=pointer]: Last reply 15 days ago
+                          - generic [ref=f45e984] [cursor=pointer]
+                    - listitem [ref=f45e987]
+                    - list "general (channel)" [ref=f45e989]
+                - generic [ref=f45e994]:
+                  - group "composer" [ref=f45e996]:
+                    - generic [ref=f45e998]:
+                      - toolbar "Formatting" [ref=f45e999]:
+                        - generic [ref=f45e1000]:
+                          - generic:
+                            - generic:
+                              - button "Bold"
+                              - button "Italic"
+                              - button "Underline"
+                              - button "Strikethrough"
+                              - button "Link"
+                              - button "Ordered list"
+                              - button "Bulleted list"
+                              - button "Blockquote"
+                              - button "Code"
+                              - button "Code block"
+                      - generic [ref=f45e1034]:
+                        - textbox "Message to general" [ref=f45e1035]:
+                          - paragraph [ref=f45e1036]
+                        - generic [aria-hidden]:
+                          - generic:
+                            - generic:
+                              - text: Message
+                              - generic:
+                                - generic [aria-hidden]: 
+                                - text: general
+                      - toolbar "Composer actions" [ref=f45e1037]:
+                        - generic [ref=f45e1039]:
+                          - button "Attach" [ref=f45e1040] [cursor=pointer]
+                          - button [aria-hidden] [ref=f45e1043]
+                        - generic [ref=f45e1045]:
+                          - button "Show formatting" [pressed] [ref=f45e1046] [cursor=pointer]
+                          - button "Emoji" [ref=f45e1049] [cursor=pointer]
+                          - button "Mention someone" [ref=f45e1054] [cursor=pointer]
+                          - button "Record video clip" [ref=f45e1058] [cursor=pointer]
+                          - button "Record audio clip" [ref=f45e1061] [cursor=pointer]
+                          - button "Run shortcut" [ref=f45e1065] [cursor=pointer]
+                        - generic [ref=f45e1069]:
+                          - button "Send now" [disabled]
+                          - button "Schedule for later" [disabled]
+                  - generic [ref=f45e1070]:
+                    - generic:
+                      - generic [aria-hidden]:
+                        - button: Return to add a new line
+        - toolbar "Control strip" [ref=f45e636]:
+          - button "Create new" [ref=f45e637] [cursor=pointer]
+          - button "Turn on focus mode" [ref=f45e644] [cursor=pointer]
+          - 'button "User: Anantharaman Ravi" [ref=f45e653] [cursor=pointer]':
+            - img "Active, notifications snoozed" [ref=f45e1072]
+      - dialog "Information" [ref=f45e1076]:
+        - generic [ref=f45e1078]:
+          - img "bell emoji" [ref=f45e1080]
+          - generic [ref=f45e1081]:
+            - text: Slack needs your permission to enable notifications.
+            - button "Enable notifications" [ref=f45e1082] [cursor=pointer]
+        - button "Close" [ref=f45e1083] [cursor=pointer]
+  - generic [ref=f45e667]:
+    - alert [ref=f45e668]: loading…
+    - log [ref=f45e669]

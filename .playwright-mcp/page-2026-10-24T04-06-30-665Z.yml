@@ -1,0 +1,123 @@
+- generic [ref=f23e1]:
+  - generic [ref=f23e3]:
+    - banner [ref=f23e4]:
+      - generic [ref=f23e5]:
+        - link [ref=f23e7] [cursor=pointer]:
+          - /url: https://api.slack.com
+          - img "Slack API" [ref=f23e8]
+        - search [ref=f23e9]:
+          - generic [ref=f23e11]:
+            - generic [aria-hidden] [ref=f23e12]: 
+            - textbox "Search" [ref=f23e13]
+        - generic [ref=f23e14]:
+          - link "Documentation" [ref=f23e15] [cursor=pointer]:
+            - /url: https://api.slack.com/#read_the_docs
+          - link "Tutorials" [ref=f23e16] [cursor=pointer]:
+            - /url: https://api.slack.com/tutorials
+          - link "Your Apps" [ref=f23e17] [cursor=pointer]:
+            - /url: https://api.slack.com/apps
+    - generic [ref=f23e18]:
+      - navigation "Main Menu" [ref=f23e19]:
+        - combobox "app_select" [ref=f23e21] [cursor=pointer]:
+          - generic [ref=f23e22]: Claude Assistant
+        - list [ref=f23e30]:
+          - heading "Settings" [level=3] [ref=f23e31]
+          - menuitem "Basic Information" [ref=f23e32] [cursor=pointer]
+          - menuitem "Collaborators" [ref=f23e33] [cursor=pointer]
+          - menuitem "Socket Mode" [active] [ref=f23e34] [cursor=pointer]
+          - menuitem "Install App" [ref=f23e35] [cursor=pointer]
+          - menuitem "Manage Distribution" [ref=f23e36] [cursor=pointer]
+          - heading "Features" [level=3] [ref=f23e37]
+          - menuitem "App Home" [ref=f23e38] [cursor=pointer]
+          - menuitem "Agents" [ref=f23e39] [cursor=pointer]
+          - menuitem "Search App New" [ref=f23e40] [cursor=pointer]:
+            - text: Search App
+            - generic [ref=f23e41]: New
+          - menuitem "Work Object Previews New" [ref=f23e43] [cursor=pointer]:
+            - text: Work Object Previews
+            - generic [ref=f23e44]: New
+          - menuitem "Workflow Steps" [ref=f23e46] [cursor=pointer]
+          - menuitem "Org Level Apps" [ref=f23e47] [cursor=pointer]
+          - menuitem "Incoming Webhooks" [ref=f23e48] [cursor=pointer]
+          - menuitem "Interactivity & Shortcuts" [ref=f23e49] [cursor=pointer]
+          - menuitem "Slash Commands" [ref=f23e50] [cursor=pointer]
+          - menuitem "OAuth & Permissions" [ref=f23e51] [cursor=pointer]
+          - menuitem "MCP Servers New" [ref=f23e52] [cursor=pointer]:
+            - text: MCP Servers
+            - generic [ref=f23e53]: New
+          - menuitem "Event Subscriptions" [ref=f23e55] [cursor=pointer]
+          - menuitem "User ID Translation" [ref=f23e56] [cursor=pointer]
+          - menuitem "App Manifest" [ref=f23e57] [cursor=pointer]
+          - menuitem "Beta Features" [ref=f23e58] [cursor=pointer]
+          - heading "Submit to Slack Marketplace" [level=3] [ref=f23e59]
+          - menuitem "Prepare & Submit" [ref=f23e60] [cursor=pointer]
+          - menuitem "1. Your App Listing" [ref=f23e61]
+          - menuitem "2. Review scopes" [ref=f23e62]
+          - menuitem "3. Security and compliance" [ref=f23e63]
+          - menuitem "4. Testing information" [ref=f23e64]
+          - menuitem "5. Automated checks" [ref=f23e65]
+        - link "Give feedback" [ref=f23e67] [cursor=pointer]:
+          - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+        - list [ref=f23e68]:
+          - text: Slack
+          - generic [aria-hidden] [ref=f23e69]: 
+          - link "Help" [ref=f23e70] [cursor=pointer]:
+            - /url: https://slack.com/help
+          - link "Contact" [ref=f23e71] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new
+          - link "Policies" [ref=f23e72] [cursor=pointer]:
+            - /url: https://slack.com/terms-of-service
+          - link "Our Blog" [ref=f23e73] [cursor=pointer]:
+            - /url: https://slackhq.com
+      - main [ref=f23e74]:
+        - generic [ref=f23e76]:
+          - heading "Socket Mode" [level=1] [ref=f23e77]
+          - generic [ref=f23e79]:
+            - heading "Receive app payloads via Websockets instead of Request URLs" [level=3] [ref=f23e80]
+            - paragraph [ref=f23e81]: Turning on Socket Mode will route your app’s interactions and events over a WebSockets connection instead of sending these payloads to Request URLs, which are public HTTP endpoints.
+            - paragraph [ref=f23e82]:
+              - text: This setting is intended for internal apps that are in development or need to be deployed behind a firewall. It is not intended for widely distributed apps. Please set up Request URLs for your app before submitting to the Slack Marketplace.
+              - link "Learn more" [ref=f23e83] [cursor=pointer]:
+                - /url: https://api.slack.com/socket-mode
+            - separator [ref=f23e84]
+            - heading "Connect using Socket Mode" [level=3] [ref=f23e85]
+            - paragraph [ref=f23e86]:
+              - text: To start receiving payloads in Socket Mode, turn on the toggle below and call the
+              - link "apps.connections.open" [ref=f23e87] [cursor=pointer]:
+                - /url: https://api.slack.com/methods/apps.connections.open
+              - text: endpoint using an
+              - link "App Level Token" [ref=f23e88] [cursor=pointer]:
+                - /url: https://api.slack.com/apps/A0CBCFMN9UP/general
+              - text: to establish a connection.
+            - generic [ref=f23e89]:
+              - generic [ref=f23e90]:
+                - paragraph [ref=f23e91]:
+                  - generic [ref=f23e92]: Enable Socket Mode
+                - paragraph [ref=f23e93]: Allow your app to connect via Socket Mode. You can disable this any time and revert to using any Request URL you’ve already defined.
+              - generic [ref=f23e94]:
+                - switch "Enable Socket Mode" [checked] [ref=f23e95] [cursor=pointer]
+                - text: 
+            - generic [ref=f23e96]:
+              - heading "Features affected" [level=4] [ref=f23e97]
+              - generic [ref=f23e98]:
+                - generic [ref=f23e99]: Features
+                - generic [ref=f23e100]: Description
+                - generic [ref=f23e101]: Enabled?
+              - generic [ref=f23e102]:
+                - link "Interactivity & Shortcuts" [ref=f23e104] [cursor=pointer]:
+                  - /url: https://api.slack.com/apps/A0CBCFMN9UP/interactive-messages
+                - generic [ref=f23e105]: Any interactions with shortcuts, modals, or interactive components
+                - generic [ref=f23e106]: "No"
+              - generic [ref=f23e107]:
+                - link "Slash Commands" [ref=f23e109] [cursor=pointer]:
+                  - /url: https://api.slack.com/apps/A0CBCFMN9UP/slash-commands
+                - generic [ref=f23e110]: "Commands enable users to interact with your app with a `/ `"
+                - generic [ref=f23e111]: "No"
+              - generic [ref=f23e112]:
+                - link "Event Subscriptions" [ref=f23e114] [cursor=pointer]:
+                  - /url: https://api.slack.com/apps/A0CBCFMN9UP/event-subscriptions
+                - generic [ref=f23e115]: Subscribe to specific types of events occurring in Slack
+                - generic [ref=f23e116]: "Yes"
+  - generic [ref=f23e117]:
+    - alert [ref=f23e118]
+    - log [ref=f23e119]

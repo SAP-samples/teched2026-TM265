@@ -1,0 +1,168 @@
+- generic [active] [ref=f45e1]:
+  - generic [ref=f45e4]:
+    - application [ref=f45e6]
+    - toolbar "History Navigation" [ref=f45e8]:
+      - generic [ref=f45e10]:
+        - generic [ref=f45e13]:
+          - generic [ref=f45e14]:
+            - button "Back in history" [disabled] [ref=f45e15]
+            - button "Forward in history" [disabled] [ref=f45e18]
+          - button "Show history" [ref=f45e22] [cursor=pointer]
+        - button "Search" [ref=f45e27] [cursor=pointer]:
+          - generic [ref=f45e31]: Search SAP
+        - button "Help" [ref=f45e36] [cursor=pointer]
+    - tabpanel "SAP" [ref=f45e40]:
+      - generic [ref=f45e41]:
+        - button "Switch workspaces… (SAP)" [ref=f45e44] [cursor=pointer]
+        - tablist "SAP" [ref=f45e48]:
+          - tab "Home" [selected] [ref=f45e51] [cursor=pointer]:
+            - generic [ref=f45e52]:
+              - generic [ref=f45e59]: Home
+              - generic [aria-hidden]: "1"
+          - tab "DMs" [ref=f45e61] [cursor=pointer]:
+            - generic [ref=f45e62]:
+              - generic [ref=f45e67]: DMs
+              - generic [aria-hidden]: "2"
+          - tab "Activity" [ref=f45e69] [cursor=pointer]:
+            - generic [ref=f45e70]:
+              - generic [ref=f45e77]: Activity
+              - generic [aria-hidden]: "3"
+          - tab "Files" [ref=f45e79] [cursor=pointer]:
+            - generic [ref=f45e80]:
+              - generic [ref=f45e85]: Files
+              - generic [aria-hidden]: "4"
+          - tab "Later" [ref=f45e88] [cursor=pointer]:
+            - generic [ref=f45e89]:
+              - generic [ref=f45e94]: Later
+              - generic [aria-hidden]: "5"
+          - tab "More…" [ref=f45e96] [cursor=pointer]:
+            - generic [ref=f45e97]:
+              - generic [ref=f45e102]: More
+              - generic [aria-hidden]: "0"
+      - generic [ref=f45e106]:
+        - tabpanel "Home" [ref=f45e107]:
+          - generic [ref=f45e109]:
+            - group "Home" [ref=f45e110]:
+              - generic [ref=f45e112]:
+                - toolbar "Actions" [ref=f45e113]:
+                  - button "SAP Actions" [ref=f45e116] [cursor=pointer]:
+                    - generic [ref=f45e117]: SAP
+                    - img "caret-down" [ref=f45e118]
+                  - generic [ref=f45e120]:
+                    - button "Manage my sidebar" [ref=f45e121] [cursor=pointer]
+                    - button "New message" [ref=f45e125] [cursor=pointer]
+                - searchbox "Channel or user name" [ref=f45e132]
+                - generic [ref=f45e134]:
+                  - generic:
+                    - tree "Channels and direct messages" [ref=f45e135]:
+                      - treeitem "Unreads" [level=1] [ref=f45e136] [cursor=pointer]
+                      - treeitem "Threads" [level=1] [ref=f45e143] [cursor=pointer]
+                      - treeitem "Huddles" [level=1] [ref=f45e149] [cursor=pointer]
+                      - treeitem "Drafts & sent" [level=1] [ref=f45e157] [cursor=pointer]
+                      - treeitem "Directories" [level=1] [ref=f45e164] [cursor=pointer]
+                      - treeitem "My Team" [expanded] [level=1] [ref=f45e173]:
+                        - button [aria-hidden] [ref=f45e178] [cursor=pointer]:
+                          - generic [ref=f45e188]: My Team
+                        - group:
+                          - treeitem "ai-visual-inspection" [level=2] [ref=f45e190] [cursor=pointer]
+                          - treeitem "dgs-pipeline-sg" [level=2] [ref=f45e196] [cursor=pointer]
+                          - treeitem "j4c-info-dump" [level=2] [ref=f45e202] [cursor=pointer]
+                      - treeitem "External connections" [expanded] [level=1] [ref=f45e208]:
+                        - button [aria-hidden] [ref=f45e212] [cursor=pointer]:
+                          - generic [ref=f45e220]: External connections
+                        - group:
+                          - treeitem "ext-sap-unstructured" [level=2] [ref=f45e222] [cursor=pointer]
+                          - treeitem "ext-nv-sap" [level=2] [ref=f45e228] [cursor=pointer]
+                      - treeitem "Management" [expanded] [level=1] [ref=f45e234]:
+                        - button [aria-hidden] [ref=f45e238] [cursor=pointer]:
+                          - generic [ref=f45e248]: Management
+                        - group:
+                          - treeitem "mai-gong-bo-jio" [level=2] [ref=f45e250] [cursor=pointer]
+                          - treeitem "ai-sg-mgmt" [level=2] [ref=f45e256] [cursor=pointer]
+                          - treeitem "ai-singapore" [level=2] [ref=f45e262] [cursor=pointer]
+                      - treeitem "interest groups" [expanded] [level=1] [ref=f45e268]:
+                        - button [aria-hidden] [ref=f45e272] [cursor=pointer]:
+                          - generic [ref=f45e282]: interest groups
+                        - group:
+                          - treeitem "ai-sg-ds-community" [level=2] [ref=f45e284] [cursor=pointer]
+                          - treeitem "generalSAP Artificial Intelligence" [level=2] [ref=f45e290] [cursor=pointer]
+                          - treeitem "sap-announcements" [level=2] [ref=f45e296] [cursor=pointer]
+                          - treeitem "sap-cp-cf-users" [level=2] [ref=f45e302] [cursor=pointer]
+                          - treeitem "sap-machine-learning" [level=2] [ref=f45e308] [cursor=pointer]
+                      - treeitem "Starred" [expanded] [level=1] [ref=f45e314]:
+                        - button [aria-hidden] [ref=f45e318] [cursor=pointer]:
+                          - generic [ref=f45e326]: Starred
+                        - group:
+                          - treeitem [level=2] [ref=f45e328] [cursor=pointer]:
+                            - generic [aria-hidden] [ref=f45e330]: 
+                      - treeitem "My Cash App Team" [level=1] [ref=f45e333]:
+                        - button [aria-hidden] [ref=f45e337] [cursor=pointer]:
+                          - generic [ref=f45e347]: My Cash App Team
+                        - group
+                      - treeitem "AI-BUS" [expanded] [level=1] [ref=f45e349]:
+                        - button [aria-hidden] [ref=f45e353] [cursor=pointer]:
+                          - generic [ref=f45e363]: AI-BUS
+                        - group:
+                          - treeitem "ai-bus-engineering" [level=2] [ref=f45e365] [cursor=pointer]
+                          - treeitem "ml-jenkins" [level=2] [ref=f45e371] [cursor=pointer]
+                      - treeitem "Support channels" [expanded] [level=1] [ref=f45e377]:
+                        - button [aria-hidden] [ref=f45e381] [cursor=pointer]:
+                          - generic [ref=f45e391]: Support channels
+                        - group:
+                          - treeitem "aif-support" [level=2] [ref=f45e393] [cursor=pointer]
+                      - treeitem "Channels" [expanded] [level=1] [ref=f45e399]:
+                        - button [aria-hidden] [ref=f45e403] [cursor=pointer]:
+                          - generic [ref=f45e411]: Channels
+                        - group:
+                          - treeitem "ai-bus-commons" [level=2] [ref=f45e413] [cursor=pointer]
+                          - treeitem "ai-chatgpt-llms" [level=2] [ref=f45e419] [cursor=pointer]
+                          - treeitem "ai-cicd-help" [level=2] [ref=f45e425] [cursor=pointer]
+                          - treeitem "ai-daily-news" [level=2] [ref=f45e431] [cursor=pointer]
+                          - treeitem "aif-grounding-support" [level=2] [ref=f45e437] [cursor=pointer]
+                          - treeitem "btp-workspace-announcements" [level=2] [ref=f45e443] [cursor=pointer]
+                          - treeitem "generalConcur Blue" [level=2] [ref=f45e449] [cursor=pointer]
+                          - treeitem "generalStack@SAP" [level=2] [ref=f45e455] [cursor=pointer]
+                          - treeitem "ml-apps-24x7" [level=2] [ref=f45e461] [cursor=pointer]
+                          - treeitem "ml-rage-internal-prod-alerts-24x7" [level=2] [ref=f45e467] [cursor=pointer]
+                          - treeitem "sap-os-macos" [level=2] [ref=f45e473] [cursor=pointer]
+                          - treeitem "sap-random" [level=2] [ref=f45e479] [cursor=pointer]
+                          - treeitem "sap-tech-event-hub" [level=2] [ref=f45e485] [cursor=pointer]
+                          - treeitem "sap-tools-github" [level=2] [ref=f45e491] [cursor=pointer]
+                          - treeitem "sap-tools-xmake" [level=2] [ref=f45e497] [cursor=pointer]
+                          - treeitem "dg-devops" [level=2] [ref=f45e503] [cursor=pointer]
+                      - treeitem "Direct Messages" [expanded] [level=1] [ref=f45e509]:
+                        - button [aria-hidden] [ref=f45e513] [cursor=pointer]:
+                          - generic [ref=f45e521]: Direct messages
+                        - group:
+                          - treeitem [level=2] [ref=f45e523] [cursor=pointer]:
+                            - img "Away" [ref=f45e529]
+                          - treeitem [level=2] [ref=f45e533] [cursor=pointer]:
+                            - img "Away" [ref=f45e539]
+                          - treeitem [level=2] [ref=f45e543] [cursor=pointer]:
+                            - img "Away" [ref=f45e549]
+                          - treeitem [level=2] [ref=f45e553] [cursor=pointer]:
+                            - img "Away" [ref=f45e559]
+                          - treeitem [level=2] [ref=f45e563] [cursor=pointer]:
+                            - img "Away" [ref=f45e569]
+                          - treeitem [level=2] [ref=f45e573] [cursor=pointer]:
+                            - img "Away" [ref=f45e579]
+                          - treeitem [level=2] [ref=f45e583] [cursor=pointer]:
+                            - img "Away" [ref=f45e589]
+                          - treeitem [level=2] [ref=f45e593] [cursor=pointer]:
+                            - img "Away" [ref=f45e599]
+                          - treeitem [level=2] [ref=f45e603] [cursor=pointer]:
+                            - generic [aria-hidden] [ref=f45e605]: 
+                      - treeitem "Apps" [expanded] [level=1] [ref=f45e608]:
+                        - button [aria-hidden] [ref=f45e612] [cursor=pointer]:
+                          - generic [ref=f45e620]: Apps
+                        - group
+                    - button [ref=f45e623] [cursor=pointer]
+            - slider "Sidebar width" [ref=f45e627]: "270"
+        - toolbar "Control strip" [ref=f45e636]:
+          - button "Create new" [ref=f45e637] [cursor=pointer]
+          - button "Turn on focus mode" [ref=f45e644] [cursor=pointer]
+          - 'button "User: Anantharaman Ravi" [ref=f45e653] [cursor=pointer]':
+            - img "Away" [ref=f45e660]
+  - generic [ref=f45e667]:
+    - alert [ref=f45e668]
+    - log [ref=f45e669]

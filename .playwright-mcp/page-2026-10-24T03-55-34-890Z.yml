@@ -1,0 +1,51 @@
+- generic [active] [ref=f17e1]:
+  - generic [ref=f17e4]:
+    - application [ref=f17e6]
+    - toolbar "History Navigation" [ref=f17e8]:
+      - generic [ref=f17e10]:
+        - generic [ref=f17e13]:
+          - generic [ref=f17e14]:
+            - button "Back in history" [disabled] [ref=f17e15]
+            - button "Forward in history" [disabled] [ref=f17e18]
+          - button "Show history" [ref=f17e22] [cursor=pointer]
+        - button "Search" [ref=f17e27] [cursor=pointer]:
+          - generic [ref=f17e31]: Search SAP
+        - button "Help" [ref=f17e36] [cursor=pointer]
+    - tabpanel "SAP" [ref=f17e40]:
+      - generic [ref=f17e41]:
+        - button "Switch workspaces… (SAP)" [ref=f17e44] [cursor=pointer]
+        - tablist "SAP" [ref=f17e48]:
+          - tab "Home" [selected] [ref=f17e51] [cursor=pointer]:
+            - generic [ref=f17e52]:
+              - generic [ref=f17e59]: Home
+              - generic [aria-hidden]: "1"
+          - tab "DMs" [ref=f17e61] [cursor=pointer]:
+            - generic [ref=f17e62]:
+              - generic [ref=f17e67]: DMs
+              - generic [aria-hidden]: "2"
+          - tab "Activity" [ref=f17e69] [cursor=pointer]:
+            - generic [ref=f17e70]:
+              - generic [ref=f17e77]: Activity
+              - generic [aria-hidden]: "3"
+          - tab "Files" [ref=f17e79] [cursor=pointer]:
+            - generic [ref=f17e80]:
+              - generic [ref=f17e85]: Files
+              - generic [aria-hidden]: "4"
+          - tab "Later" [ref=f17e88] [cursor=pointer]:
+            - generic [ref=f17e89]:
+              - generic [ref=f17e94]: Later
+              - generic [aria-hidden]: "5"
+          - tab "More…" [ref=f17e96] [cursor=pointer]:
+            - generic [ref=f17e97]:
+              - generic [ref=f17e102]: More
+              - generic [aria-hidden]: "0"
+      - generic [ref=f17e106]:
+        - tabpanel "Home" [ref=f17e107]
+        - toolbar "Control strip" [ref=f17e119]:
+          - button "Create new" [ref=f17e120] [cursor=pointer]
+          - button "Turn on focus mode" [ref=f17e127] [cursor=pointer]
+          - 'button "User: Anantharaman Ravi" [ref=f17e136] [cursor=pointer]':
+            - img "Away" [ref=f17e143]
+  - generic [ref=f17e150]:
+    - alert [ref=f17e151]
+    - log [ref=f17e152]

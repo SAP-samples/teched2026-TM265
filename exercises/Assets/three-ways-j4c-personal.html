@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Three Ways to Make J4C Personal</title>
+  <style>
+    /* ── PPTX theme palette ─────────────────────────────────────────── */
+    /* Extracted from theme1.xml:
+       dk2=#0E2841  accent1=#156082  accent2=#E97132  accent4=#0F9ED5
+       Slide bg from slide2.xml: #00144A
+       Fonts: Aptos Display (headings) / Aptos (body)                  */
+
+    .viz-root {
+      /* PPTX dark theme (default — matches existing slides) */
+      color-scheme: dark;
+      --surface-slide: #00144A;
+      --surface-card:  #0D2240;
+      --surface-foot:  #091b34;
+      --text-primary:   #FFFFFF;
+      --text-secondary: #c8d4e0;
+      --text-muted:     #7a9ab8;
+      --border:    rgba(255,255,255,0.10);
+      --gridline:  rgba(255,255,255,0.06);
+      --c1: #156082;  --c1-pill: rgba(21,96,130,0.30);   --c1-pill-text: #5bc4e8;
+      --c2: #E97132;  --c2-pill: rgba(233,113,50,0.25);  --c2-pill-text: #f5a878;
+      --c3: #0F9ED5;  --c3-pill: rgba(15,158,213,0.22);  --c3-pill-text: #6fd0f5;
+      --deco: #5D36FF;
+    }
+
+    .viz-root[data-theme="light"] {
+      color-scheme: light;
+      --surface-slide: #FFFFFF;
+      --surface-card:  #f2f5f8;
+      --surface-foot:  #e8edf3;
+      --text-primary:   #0E2841;
+      --text-secondary: #2e4e6a;
+      --text-muted:     #5a7a96;
+      --border:    rgba(14,40,65,0.10);
+      --gridline:  rgba(14,40,65,0.06);
+      --c1: #156082;  --c1-pill: #d0eaf6;  --c1-pill-text: #0d4460;
+      --c2: #E97132;  --c2-pill: #fde8d8;  --c2-pill-text: #a04010;
+      --c3: #0F9ED5;  --c3-pill: #d0f0fb;  --c3-pill-text: #085d7e;
+      --deco: #5D36FF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: "Aptos", "Aptos Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: #111827;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .theme-toggle {
+      display: flex;
+      gap: 8px;
+    }
+    .theme-toggle button {
+      font-size: 12px;
+      font-family: inherit;
+      padding: 5px 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.20);
+      background: rgba(255,255,255,0.08);
+      color: #e0e8f0;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .theme-toggle button:hover { background: rgba(255,255,255,0.15); }
+
+    .viz-root {
+      width: 1280px;
+      height: 720px;
+      background: var(--surface-slide);
+      border-radius: 6px;
+      padding: 44px 52px 32px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.50);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .viz-root::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--c1) 33.3%, var(--c2) 33.3% 66.6%, var(--c3) 66.6%);
+    }
+
+    .viz-root::after {
+      content: "";
+      position: absolute;
+      bottom: -120px; right: -80px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(93,54,255,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .slide-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 7px;
+    }
+    .slide-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .slide-sub {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 7px;
+      line-height: 1.4;
+    }
+
+    .scope-axis {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 18px 0 16px;
+    }
+    .scope-label {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .scope-track {
+      flex: 1;
+      height: 2px;
+      background: var(--gridline);
+      border-radius: 1px;
+      position: relative;
+    }
+    .scope-dot {
+      position: absolute;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      top: 50%; transform: translate(-50%, -50%);
+    }
+    .scope-dot.d1 { left: 16.5%;  background: var(--c1); box-shadow: 0 0 6px var(--c1); }
+    .scope-dot.d2 { left: 49.5%;  background: var(--c2); box-shadow: 0 0 6px var(--c2); }
+    .scope-dot.d3 { left: 83%;    background: var(--c3); box-shadow: 0 0 6px var(--c3); }
+    .scope-arrowhead {
+      width: 0; height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid var(--text-muted);
+    }
+
+    .cards-row {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .tier-card {
+      flex: 1;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--surface-card);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .tier-1 { border-top: 3px solid var(--c1); }
+    .tier-2 { border-top: 3px solid var(--c2); }
+    .tier-3 { border-top: 3px solid var(--c3); }
+    .tier-1:hover { border-color: var(--c1); box-shadow: 0 0 20px rgba(21,96,130,0.25); }
+    .tier-2:hover { border-color: var(--c2); box-shadow: 0 0 20px rgba(233,113,50,0.20); }
+    .tier-3:hover { border-color: var(--c3); box-shadow: 0 0 20px rgba(15,158,213,0.22); }
+
+    .card-head {
+      padding: 16px 20px 13px;
+      border-bottom: 1px solid var(--border);
+    }
+    .scope-pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 9px;
+    }
+    .tier-1 .scope-pill { background: var(--c1-pill); color: var(--c1-pill-text); }
+    .tier-2 .scope-pill { background: var(--c2-pill); color: var(--c2-pill-text); }
+    .tier-3 .scope-pill { background: var(--c3-pill); color: var(--c3-pill-text); }
+
+    .feature-name {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+    .feature-desc {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .card-body {
+      padding: 14px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .attr {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 12.5px;
+      line-height: 1.35;
+    }
+    .attr-key {
+      font-weight: 600;
+      color: var(--text-muted);
+      min-width: 78px;
+      flex-shrink: 0;
+      font-size: 11.5px;
+      letter-spacing: 0.01em;
+    }
+    .attr-val { color: var(--text-primary); }
+
+    .card-foot {
+      padding: 11px 20px;
+      background: var(--surface-foot);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-example {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      font-style: italic;
+      line-height: 1.3;
+    }
+    .ex-badge {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .tier-1 .ex-badge { background: var(--c1); }
+    .tier-2 .ex-badge { background: var(--c2); }
+    .tier-3 .ex-badge { background: var(--c3); }
+
+    .slide-note {
+      margin-top: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lock-icon {
+      width: 14px; height: 14px;
+      flex-shrink: 0;
+      color: var(--text-muted);
+    }
+    .note-text {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .note-text strong {
+      color: var(--text-secondary);
+      font-weight: 650;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="theme-toggle">
+    <button onclick="document.querySelector('.viz-root').removeAttribute('data-theme')">☾ PPTX Dark</button>
+    <button onclick="document.querySelector('.viz-root').setAttribute('data-theme','light')">☀ PPTX Light</button>
+  </div>
+
+  <div class="viz-root" id="slide">
+
+    <div>
+      <div class="slide-eyebrow">SAP Joule for Consultants · TM265</div>
+      <h1 class="slide-title">Three Ways to Make J4C Personal</h1>
+      <p class="slide-sub">
+        Out of the box, J4C is grounded in SAP's knowledge base.
+        Choose the method based on how long you need the context and who needs access to it.
+      </p>
+    </div>
+
+    <div class="scope-axis">
+      <span class="scope-label">Narrower scope</span>
+      <div class="scope-track">
+        <span class="scope-dot d1"></span>
+        <span class="scope-dot d2"></span>
+        <span class="scope-dot d3"></span>
+      </div>
+      <div class="scope-arrowhead"></div>
+      <span class="scope-label">Broader scope</span>
+    </div>
+
+    <div class="cards-row">
+
+      <!-- Conversation -->
+      <div class="tier-card tier-1">
+        <div class="card-head">
+          <div class="scope-pill">Conversation</div>
+          <div class="feature-name">Prompt-Level Upload</div>
+          <div class="feature-desc">Upload directly at the chat prompt — context lives for this conversation only.</div>
+        </div>
+        <div class="card-body">
+          <div class="attr"><span class="attr-key">Who sets up</span><span class="attr-val">Any user</span></div>
+          <div class="attr"><span class="attr-key">Persists</span><span class="attr-val">Auto-deleted after 7 days</span></div>
+          <div class="attr"><span class="attr-key">Storage</span><span class="attr-val">Up to 10 MB per file</span></div>
+          <div class="attr"><span class="attr-key">Formats</span><span class="attr-val">PDF, DOCX, TXT, XLSX, CSV, MD, PNG/JPEG</span></div>
+          <div class="attr"><span class="attr-key">Best for</span><span class="attr-val">Workshop transcripts, one-off analysis</span></div>
+        </div>
+        <div class="card-foot">
+          <span class="card-example">"The transcript Raj just received"</span>
+          <span class="ex-badge">Exercise 2</span>
+        </div>
+      </div>
+
+      <!-- Project / Engagement -->
+      <div class="tier-card tier-2">
+        <div class="card-head">
+          <div class="scope-pill">Project / Engagement</div>
+          <div class="feature-name">Expert Workspace Upload</div>
+          <div class="feature-desc">Attach files to your Expert — available across all conversations using that Expert.</div>
+        </div>
+        <div class="card-body">
+          <div class="attr"><span class="attr-key">Who sets up</span><span class="attr-val">Any user</span></div>
+          <div class="attr"><span class="attr-key">Persists</span><span class="attr-val">Until deleted</span></div>
+          <div class="attr"><span class="attr-key">Storage</span><span class="attr-val">1 GB total · 10 MB per file</span></div>
+          <div class="attr"><span class="attr-key">Formats</span><span class="attr-val">PDF, DOCX, TXT, XLSX, CSV, MD, PNG/JPEG</span></div>
+          <div class="attr"><span class="attr-key">Best for</span><span class="attr-val">Recurring engagement context, BAdI specs</span></div>
+        </div>
+        <div class="card-foot">
+          <span class="card-example">"18J workshop artefacts"</span>
+          <span class="ex-badge">Exercise 1</span>
+        </div>
+      </div>
+
+      <!-- Organisational -->
+      <div class="tier-card tier-3">
+        <div class="card-head">
+          <div class="scope-pill">Organisational</div>
+          <div class="feature-name">Custom Knowledge Grounding</div>
+          <div class="feature-desc">Admin-connected repositories available to every consultant on the tenant.</div>
+        </div>
+        <div class="card-body">
+          <div class="attr"><span class="attr-key">Who sets up</span><span class="attr-val">Administrator</span></div>
+          <div class="attr"><span class="attr-key">Persists</span><span class="attr-val">Until removed</span></div>
+          <div class="attr"><span class="attr-key">Storage</span><span class="attr-val">Depends on data repository</span></div>
+          <div class="attr"><span class="attr-key">Formats</span><span class="attr-val">PDF, DOCX, HTML, TXT, PPT, PNG/JPEG/TIFF</span></div>
+          <div class="attr"><span class="attr-key">Best for</span><span class="attr-val">Shared BRDs, org standards, SOPs</span></div>
+        </div>
+        <div class="card-foot">
+          <span class="card-example">"Nexstream BRD — already grounded"</span>
+          <span class="ex-badge">Exercise 3</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="slide-note">
+      <svg class="lock-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="7" width="10" height="8" rx="1.5"/>
+        <path d="M5 7V5a3 3 0 0 1 6 0v2"/>
+      </svg>
+      <span class="note-text">
+        <strong>Data privacy:</strong> None of these files are ever used to train the underlying LLM. Your content stays yours.
+      </span>
+    </div>
+
+  </div>
+
+</body>
+</html>

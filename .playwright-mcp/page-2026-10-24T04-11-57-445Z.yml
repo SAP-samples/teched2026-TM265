@@ -1,0 +1,160 @@
+- generic [active] [ref=f27e1]:
+  - banner [ref=f27e2]:
+    - generic [ref=f27e3]:
+      - text: 
+      - link [ref=f27e5] [cursor=pointer]:
+        - /url: https://api.slack.com/
+        - img "Slack API" [ref=f27e6]
+      - generic [ref=f27e8]:
+        - link "Changelog" [ref=f27e9] [cursor=pointer]:
+          - /url: https://docs.slack.dev/changelog
+        - link "Documentation" [ref=f27e10] [cursor=pointer]:
+          - /url: /#read_the_docs
+        - link "Tutorials" [ref=f27e11] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Your Apps" [ref=f27e12] [cursor=pointer]:
+          - /url: /apps
+  - generic [ref=f27e14]:
+    - generic:
+      - navigation [ref=f27e15]:
+        - generic [ref=f27e16] [cursor=pointer]:  Claude Assistant
+        - generic [ref=f27e18]:
+          - heading "Settings" [level=4] [ref=f27e19]
+          - list [ref=f27e20]:
+            - listitem [ref=f27e21]:
+              - link "Basic Information" [ref=f27e22] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/general
+            - listitem [ref=f27e23]:
+              - link "Collaborators" [ref=f27e24] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/collaborators
+            - listitem [ref=f27e25]:
+              - link "Socket Mode" [ref=f27e26] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/socket-mode
+            - listitem [ref=f27e27]:
+              - link "Install App" [ref=f27e28] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/install-on-team?
+            - listitem [ref=f27e29]:
+              - link "Manage Distribution" [ref=f27e30] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/distribute
+          - heading "Features" [level=4] [ref=f27e31]
+          - list [ref=f27e32]:
+            - listitem [ref=f27e33]:
+              - link "App Home" [ref=f27e34] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/app-home?
+            - listitem [ref=f27e35]:
+              - link "Agents" [ref=f27e36] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/app-assistant?
+            - listitem [ref=f27e37]:
+              - link "Work Object Previews New" [ref=f27e38] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/rich-previews?
+                - text: Work Object Previews
+                - generic [ref=f27e39]: New
+            - listitem [ref=f27e40]:
+              - link "Search Apps New" [ref=f27e41] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/search-app?
+                - text: Search Apps
+                - generic [ref=f27e42]: New
+            - listitem [ref=f27e43]:
+              - link "Workflow Steps" [ref=f27e44] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/functions
+            - listitem [ref=f27e45]:
+              - link "Org Level Apps" [ref=f27e46] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/org-level?
+            - listitem [ref=f27e47]:
+              - link "Incoming Webhooks" [ref=f27e48] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/incoming-webhooks?
+            - listitem [ref=f27e49]:
+              - link "Interactivity & Shortcuts" [ref=f27e50] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/interactive-messages?
+            - listitem [ref=f27e51]:
+              - link "Slash Commands" [ref=f27e52] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/slash-commands?
+            - listitem [ref=f27e53]:
+              - link "OAuth & Permissions" [ref=f27e54] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/oauth?
+            - listitem [ref=f27e55]:
+              - link "MCP Servers New" [ref=f27e56] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/mcp-servers
+                - text: MCP Servers
+                - generic [ref=f27e57]: New
+            - listitem [ref=f27e58]:
+              - link "Event Subscriptions" [ref=f27e59] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/event-subscriptions?
+            - listitem [ref=f27e60]:
+              - link "User ID Translation" [ref=f27e61] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/user-ids?
+            - listitem [ref=f27e62]:
+              - link "App Manifest" [ref=f27e63] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/app-manifest
+            - listitem [ref=f27e64]:
+              - link "Beta Features" [ref=f27e65] [cursor=pointer]:
+                - /url: /apps/A0CBCFMN9UP/developer-beta?
+          - heading "Submit to Slack Marketplace" [level=4] [ref=f27e66]
+          - list [ref=f27e67]:
+            - listitem [ref=f27e68]:
+              - link "Review & Submit" [ref=f27e69] [cursor=pointer]:
+                - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/submission
+        - generic [ref=f27e70]:
+          - paragraph
+          - link "Give feedback" [ref=f27e72] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+          - paragraph
+          - paragraph [ref=f27e73]:
+            - text: Slack
+            - generic [ref=f27e74]: 
+          - list [ref=f27e75]:
+            - listitem [ref=f27e76]:
+              - link "Help" [ref=f27e77] [cursor=pointer]:
+                - /url: https://slack.com/help
+            - listitem [ref=f27e78]:
+              - link "Contact" [ref=f27e79] [cursor=pointer]:
+                - /url: https://slack.com/help/requests/new
+            - listitem [ref=f27e80]:
+              - link "Policies" [ref=f27e81] [cursor=pointer]:
+                - /url: https://slack.com/terms-of-service
+            - listitem [ref=f27e82]:
+              - link "Our Blog" [ref=f27e83] [cursor=pointer]:
+                - /url: https://slackhq.com/
+      - generic [ref=f27e86]:
+        - heading "Install App" [level=1] [ref=f27e87]
+        - generic [ref=f27e88]:
+          - heading "OAuth Tokens" [level=3] [ref=f27e89]
+          - paragraph [ref=f27e91]:
+            - link "OAuth Tokens" [ref=f27e92] [cursor=pointer]:
+              - /url: https://docs.slack.dev/authentication/installing-with-oauth/
+            - text: will be automatically generated when you finish installing your app to your workspace. You’ll use these tokens to authenticate your app.
+          - generic [ref=f27e93]:
+            - link "Install to SAP Artificial Intelligence" [ref=f27e95] [cursor=pointer]:
+              - /url: https://slack.com/oauth/v2/authorize?client_id=9557279667.12386531757975&team=T09GD87KM&install_redirect=install-on-team&scope=app_mentions:read,chat:write,channels:history,im:history,im:write,im:read
+            - generic [ref=f27e97]:
+              - strong [ref=f27e98]: Org Installation
+              - paragraph [ref=f27e99]:
+                - text: This app can also be
+                - link "installed on SAP" [ref=f27e100] [cursor=pointer]:
+                  - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/org-level
+                - text: .
+              - paragraph [ref=f27e101]:
+                - text: Send your admin a
+                - link "shareable URL" [ref=f27e102] [cursor=pointer]:
+                  - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/distribute
+                - text: ", your admin will be asked to authorize this app. Add your organization admin as a"
+                - link "collaborator" [ref=f27e103] [cursor=pointer]:
+                  - /url: https://app.slack.com/app-settings/T09GD87KM/A0CBCFMN9UP/collaborators
+                - text: on your app, your admin will be able to directly install from these pages.
+              - link "Learn more about org-ready apps." [ref=f27e104] [cursor=pointer]:
+                - /url: https://docs.slack.dev/enterprise/organization-ready-apps/
+  - generic [ref=f27e105]:
+    - alert [ref=f27e106]
+    - log [ref=f27e107]
+  - generic [ref=f27e108]:
+    - alert [ref=f27e109]
+    - log [ref=f27e110]
+  - generic [ref=f27e111]:
+    - alert [ref=f27e112]
+    - log [ref=f27e113]
+  - generic [ref=f27e114]:
+    - alert [ref=f27e115]
+    - log [ref=f27e116]
+  - generic [ref=f27e117]:
+    - alert [ref=f27e118]
+    - log [ref=f27e119]

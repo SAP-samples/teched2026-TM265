@@ -1,0 +1,28 @@
+- generic [ref=f9e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f9e7]:
+    - banner [ref=f9e8]:
+      - banner "Shell Bar" [ref=f9e9]:
+        - generic [ref=f9e10]:
+          - button "Back" [ref=f9e30] [cursor=pointer]:
+            - generic [ref=f9e31]: 
+          - button [ref=f9e11] [cursor=pointer]:
+            - img "SAP Logo" [ref=f9e12]
+          - button "Explore " [ref=f9e32] [cursor=pointer]
+          - generic [ref=f9e13] [cursor=pointer]:
+            - heading "My Leave Request" [level=1]
+            - button "My Leave Request" [ref=f9e34]:
+              - generic [aria-hidden] [ref=f9e36]: 
+        - generic [ref=f9e17]:
+          - button "Open Search" [ref=f9e38] [cursor=pointer]:
+            - generic [ref=f9e39]: 
+          - button "Notifications" [ref=f9e40] [cursor=pointer]:
+            - generic [ref=f9e41]: 
+            - text: "2"
+          - button "Profile of Anantharaman Ravi" [ref=f9e18] [cursor=pointer]:
+            - generic: AR
+    - main "Content" [ref=f9e29]:
+      - iframe [active] [ref=f9e42]:
+        - application [active] [ref=f10e1]

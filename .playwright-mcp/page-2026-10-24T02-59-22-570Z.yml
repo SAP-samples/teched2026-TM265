@@ -1,0 +1,474 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to main content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#one-content"
+  - generic [ref=f4e3]:
+    - generic [ref=f4e4]: You can find Global News, Corporate Strategy, HR, IT and General Policy information that is useful for all SAP Employees. You may also find curated content for select business units.
+    - generic [ref=f4e5]:
+      - banner "Site header" [ref=f4e6]:
+        - generic [ref=f4e7]:
+          - link "SAP One" [ref=f4e8] [cursor=pointer]:
+            - /url: /home
+            - generic [ref=f4e10]:
+              - generic [ref=f4e11]: SAP
+              - text: One
+          - button "Explore" [ref=f4e13] [cursor=pointer]
+        - search "Global search" [ref=f4e18]:
+          - generic [ref=f4e19]:
+            - textbox "Search with SAP Corporate Search" [ref=f4e20]:
+              - /placeholder: What are you looking for?
+            - generic: Results will update as you type.
+            - dialog "Available values":
+              - generic: No results found.
+          - generic:
+            - generic [aria-hidden]: What are you looking for?
+            - generic [aria-hidden]:
+              - generic: ⌘
+              - generic: K
+            - generic: Type Command K to search
+          - generic "Open SAP Corporate Search in a new tab and search directly there":
+            - button "Open SAP Corporate Search in a new tab and search directly there"
+        - generic [ref=f4e21]:
+          - link "Open your inbox" [ref=f4e22] [cursor=pointer]:
+            - /url: /admin_area/header_inbox_page/region/0000/lang/en
+          - button "Show Help Topics" [ref=f4e23] [cursor=pointer]
+          - button "Joule" [ref=f4e24] [cursor=pointer]
+          - button "Hi Anantharaman Ravi, activate to see and edit your profile and settings. If you are an editor and/or an administrator you have access to further tools here." [ref=f4e25] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic:
+                - generic: Profile
+                - generic: Settings
+                - generic: Logout
+      - text:                                 
+    - generic [ref=f4e27]:
+      - main "Homepage content" [ref=f4e28]:
+        - generic [ref=f4e31]:
+          - generic [ref=f4e32]:
+            - heading "Home Page Hello" [level=1] [ref=f4e33]:
+              - text: Home Page
+              - generic [aria-hidden] [ref=f4e34]:
+                - generic [ref=f4e35]: नमस्ते
+                - text: ", Anantharaman!"
+              - generic: Hello
+            - generic "Edit the Home Page" [ref=f4e38] [cursor=pointer]:
+              - button "Edit the Home Page" [ref=f4e39]:
+                - generic: Edit
+          - generic [ref=f4e41]:
+            - region "SAP News" [ref=f4e42]:
+              - generic [ref=f4e44]:
+                - generic [ref=f4e46]:
+                  - generic:
+                    - generic:
+                      - heading "SAP News" [level=2]
+                  - generic "More news" [ref=f4e48] [cursor=pointer]:
+                    - link "More news" [ref=f4e49]:
+                      - /url: /news
+                - generic [ref=f4e54]:
+                  - tablist [ref=f4e55]:
+                    - tab "Global" [selected] [ref=f4e56] [cursor=pointer]
+                    - tab "News from Employees" [ref=f4e57] [cursor=pointer]
+                  - tabpanel "Global" [ref=f4e58]:
+                    - region [ref=f4e59]:
+                      - generic [ref=f4e60]:
+                        - 'link "Q3 GEM: Strong Results Show SAP''s AI Strategy is Working. Read the full article" [ref=f4e61] [cursor=pointer]':
+                          - /url: /news/global/q3-gem-strong-results-show-sap-s-ai-strategy-is-working
+                          - 'heading "Q3 GEM: Strong Results Show SAP''s AI Strategy is Working" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e62]:
+                        - link "SAP Releases Q3 Earnings. Read the full article" [ref=f4e63] [cursor=pointer]:
+                          - /url: /news/global/sap-releases-q3-earnings
+                          - heading "SAP Releases Q3 Earnings" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e64]:
+                        - link "“Touch Any Growth Lever in India and You'll Find SAP There”. Read the full article" [ref=f4e65] [cursor=pointer]:
+                          - /url: /news/global/touch-any-growth-lever-in-india-and-you-ll-find-sap-there
+                          - heading "“Touch Any Growth Lever in India and You'll Find SAP There”" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e66]:
+                        - link "How to Follow SAP TechEd in 2026. Read the full article" [ref=f4e67] [cursor=pointer]:
+                          - /url: /news/global/how-to-follow-sap-teched-in-2026
+                          - heading "How to Follow SAP TechEd in 2026" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e68]:
+                        - 'link "AI Roadshows: Helping Every SAP Employee Become AI-Ready. Read the full article" [ref=f4e69] [cursor=pointer]':
+                          - /url: /news/global/ai-roadshows-helping-every-sap-employee-become-ai-ready
+                          - 'heading "AI Roadshows: Helping Every SAP Employee Become AI-Ready" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e70]:
+                        - 'link "SAP’s Competitive AI Advantage: The SAP Knowledge Graph. Read the full article" [ref=f4e71] [cursor=pointer]':
+                          - /url: /news/global/sap-s-competitive-ai-advantage-the-sap-knowledge-graph
+                          - 'heading "SAP’s Competitive AI Advantage: The SAP Knowledge Graph" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e72]:
+                        - link "Introducing SAP Talent Engine. Read the full article" [ref=f4e73] [cursor=pointer]:
+                          - /url: /news/global/introducing-sap-talent-engine
+                          - heading "Introducing SAP Talent Engine" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e74]:
+                        - link "How SAP in India Drives SAP's AI Future. Read the full article" [ref=f4e75] [cursor=pointer]:
+                          - /url: /news/global/how-sap-in-india-drives-sap-s-ai-future
+                          - heading "How SAP in India Drives SAP's AI Future" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e76]:
+                        - link "Learn About Cybersecurity in the Age of AI in New Podcast. Read the full article" [ref=f4e77] [cursor=pointer]:
+                          - /url: /news/global/learn-about-cybersecurity-in-the-age-of-ai-in-new-podcast
+                          - heading "Learn About Cybersecurity in the Age of AI in New Podcast" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e78]:
+                        - link "SAP Connect in 2026. Read the full article" [ref=f4e79] [cursor=pointer]:
+                          - /url: /news/global/sap-connect-in-2026
+                          - heading "SAP Connect in 2026" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e80]:
+                        - link "SAP Showcases the Autonomous Enterprise in Action. Read the full article" [ref=f4e81] [cursor=pointer]:
+                          - /url: /news/global/sap-showcases-the-autonomous-enterprise-in-action
+                          - heading "SAP Showcases the Autonomous Enterprise in Action" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e82]:
+                        - link "SAP to Buy HR AI Startup TechWolf . Read the full article" [ref=f4e83] [cursor=pointer]:
+                          - /url: /news/global/sap-to-buy-hr-ai-startup-techwolf
+                          - heading "SAP to Buy HR AI Startup TechWolf" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e84]:
+                        - 'link "World Mental Health Day: “Even Outside Ukraine, We Cannot Fully Relax”. Read the full article" [ref=f4e85] [cursor=pointer]':
+                          - /url: /news/global/world-mental-health-day-even-outside-ukraine-we-cannot-fully-relax
+                          - 'heading "World Mental Health Day: “Even Outside Ukraine, We Cannot Fully Relax”" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e86]:
+                        - 'link "New Photo Contest: “Small Things, Big Impact”. Read the full article" [ref=f4e87] [cursor=pointer]':
+                          - /url: /news/global/new-photo-contest-small-things-big-impact
+                          - 'heading "New Photo Contest: “Small Things, Big Impact”" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e88]:
+                        - link "SAP Developers Explain Why Choosing the Right AI Model Matters. Read the full article" [ref=f4e89] [cursor=pointer]:
+                          - /url: /news/global/sap-developers-explain-why-choosing-the-right-ai-model-matters
+                          - heading "SAP Developers Explain Why Choosing the Right AI Model Matters" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e90]:
+                        - 'link "It’s OK to Be Human: But Don’t Fall for These Common Cyberattacks!. Read the full article" [ref=f4e91] [cursor=pointer]':
+                          - /url: /news/global/it-s-ok-to-be-human-but-don-t-fall-for-these-common-cyberattacks
+                          - 'heading "It’s OK to Be Human: But Don’t Fall for These Common Cyberattacks!" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e92]:
+                        - 'link "A New Heart for SAP''s Walldorf Campus: WDF01 Reimagined. Read the full article" [ref=f4e93] [cursor=pointer]':
+                          - /url: /news/global/a-new-heart-for-sap-s-walldorf-campus-wdf01-reimagined
+                          - 'heading "A New Heart for SAP''s Walldorf Campus: WDF01 Reimagined" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e94]:
+                        - link "SAP Supports Nepal Flood Relief with Emergency Funding. Read the full article" [ref=f4e95] [cursor=pointer]:
+                          - /url: /news/global/sap-supports-nepal-flood-relief-with-emergency-funding
+                          - heading "SAP Supports Nepal Flood Relief with Emergency Funding" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e96]:
+                        - 'link "Head of Industry AI: “Our Goal Is to Create €1 Billion in Value”. Read the full article" [ref=f4e97] [cursor=pointer]':
+                          - /url: /news/global/head-of-industry-ai-our-goal-is-to-create-1-billion-in-value
+                          - 'heading "Head of Industry AI: “Our Goal Is to Create €1 Billion in Value”" [level=3]'
+                        - generic: This article was created on
+                      - generic [ref=f4e98]:
+                        - link "Eyes on the Future—From Eyewear to Smart Wearables. Read the full article" [ref=f4e99] [cursor=pointer]:
+                          - /url: /news/global/eyes-on-the-future-from-eyewear-to-smart-wearables
+                          - heading "Eyes on the Future—From Eyewear to Smart Wearables" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e100]:
+                        - link "Bringing SAP Business Data Cloud to World of Warcraft. Read the full article" [ref=f4e101] [cursor=pointer]:
+                          - /url: /news/global/bringing-sap-business-data-cloud-to-world-of-warcraft
+                          - heading "Bringing SAP Business Data Cloud to World of Warcraft" [level=3]
+                        - generic: This article was created on
+                      - generic [ref=f4e102]:
+                        - link "Learn About the Importance of SAP Sovereign Cloud in New Podcast. Read the full article" [ref=f4e103] [cursor=pointer]:
+                          - /url: /news/global/learn-about-the-importance-of-sap-sovereign-cloud-in-new-podcast
+                          - heading "Learn About the Importance of SAP Sovereign Cloud in New Podcast" [level=3]
+                        - generic: This article was created on
+                - complementary
+            - region "My Day" [ref=f4e104]:
+              - generic [ref=f4e106]:
+                - generic [ref=f4e108]:
+                  - generic:
+                    - generic:
+                      - heading "My Day" [level=2]
+                  - generic "Access the settings dialog of 'My Day'" [ref=f4e110] [cursor=pointer]:
+                    - button "Access the settings dialog of 'My Day'" [ref=f4e111]
+                - generic [ref=f4e117]:
+                  - generic [ref=f4e118]:
+                    - generic [ref=f4e119]: Today
+                    - generic [ref=f4e121]:
+                      - generic "Join a quick Thought Journey":
+                        - button "Join a quick Thought Journey A guided experience for a moment of awareness" [ref=f4e122] [cursor=pointer]:
+                          - generic [ref=f4e123]:
+                            - generic [ref=f4e124]: Join a quick Thought Journey
+                            - generic [ref=f4e125]: A guided experience for a moment of awareness
+                      - generic "Lunch time!":
+                        - link "Lunch time! See what's for lunch today." [ref=f4e130] [cursor=pointer]:
+                          - /url: ""
+                          - generic [ref=f4e131]:
+                            - generic [ref=f4e132]: Lunch time!
+                            - generic [ref=f4e133]: See what's for lunch today.
+                      - generic "My workspace on campus for today":
+                        - link "My workspace on campus for today" [ref=f4e134] [cursor=pointer]:
+                          - /url: https://launchpad.one.int.sap/site#flexconnect-Display
+                          - generic [aria-hidden] [ref=f4e140]: 
+                      - text: 
+                      - generic "NYSE":
+                        - link "NYSE SAP stock price has decreased by -1.02%" [ref=f4e141] [cursor=pointer]:
+                          - /url: https://www.sap.com/investors/en/stock.html
+                          - generic [ref=f4e142]:
+                            - generic [ref=f4e143]: NYSE
+                            - generic [ref=f4e144]: SAP stock price has decreased by -1.02%
+                          - generic [aria-hidden] [ref=f4e145]: 
+                  - generic [ref=f4e146]:
+                    - generic [ref=f4e147]: Tomorrow
+                    - generic [ref=f4e149]: Currently no events to show for tomorrow
+                - complementary
+            - region "My Pins" [ref=f4e150]:
+              - generic [ref=f4e152]:
+                - generic [ref=f4e154]:
+                  - generic:
+                    - generic:
+                      - heading "My Pins" [level=2]
+                  - generic "Edit the pins in 'My Pins'" [ref=f4e156] [cursor=pointer]:
+                    - button "Edit the pins in 'My Pins'" [ref=f4e157]
+                - navigation [ref=f4e162]:
+                  - link "Expense" [ref=f4e163] [cursor=pointer]:
+                    - /url: https://accounts.sap.com/saml2/idp/sso?sp=https%3A%2F%2Feu1.concursolutions.com
+                    - generic [aria-hidden] [ref=f4e167]: 
+                  - link "Distribution List" [ref=f4e168] [cursor=pointer]:
+                    - /url: https://profiles.wdf.sap.corp/groups?show=owned
+                    - generic [aria-hidden] [ref=f4e172]: 
+                  - link "Review meeting dashboard" [ref=f4e173] [cursor=pointer]:
+                    - /url: https://sap-sac.eu10.sapanalytics.cloud/sap/fpa/ui/app.html#/story2&/s2/9F428186C6E6DCC6233B5269E6558B4A/?viewer=story&mode=present
+                    - generic [aria-hidden] [ref=f4e177]: 
+                  - link "Appriciate" [ref=f4e178] [cursor=pointer]:
+                    - /url: https://sapit-hr-prod-jobpts-web-mt-sap-prod.cfapps.eu10.hana.ondemand.com/social_feed
+                    - generic [aria-hidden] [ref=f4e182]: 
+                  - link "COVID-19" [ref=f4e183] [cursor=pointer]:
+                    - /url: /company/COVID_19
+                  - link "Read about Benefits" [ref=f4e187] [cursor=pointer]:
+                    - /url: /me@sap/benefits
+                  - link "Check Own / Move SAP" [ref=f4e191] [cursor=pointer]:
+                    - /url: /me@sap/equity
+                  - link "Check my Payslip" [ref=f4e195] [cursor=pointer]:
+                    - /url: /me@sap/compensation/payroll
+                  - link "Your messages from SAP" [ref=f4e199] [cursor=pointer]:
+                    - /url: https://communicationhub-portal.cfapps.eu10.hana.ondemand.com/home
+                    - generic [aria-hidden] [ref=f4e203]: 
+                  - link "Create / Cancel Vacation" [ref=f4e204] [cursor=pointer]:
+                    - /url: https://launchpad.one.int.sap/site#leaverequest-create
+                    - generic [aria-hidden] [ref=f4e208]: 
+                  - button "Add pin" [ref=f4e209] [cursor=pointer]
+                - complementary
+            - region "Announcements" [ref=f4e212]:
+              - generic [ref=f4e214]:
+                - generic [ref=f4e216]:
+                  - generic:
+                    - generic:
+                      - heading "Announcements" [level=2]
+                - generic "Slides" [ref=f4e219]:
+                  - generic [ref=f4e221]:
+                    - 'tabpanel "Current page #1" [ref=f4e222]':
+                      - link "Check the Progress of Your Revenue Enabling Bonus KPIs Q3 results are now live." [ref=f4e223] [cursor=pointer]:
+                        - /url: https://one.int.sap/me@sap/compensation/variable_pay_revenue_enabling_bonus_plan
+                        - heading "Check the Progress of Your Revenue Enabling Bonus KPIs" [level=3] [ref=f4e224]:
+                          - text: Check the Progress of Your Revenue Enabling Bonus KPIs
+                          - generic [aria-hidden] [ref=f4e225]: 
+                        - generic [ref=f4e226]: Q3 results are now live.
+                    - tabpanel [aria-hidden]:
+                      - link:
+                        - /url: https://broadcast.sap.com/replay/261022_gem?hash=f561bb366e4e0ab2e715191761fa4a342557a8ed7e6060739c97f1603c4aef67
+                        - heading [level=3]:
+                          - text: Watch the latest Global Employee Meeting Replay
+                          - generic [aria-hidden]: 
+                        - generic: Catch up on Q3 progress and delivery updates from the latest GEM.
+                    - tabpanel [aria-hidden]:
+                      - link:
+                        - /url: https://one.int.sap/me@sap/hrdirect/p_and_c_lounge
+                        - heading [level=3]:
+                          - text: "P&C Lounge: Book an In-Person Meeting with HR"
+                          - generic [aria-hidden]: 
+                        - generic: For HR topics needing a deeper 1:1 conversation—complementing SAP One, Joule, and P&C HRdirect.
+                    - tabpanel [aria-hidden]:
+                      - link:
+                        - /url: https://video.sap.com/media/t/1_dcxtxmmz/381831322
+                        - heading [level=3]:
+                          - text: in:side HQ | Ep. 8 – Exploring SAP's New Flagship Building
+                          - generic [aria-hidden]: 
+                        - generic: Step inside building 01 and discover SAP’s future workplace before it opens in 2027.
+                    - tabpanel [aria-hidden]:
+                      - link:
+                        - /url: https://one.int.sap/me@sap/learning_and_development/career_development/career_development_speaker_series#tab-recordings_of_previous_sessions
+                        - heading [level=3]:
+                          - text: "Replay: Career Development Speaker Session"
+                          - generic [aria-hidden]: 
+                        - generic: Missed it? Watch the recording to see how sideways moves grow your career, with real colleague stories.
+                  - tablist "Slider Navigation" [ref=f4e227]:
+                    - tab [ref=f4e228] [cursor=pointer]:
+                      - button "Show previous page" [ref=f4e229]
+                    - 'tab "Current page #1" [ref=f4e230] [cursor=pointer]'
+                    - tab "Show page 2 of 5" [ref=f4e231] [cursor=pointer]
+                    - tab "Show page 3 of 5" [ref=f4e232] [cursor=pointer]
+                    - tab "Show page 4 of 5" [ref=f4e233] [cursor=pointer]
+                    - tab "Show page 5 of 5" [ref=f4e234] [cursor=pointer]
+                    - tab [ref=f4e235] [cursor=pointer]:
+                      - button "Show next page" [ref=f4e236]
+                - complementary
+            - region "Report an Incident or Concern" [ref=f4e237]:
+              - generic [ref=f4e239]:
+                - generic [ref=f4e241]:
+                  - generic:
+                    - generic:
+                      - heading "Report an Incident or Concern" [level=2]
+                - generic [ref=f4e246]:
+                  - group [ref=f4e248]:
+                    - generic "Compliance" [ref=f4e249] [cursor=pointer]
+                    - generic:
+                      - generic: Concerns relating to bribery, corruption, or fraud
+                      - text: 
+                    - generic: Read more
+                    - text: 
+                    - generic:
+                      - generic: Concerns relating to discrimination, harassment, or retaliation
+                      - text: 
+                    - generic: Read more
+                    - text: 
+                  - group [ref=f4e255]:
+                    - generic "Conflict Resolution" [ref=f4e256] [cursor=pointer]
+                    - generic:
+                      - generic: Contact the Global Ombuds Office for impartial conflict counselling
+                      - text: 
+                    - generic: Read more
+                    - text: 
+                    - generic:
+                      - generic: Request a Business Mediation to get clarity on a challenging situation
+                      - text: 
+                    - generic: Read more
+                    - text: 
+                  - group [ref=f4e262]:
+                    - generic "Customer Information Security Advisory (CISA)" [ref=f4e263] [cursor=pointer]
+                    - generic:
+                      - generic: Create a ticket to request support for security & compliance topics in a sales opportunity or renewal
+                      - text: 
+                    - generic: Read more
+                    - generic:
+                      - generic: Learn more about CISA and how to create a ticket
+                      - text: 
+                    - generic: Read more
+                    - text: 
+                  - group [ref=f4e269]:
+                    - generic "Cyber and Physical Incidents" [ref=f4e270] [cursor=pointer]
+                    - generic:
+                      - generic: Request to investigate a potential cyber security incident
+                      - text: 
+                    - generic: Read more
+                    - generic:
+                      - generic: Submit any physical security incidents
+                      - text: 
+                    - generic: Read more
+                    - generic:
+                      - generic: Unblock URL
+                      - text: 
+                    - generic: Read more
+                  - group [ref=f4e276]:
+                    - generic "Data Exposure and Application" [ref=f4e277] [cursor=pointer]
+                    - generic:
+                      - generic: Submit an Application Security Incident
+                      - text: 
+                    - generic: Read more
+                    - generic:
+                      - generic: Submit any concerns or leakage of PII or confidential information due to human error
+                      - text: 
+                    - generic: Read more
+                  - group [ref=f4e283]:
+                    - generic "Phishing - Suspicious Communications" [ref=f4e284] [cursor=pointer]
+                    - generic:
+                      - generic: Report Phish through Outlook integration
+                      - text: 
+                    - generic: Read more
+                    - generic:
+                      - generic: Report Vishing, suspicious calls, messages, Social Media posts, Scam or Fraud
+                      - text: 
+                    - generic: Read more
+                - complementary
+            - region "Recommended for Me" [ref=f4e289]:
+              - generic [ref=f4e291]:
+                - generic [ref=f4e293]:
+                  - generic:
+                    - generic:
+                      - heading "Recommended for Me" [level=2]
+                - complementary
+            - region "Stock Ticker" [ref=f4e296]:
+              - generic [ref=f4e298]:
+                - generic [ref=f4e300]:
+                  - generic:
+                    - generic:
+                      - heading "Stock Ticker" [level=2]
+                - complementary
+            - region "Did You Know?" [ref=f4e303]:
+              - generic [ref=f4e305]:
+                - generic [ref=f4e307]:
+                  - generic:
+                    - generic:
+                      - heading "Did You Know?" [level=2]
+                - complementary
+            - region "Let’s work the AI way" [ref=f4e310]:
+              - generic [ref=f4e312]:
+                - generic [ref=f4e314]:
+                  - generic:
+                    - generic:
+                      - heading "Let’s work the AI way" [level=2]
+                - complementary
+            - region "Learning" [ref=f4e317]:
+              - generic [ref=f4e319]:
+                - generic [ref=f4e321]:
+                  - generic:
+                    - generic:
+                      - heading "Learning" [level=2]
+                - complementary
+            - region "Microsoft 365" [ref=f4e324]:
+              - generic [ref=f4e326]:
+                - generic [ref=f4e328]:
+                  - generic:
+                    - generic:
+                      - heading "Microsoft 365" [level=2]
+                  - generic "Reveal" [ref=f4e330] [cursor=pointer]:
+                    - button "Reveal" [ref=f4e331]
+                - complementary [ref=f4e334]:
+                  - button "Press or focus to reveal" [ref=f4e335]
+            - region "SAP Dictionary" [ref=f4e336]:
+              - generic [ref=f4e338]:
+                - generic [ref=f4e340]:
+                  - generic:
+                    - generic:
+                      - heading "SAP Dictionary" [level=2]
+                - complementary
+            - region "Events Calendar (beta)" [ref=f4e343]:
+              - generic [ref=f4e345]:
+                - generic [ref=f4e347]:
+                  - generic:
+                    - generic:
+                      - heading "Events Calendar (beta)" [level=2]
+                - complementary
+            - region "My Leave Days" [ref=f4e350]:
+              - generic [ref=f4e352]:
+                - generic [ref=f4e354]:
+                  - generic:
+                    - generic:
+                      - heading "My Leave Days" [level=2]
+                  - generic "Reveal" [ref=f4e356] [cursor=pointer]:
+                    - button "Reveal" [ref=f4e357]
+                - complementary [ref=f4e360]:
+                  - button "Press or focus to reveal" [ref=f4e361]
+      - complementary [ref=f4e362]:
+        - generic "Give us feedback!" [ref=f4e363]:
+          - generic [ref=f4e366]: Was this content helpful?
+          - generic [ref=f4e367]:
+            - generic "It was helpful" [ref=f4e368] [cursor=pointer]:
+              - button "It was helpful" [ref=f4e369]:
+                - generic: "Yes"
+            - generic "It was not helpful" [ref=f4e370] [cursor=pointer]:
+              - button "It was not helpful" [ref=f4e371]:
+                - generic: "No"
+          - generic "Report a technical issue" [ref=f4e372] [cursor=pointer]:
+            - link "Report a technical issue" [ref=f4e373]:
+              - /url: https://url.sap/xog7ns
+              - generic [aria-hidden]: 
+      - contentinfo [ref=f4e374]:
+        - generic "2026-10-01T13:50:22.811Z 1790862622811" [ref=f4e376]

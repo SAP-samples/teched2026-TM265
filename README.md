@@ -106,7 +106,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 | **Storage limit** | Up to 10 MB per file | 1 GB total / 10 MB per file | Depends on data repository |
 | **Supported formats** | PDF, TXT, DOCX, XLSX, CSV, MD · PNG, JPEG, JPG, WEBP | PDF, TXT, DOCX, XLSX, CSV, MD · PNG, JPEG, JPG, WEBP | PDF, DOCX, HTML, TXT · PNG, JPEG, JPG, TIFF, PPT |
 | **Best for** | Workshop transcript, one-off analysis | Recurring engagement context | Shared org standards, SOPs |
-| **Hands-on exercise** | Exercise 3 ↓ | Exercise 1 ↓ | Exercise 4 ↓ |
+| **Hands-on exercise** | Exercise 2 ↓ | Exercise 1 ↓ | Exercise 3 ↓ |
 
 
 ---

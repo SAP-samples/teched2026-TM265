@@ -1,0 +1,200 @@
+- generic [ref=f25e1]:
+  - generic [ref=f25e3]:
+    - banner [ref=f25e4]:
+      - generic [ref=f25e5]:
+        - link [ref=f25e416] [cursor=pointer]:
+          - /url: https://api.slack.com
+          - img "Slack API" [ref=f25e417]
+        - search [ref=f25e9]:
+          - generic [ref=f25e11]:
+            - generic [aria-hidden] [ref=f25e12]: 
+            - textbox "Search" [ref=f25e418]
+        - generic [ref=f25e14]:
+          - link "Documentation" [ref=f25e419] [cursor=pointer]:
+            - /url: https://api.slack.com/#read_the_docs
+          - link "Tutorials" [ref=f25e420] [cursor=pointer]:
+            - /url: https://api.slack.com/tutorials
+          - link "Your Apps" [ref=f25e421] [cursor=pointer]:
+            - /url: https://api.slack.com/apps
+    - generic [ref=f25e18]:
+      - navigation "Main Menu" [ref=f25e422]:
+        - combobox "app_select" [ref=f25e423] [cursor=pointer]:
+          - generic [ref=f25e22]: Claude Assistant
+        - list [ref=f25e30]:
+          - heading "Settings" [level=3] [ref=f25e424]
+          - menuitem "Basic Information" [ref=f25e425] [cursor=pointer]
+          - menuitem "Collaborators" [ref=f25e426] [cursor=pointer]
+          - menuitem "Socket Mode" [ref=f25e427] [cursor=pointer]
+          - menuitem "Install App" [ref=f25e428] [cursor=pointer]
+          - menuitem "Manage Distribution" [ref=f25e429] [cursor=pointer]
+          - heading "Features" [level=3] [ref=f25e430]
+          - menuitem "App Home" [ref=f25e431] [cursor=pointer]
+          - menuitem "Agents" [ref=f25e432] [cursor=pointer]
+          - menuitem "Search App New" [ref=f25e433] [cursor=pointer]:
+            - text: Search App
+            - generic [ref=f25e41]: New
+          - menuitem "Work Object Previews New" [ref=f25e434] [cursor=pointer]:
+            - text: Work Object Previews
+            - generic [ref=f25e44]: New
+          - menuitem "Workflow Steps" [ref=f25e435] [cursor=pointer]
+          - menuitem "Org Level Apps" [ref=f25e436] [cursor=pointer]
+          - menuitem "Incoming Webhooks" [ref=f25e437] [cursor=pointer]
+          - menuitem "Interactivity & Shortcuts" [ref=f25e438] [cursor=pointer]
+          - menuitem "Slash Commands" [ref=f25e439] [cursor=pointer]
+          - menuitem "OAuth & Permissions" [ref=f25e440] [cursor=pointer]
+          - menuitem "MCP Servers New" [ref=f25e441] [cursor=pointer]:
+            - text: MCP Servers
+            - generic [ref=f25e53]: New
+          - menuitem "Event Subscriptions" [ref=f25e442] [cursor=pointer]
+          - menuitem "User ID Translation" [ref=f25e443] [cursor=pointer]
+          - menuitem "App Manifest" [ref=f25e444] [cursor=pointer]
+          - menuitem "Beta Features" [ref=f25e445] [cursor=pointer]
+          - heading "Submit to Slack Marketplace" [level=3] [ref=f25e446]
+          - menuitem "Prepare & Submit" [ref=f25e447] [cursor=pointer]
+          - menuitem "1. Your App Listing" [ref=f25e448]
+          - menuitem "2. Review scopes" [ref=f25e449]
+          - menuitem "3. Security and compliance" [ref=f25e450]
+          - menuitem "4. Testing information" [ref=f25e451]
+          - menuitem "5. Automated checks" [ref=f25e452]
+        - link "Give feedback" [ref=f25e453] [cursor=pointer]:
+          - /url: https://slack.com/help/requests/new?cu_web_tags=app_config_feedback
+        - list [ref=f25e68]:
+          - text: Slack
+          - generic [aria-hidden] [ref=f25e69]: 
+          - link "Help" [ref=f25e454] [cursor=pointer]:
+            - /url: https://slack.com/help
+          - link "Contact" [ref=f25e455] [cursor=pointer]:
+            - /url: https://slack.com/help/requests/new
+          - link "Policies" [ref=f25e456] [cursor=pointer]:
+            - /url: https://slack.com/terms-of-service
+          - link "Our Blog" [ref=f25e457] [cursor=pointer]:
+            - /url: https://slackhq.com
+      - main [ref=f25e74]:
+        - generic [ref=f25e75]:
+          - heading "Basic Information" [level=1] [ref=f25e458]
+          - generic [ref=f25e78]:
+            - generic [ref=f25e80]:
+              - heading "App Credentials" [level=2] [ref=f25e459]
+              - generic [ref=f25e82]: These credentials allow your app to access the Slack API. They are secret. Please don’t share your app credentials with anyone, include them in public code repositories, or store them in insecure ways.
+            - generic [ref=f25e83]:
+              - generic [ref=f25e84]:
+                - strong [ref=f25e86]: App ID
+                - textbox "App ID" [ref=f25e460]:
+                  - /placeholder: ""
+                  - text: A0CBCFMN9UP
+              - generic [ref=f25e91]:
+                - strong [ref=f25e93]: Date of App Creation
+                - textbox "Date of App Creation" [ref=f25e461]:
+                  - /placeholder: ""
+                  - text: October 24th, 2026
+            - generic [ref=f25e98]:
+              - strong [ref=f25e100]:
+                - generic [ref=f25e101]: Client ID
+              - textbox "Client ID" [ref=f25e462]:
+                - /placeholder: ""
+                - text: "9557279667.12386531757975"
+            - generic [ref=f25e106]:
+              - strong [ref=f25e108]:
+                - generic [ref=f25e109]:
+                  - text: Client Secret
+                  - button "About the Client Secret" [ref=f25e463] [cursor=pointer]
+              - generic [ref=f25e115]:
+                - textbox "Client Secret" [ref=f25e464]:
+                  - /placeholder: ""
+                  - text: 7ec6dcfee39b5fbeb44a97cc60d49acf
+                - generic [ref=f25e117]:
+                  - button "Show" [ref=f25e465] [cursor=pointer]
+                  - button "Regenerate" [ref=f25e466] [cursor=pointer]
+            - generic [ref=f25e120]:
+              - strong [ref=f25e122]:
+                - generic [ref=f25e123]:
+                  - text: Signing Secret
+                  - button "About the Signing Secret" [ref=f25e467] [cursor=pointer]
+              - generic [ref=f25e129]:
+                - textbox "Signing Secret" [ref=f25e468]:
+                  - /placeholder: ""
+                  - text: 996839d2ffaaf337a744b361406326d0
+                - generic [ref=f25e131]:
+                  - button "Show" [ref=f25e469] [cursor=pointer]
+                  - button "Regenerate" [ref=f25e470] [cursor=pointer]
+            - generic [ref=f25e134]:
+              - strong [ref=f25e136]:
+                - generic [ref=f25e137]:
+                  - text: Verification Token
+                  - button "About the Verification Token" [ref=f25e471] [cursor=pointer]
+              - generic [ref=f25e143]:
+                - textbox "Verification Token" [ref=f25e472]:
+                  - /placeholder: ""
+                  - text: 0nu7I7moxXsd1z3xaYdALSzu
+                - button "Regenerate" [ref=f25e473] [cursor=pointer]
+          - generic [ref=f25e149]:
+            - heading "App-Level Tokens" [level=2] [ref=f25e474]
+            - paragraph [ref=f25e153]:
+              - text: App-level tokens allow your app to use platform features that apply to multiple (or all) installations—for example, the
+              - link "API to list event authorizations" [ref=f25e475] [cursor=pointer]:
+                - /url: https://api.slack.com/apps/A0CBCFMN9UP/event-subscriptions
+              - text: . Features have distinct scopes, so request only the scopes for the features you need. Each app can have a maximum of 10 app-level tokens at one time.
+            - generic [ref=f25e155]:
+              - heading "Tokens" [level=4] [ref=f25e476]
+              - generic [ref=f25e375]:
+                - generic [ref=f25e376]: Token Name
+                - generic [ref=f25e377]: Scope
+              - generic [ref=f25e378]:
+                - button "socket-token" [ref=f25e477] [cursor=pointer]
+                - generic [ref=f25e381]: connections:write
+            - generic [ref=f25e157]:
+              - generic [ref=f25e158]:
+                - heading "Token rotation" [level=3] [ref=f25e478]
+                - switch "Token rotation" [ref=f25e479] [cursor=pointer]
+                - text: 
+              - paragraph [ref=f25e161]: Opt in to rotating app-level tokens so new tokens automatically expire after they’re issued, for better security. This can’t be undone.
+            - button "Generate Token and Scopes" [active] [ref=f25e480] [cursor=pointer]
+          - generic [ref=f25e165]:
+            - generic [ref=f25e167]:
+              - heading "Display Information" [level=2] [ref=f25e481]
+              - generic [ref=f25e169]:
+                - text: This information will be shown in the Slack Marketplace and in Slack. For more information, view our
+                - link "App Detail Guidelines" [ref=f25e482] [cursor=pointer]:
+                  - /url: https://api.slack.com/start/distributing/guidelines
+                - text: .
+            - generic [ref=f25e171]:
+              - generic [ref=f25e175] [cursor=pointer]:
+                - generic [ref=f25e176]: App name
+                - textbox "App name" [ref=f25e483]:
+                  - /placeholder: An app name…
+                  - text: Claude Assistant
+              - generic [ref=f25e183] [cursor=pointer]:
+                - generic [ref=f25e184]: Short description
+                - textbox "Short description" [ref=f25e484]:
+                  - /placeholder: Add a short description…
+                  - text: AI assistant powered by Claude via HAI proxy
+            - generic [ref=f25e188]:
+              - generic [ref=f25e190]:
+                - strong [ref=f25e192]: App icon & Preview
+                - generic [ref=f25e194]:
+                  - button "Add app icon" [ref=f25e485] [cursor=pointer]:
+                    - generic [ref=f25e197]: + Add App Icon
+                  - generic [ref=f25e198]:
+                    - generic [ref=f25e199]:
+                      - generic [ref=f25e200]: Claude Assistant
+                      - generic [ref=f25e201]: APP
+                    - generic [ref=f25e202]: AI assistant powered by Claude via HAI proxy
+              - generic [ref=f25e204]:
+                - strong [ref=f25e206]: Background color
+                - generic [ref=f25e208]:
+                  - button "Choose color for Background color" [ref=f25e486] [cursor=pointer]
+                  - generic [ref=f25e210]: "#"
+                  - textbox "Background color" [ref=f25e487]: 1A1A2E
+            - generic [ref=f25e213]:
+              - generic [ref=f25e214]: Long description
+              - textbox "Long description" [ref=f25e488]:
+                - /placeholder: Add a long description that will show up on your App Detail page. You can format your description with bold text, lists and more.
+            - button "Save Changes" [disabled]
+          - generic [ref=f25e218]:
+            - heading "Delete App" [level=2] [ref=f25e489]
+            - paragraph [ref=f25e222]: If your app is listed in the Slack Marketplace, please communicate any plans to deprecate it to your users, and be prepared to respond to questions and support requests after deleting it.
+            - paragraph [ref=f25e223]: Your app has 0 authed users.
+            - button "Delete App" [ref=f25e490] [cursor=pointer]
+  - generic [ref=f25e225]:
+    - alert [ref=f25e226]
+    - log [ref=f25e227]

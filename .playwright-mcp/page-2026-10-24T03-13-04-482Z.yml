@@ -1,0 +1,414 @@
+- generic [ref=f9e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f9e7]:
+    - banner [ref=f9e8]:
+      - banner "Shell Bar" [ref=f9e9]:
+        - generic [ref=f9e10]:
+          - button "Back" [ref=f9e30] [cursor=pointer]:
+            - generic [ref=f9e31]: 
+          - button [ref=f9e11] [cursor=pointer]:
+            - img "SAP Logo" [ref=f9e12]
+          - button "Explore " [ref=f9e32] [cursor=pointer]
+          - generic [ref=f9e13] [cursor=pointer]:
+            - heading "My Leave Request" [level=1]
+            - button "My Leave Request" [ref=f9e56]:
+              - generic [aria-hidden] [ref=f9e36]: 
+        - generic [ref=f9e17]:
+          - button "Open Search" [ref=f9e38] [cursor=pointer]:
+            - generic [ref=f9e39]: 
+          - button "Joule" [ref=f9e43] [cursor=pointer]:
+            - generic [ref=f9e44]: 
+          - button "Open Help" [ref=f9e45] [cursor=pointer]:
+            - generic [ref=f9e46]: 
+          - button "supoort" [ref=f9e47] [cursor=pointer]:
+            - generic [ref=f9e48]: 
+          - button "Notifications" [ref=f9e40] [cursor=pointer]:
+            - generic [ref=f9e41]: 
+            - text: "2"
+          - button "Profile of Anantharaman Ravi" [ref=f9e18] [cursor=pointer]:
+            - generic: AR
+    - main "Content" [ref=f9e29]:
+      - iframe [active] [ref=f9e42]:
+        - application [ref=f10e1]:
+          - generic:
+            - status
+            - alert [ref=f10e819]: Request sent successfully
+          - generic [ref=f10e7]:
+            - region [ref=f10e11]:
+              - text: 
+              - main [ref=f10e12]:
+                - form [ref=f10e13]:
+                  - generic [ref=f10e14]:
+                    - button "Expand/Collapse" [expanded] [ref=f10e15] [cursor=pointer]:
+                      - generic [aria-hidden] [ref=f10e17]: 
+                    - heading "Entitlement" [level=2] [ref=f10e19]
+                  - application [ref=f10e21]:
+                    - generic [ref=f10e22]:
+                      - heading "Items (4)" [level=2] [ref=f10e23]
+                      - generic "Show From" [ref=f10e25]
+                      - generic "Show Entitlement From" [ref=f10e26]:
+                        - generic [ref=f10e27]:
+                          - textbox "Show Entitlement From" [ref=f10e28]:
+                            - /placeholder: e.g. 31.12.2026
+                            - text: 24.10.2026
+                          - generic [aria-hidden] [ref=f10e30] [cursor=pointer]: 
+                    - table "Items (4) Tabular List" [ref=f10e31]:
+                      - rowgroup [ref=f10e32]:
+                        - row [ref=f10e33]:
+                          - columnheader "Leave Type" [ref=f10e34]
+                          - columnheader "Validity" [ref=f10e37]
+                          - columnheader "Available" [ref=f10e40]
+                          - columnheader "Planned" [ref=f10e43]
+                          - columnheader "Used" [ref=f10e46]
+                          - columnheader "Entitlement" [ref=f10e49]
+                      - rowgroup [ref=f10e52]:
+                        - row [ref=f10e611]:
+                          - cell "Annual Leave" [ref=f10e54]
+                          - cell "01.01.2026 – 31.12.2026" [ref=f10e58]
+                          - cell "19 Days" [ref=f10e612]:
+                            - generic [ref=f10e62]:
+                              - generic [ref=f10e63]: "19"
+                              - generic [ref=f10e64]: Days
+                          - cell "1 Day" [ref=f10e613]:
+                            - generic [ref=f10e66]:
+                              - generic [ref=f10e67]: "1"
+                              - generic [ref=f10e68]: Day
+                          - cell "4 Days" [ref=f10e69]:
+                            - generic [ref=f10e70]:
+                              - generic [ref=f10e71]: "4"
+                              - generic [ref=f10e72]: Days
+                          - cell "24 Days" [ref=f10e73]:
+                            - generic [ref=f10e74]:
+                              - generic [ref=f10e75]: "24"
+                              - generic [ref=f10e76]: Days
+                        - row [ref=f10e77]:
+                          - cell "Sick/Carer's Leave" [ref=f10e78]
+                          - cell "01.01.2026 – 31.12.2026" [ref=f10e82]
+                          - cell "11 Days" [ref=f10e85]:
+                            - generic [ref=f10e86]:
+                              - generic [ref=f10e87]: "11"
+                              - generic [ref=f10e88]: Days
+                          - cell "0 Days" [ref=f10e89]:
+                            - generic [ref=f10e90]:
+                              - generic [ref=f10e91]: "0"
+                              - generic [ref=f10e92]: Days
+                          - cell "3 Days" [ref=f10e93]:
+                            - generic [ref=f10e94]:
+                              - generic [ref=f10e95]: "3"
+                              - generic [ref=f10e96]: Days
+                          - cell "14 Days" [ref=f10e97]:
+                            - generic [ref=f10e98]:
+                              - generic [ref=f10e99]: "14"
+                              - generic [ref=f10e100]: Days
+                        - row [ref=f10e101]:
+                          - cell "Hospitalization" [ref=f10e102]
+                          - cell "01.01.2026 – 31.12.2026" [ref=f10e106]
+                          - cell "46 Days" [ref=f10e109]:
+                            - generic [ref=f10e110]:
+                              - generic [ref=f10e111]: "46"
+                              - generic [ref=f10e112]: Days
+                          - cell "0 Days" [ref=f10e113]:
+                            - generic [ref=f10e114]:
+                              - generic [ref=f10e115]: "0"
+                              - generic [ref=f10e116]: Days
+                          - cell "0 Days" [ref=f10e117]:
+                            - generic [ref=f10e118]:
+                              - generic [ref=f10e119]: "0"
+                              - generic [ref=f10e120]: Days
+                          - cell "46 Days" [ref=f10e121]:
+                            - generic [ref=f10e122]:
+                              - generic [ref=f10e123]: "46"
+                              - generic [ref=f10e124]: Days
+                        - row [ref=f10e125]:
+                          - cell "Educational Leave" [ref=f10e126]
+                          - cell "01.01.2026 – 31.12.2026" [ref=f10e130]
+                          - cell "7 Days" [ref=f10e133]:
+                            - generic [ref=f10e134]:
+                              - generic [ref=f10e135]: "7"
+                              - generic [ref=f10e136]: Days
+                          - cell "0 Days" [ref=f10e137]:
+                            - generic [ref=f10e138]:
+                              - generic [ref=f10e139]: "0"
+                              - generic [ref=f10e140]: Days
+                          - cell "0 Days" [ref=f10e141]:
+                            - generic [ref=f10e142]:
+                              - generic [ref=f10e143]: "0"
+                              - generic [ref=f10e144]: Days
+                          - cell "7 Days" [ref=f10e145]:
+                            - generic [ref=f10e146]:
+                              - generic [ref=f10e147]: "7"
+                              - generic [ref=f10e148]: Days
+                      - progressbar "Please wait" [ref=f10e820]
+                - form [ref=f10e150]:
+                  - generic [ref=f10e151]:
+                    - button "Expand/Collapse" [expanded] [ref=f10e152] [cursor=pointer]:
+                      - generic [aria-hidden] [ref=f10e154]: 
+                    - heading "Request Overview" [level=2] [ref=f10e156]
+                  - generic [ref=f10e157]:
+                    - generic [ref=f10e825]:
+                      - radiogroup [ref=f10e826]:
+                        - radio "Calendar" [ref=f10e827] [cursor=pointer]
+                        - radio "Items (11)" [checked] [ref=f10e829] [cursor=pointer]
+                      - generic "Show From" [ref=f10e832]
+                      - generic "Show Leave Requests From" [ref=f10e833]:
+                        - generic [ref=f10e834]:
+                          - textbox "Show Leave Requests From" [ref=f10e835]:
+                            - /placeholder: e.g. 31.12.2026
+                            - text: 24.10.2025
+                          - generic [aria-hidden] [ref=f10e837] [cursor=pointer]: 
+                    - application "Tabular List" [ref=f10e171]:
+                      - table "Tabular List" [ref=f10e172]:
+                        - rowgroup [ref=f10e173]:
+                          - row "Leave Type Validity Status Approver Quota Used" [ref=f10e174]:
+                            - columnheader "Leave Type" [ref=f10e175]
+                            - columnheader "Validity" [ref=f10e178]
+                            - columnheader "Status" [ref=f10e181]
+                            - columnheader "Approver" [ref=f10e184]
+                            - columnheader "Quota Used" [ref=f10e187]
+                            - columnheader [ref=f10e190]
+                            - columnheader [ref=f10e192]
+                            - columnheader [ref=f10e194]
+                        - rowgroup [ref=f10e195]:
+                          - row [ref=f10e627] [cursor=pointer]:
+                            - 'cell "New: Annual Leave" [ref=f10e628]'
+                            - cell "02.11.2026" [ref=f10e629]
+                            - cell [ref=f10e204]:
+                              - group [ref=f10e205]: Sent
+                            - cell "Fu Steven Peng Chen" [ref=f10e206]
+                            - cell "1 Day" [ref=f10e209]:
+                              - generic [ref=f10e210]:
+                                - generic [ref=f10e211]: "1"
+                                - generic [ref=f10e212]: Day
+                            - cell "Edit Request" [ref=f10e213]:
+                              - button "Edit Request" [ref=f10e214]:
+                                - generic [aria-hidden] [ref=f10e630]: 
+                            - cell "Delete Request" [ref=f10e217]:
+                              - button "Delete Request" [ref=f10e218]:
+                                - generic [aria-hidden] [ref=f10e631]: 
+                            - cell [aria-hidden] [ref=f10e221]:
+                              - generic [aria-hidden] [ref=f10e632]: 
+                          - row [ref=f10e633] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e634]
+                            - cell "14.09.2026" [ref=f10e635]
+                            - cell [ref=f10e231]:
+                              - group [ref=f10e232]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e233]
+                            - cell "1 Day" [ref=f10e236]:
+                              - generic [ref=f10e237]:
+                                - generic [ref=f10e238]: "1"
+                                - generic [ref=f10e239]: Day
+                            - cell "Edit Request" [ref=f10e240]:
+                              - button "Edit Request" [ref=f10e241]:
+                                - generic [aria-hidden] [ref=f10e636]: 
+                            - cell "Delete Request" [ref=f10e244]:
+                              - button "Delete Request" [ref=f10e245]:
+                                - generic [aria-hidden] [ref=f10e637]: 
+                            - cell [aria-hidden] [ref=f10e248]:
+                              - generic [aria-hidden] [ref=f10e638]: 
+                          - row [ref=f10e639] [cursor=pointer]:
+                            - cell "Carer's Leave" [ref=f10e640]
+                            - cell "08.09.2026" [ref=f10e641]
+                            - cell [ref=f10e258]:
+                              - group [ref=f10e259]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e260]
+                            - cell "1 Day" [ref=f10e263]:
+                              - generic [ref=f10e264]:
+                                - generic [ref=f10e265]: "1"
+                                - generic [ref=f10e266]: Day
+                            - cell "Edit Request" [ref=f10e267]:
+                              - button "Edit Request" [ref=f10e268]:
+                                - generic [aria-hidden] [ref=f10e642]: 
+                            - cell "Delete Request" [ref=f10e271]:
+                              - button "Delete Request" [ref=f10e272]:
+                                - generic [aria-hidden] [ref=f10e643]: 
+                            - cell [aria-hidden] [ref=f10e275]:
+                              - generic [aria-hidden] [ref=f10e644]: 
+                          - row [ref=f10e645] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e278]
+                            - cell "27.08.2026" [ref=f10e646]
+                            - cell [ref=f10e285]:
+                              - group [ref=f10e286]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e287]
+                            - cell "1 Day" [ref=f10e290]:
+                              - generic [ref=f10e291]:
+                                - generic [ref=f10e292]: "1"
+                                - generic [ref=f10e293]: Day
+                            - cell "Edit Request" [ref=f10e294]:
+                              - button "Edit Request" [ref=f10e295]:
+                                - generic [aria-hidden] [ref=f10e647]: 
+                            - cell "Delete Request" [ref=f10e298]:
+                              - button "Delete Request" [ref=f10e299]:
+                                - generic [aria-hidden] [ref=f10e648]: 
+                            - cell [aria-hidden] [ref=f10e302]:
+                              - generic [aria-hidden] [ref=f10e649]: 
+                          - row [ref=f10e650] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e305]
+                            - cell "27.07.2026" [ref=f10e651]
+                            - cell [ref=f10e312]:
+                              - group [ref=f10e313]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e314]
+                            - cell "1 Day" [ref=f10e652]:
+                              - generic [ref=f10e318]:
+                                - generic [ref=f10e319]: "1"
+                                - generic [ref=f10e320]: Day
+                            - cell "Edit Request" [ref=f10e321]:
+                              - button "Edit Request" [ref=f10e322]:
+                                - generic [aria-hidden] [ref=f10e653]: 
+                            - cell "Delete Request" [ref=f10e325]:
+                              - button "Delete Request" [ref=f10e326]:
+                                - generic [aria-hidden] [ref=f10e654]: 
+                            - cell [aria-hidden] [ref=f10e329]:
+                              - generic [aria-hidden] [ref=f10e655]: 
+                          - row [ref=f10e656] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e332]
+                            - cell "23.04.2026 – 28.04.2026" [ref=f10e657]
+                            - cell [ref=f10e339]:
+                              - group [ref=f10e340]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e341]
+                            - cell "4 Day" [ref=f10e658]:
+                              - generic [ref=f10e345]:
+                                - generic [ref=f10e346]: "4"
+                                - generic [ref=f10e347]: Day
+                            - cell "Edit Request" [ref=f10e348]:
+                              - button "Edit Request" [ref=f10e349]:
+                                - generic [aria-hidden] [ref=f10e659]: 
+                            - cell "Delete Request" [ref=f10e352]:
+                              - button "Delete Request" [ref=f10e353]:
+                                - generic [aria-hidden] [ref=f10e660]: 
+                            - cell [aria-hidden] [ref=f10e356]:
+                              - generic [aria-hidden] [ref=f10e661]: 
+                          - row [ref=f10e662] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e663]
+                            - cell "25.03.2026 – 31.03.2026" [ref=f10e664]
+                            - cell [ref=f10e366]:
+                              - group [ref=f10e367]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e368]
+                            - cell "5 Days" [ref=f10e665]:
+                              - generic [ref=f10e372]:
+                                - generic [ref=f10e373]: "5"
+                                - generic [ref=f10e374]: Days
+                            - cell "Edit Request" [ref=f10e666]:
+                              - button "Edit Request" [ref=f10e667]:
+                                - generic [aria-hidden] [ref=f10e669]: 
+                            - cell "Delete Request" [ref=f10e670]:
+                              - button "Delete Request" [ref=f10e671]:
+                                - generic [aria-hidden] [ref=f10e673]: 
+                            - cell [aria-hidden] [ref=f10e377]:
+                              - generic [aria-hidden] [ref=f10e674]: 
+                          - row [ref=f10e675] [cursor=pointer]:
+                            - cell "Sick Leave" [ref=f10e676]
+                            - cell "19.02.2026" [ref=f10e677]
+                            - cell [ref=f10e387]:
+                              - group [ref=f10e388]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e389]
+                            - cell "1 Day" [ref=f10e678]:
+                              - generic [ref=f10e393]:
+                                - generic [ref=f10e394]: "1"
+                                - generic [ref=f10e395]: Day
+                            - cell [ref=f10e679]
+                            - cell [ref=f10e680]
+                            - cell [aria-hidden] [ref=f10e404]:
+                              - generic [aria-hidden] [ref=f10e681]: 
+                          - row [ref=f10e682] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e683]
+                            - cell "09.02.2026 – 13.02.2026" [ref=f10e684]
+                            - cell [ref=f10e414]:
+                              - group [ref=f10e415]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e416]
+                            - cell "5 Days" [ref=f10e685]:
+                              - generic [ref=f10e420]:
+                                - generic [ref=f10e421]: "5"
+                                - generic [ref=f10e422]: Days
+                            - cell "Edit Request" [ref=f10e686]:
+                              - button "Edit Request" [ref=f10e687]:
+                                - generic [aria-hidden] [ref=f10e689]: 
+                            - cell "Delete Request" [ref=f10e690]:
+                              - button "Delete Request" [ref=f10e691]:
+                                - generic [aria-hidden] [ref=f10e693]: 
+                            - cell [aria-hidden] [ref=f10e425]:
+                              - generic [aria-hidden] [ref=f10e694]: 
+                          - row [ref=f10e695] [cursor=pointer]:
+                            - cell "Carer's Leave" [ref=f10e696]
+                            - cell "21.01.2026" [ref=f10e697]
+                            - cell [ref=f10e435]:
+                              - group [ref=f10e436]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e437]
+                            - cell "1 Day" [ref=f10e698]:
+                              - generic [ref=f10e441]:
+                                - generic [ref=f10e442]: "1"
+                                - generic [ref=f10e443]: Day
+                            - cell [ref=f10e699]
+                            - cell [ref=f10e700]
+                            - cell [aria-hidden] [ref=f10e452]:
+                              - generic [aria-hidden] [ref=f10e701]: 
+                          - row [ref=f10e702] [cursor=pointer]:
+                            - cell "Annual Leave" [ref=f10e703]
+                            - cell "22.12.2025 – 29.12.2025" [ref=f10e707]
+                            - cell [ref=f10e710]:
+                              - group [ref=f10e711]: Approved
+                            - cell "Fu Steven Peng Chen" [ref=f10e712]
+                            - cell "5 Days" [ref=f10e715]:
+                              - generic [ref=f10e716]:
+                                - generic [ref=f10e717]: "5"
+                                - generic [ref=f10e718]: Days
+                            - cell "Edit Request" [ref=f10e719]:
+                              - button "Edit Request" [ref=f10e720]:
+                                - generic [aria-hidden] [ref=f10e722]: 
+                            - cell "Delete Request" [ref=f10e723]:
+                              - button "Delete Request" [ref=f10e724]:
+                                - generic [aria-hidden] [ref=f10e726]: 
+                            - cell [aria-hidden] [ref=f10e727]:
+                              - generic [aria-hidden] [ref=f10e728]: 
+                      - progressbar "Please wait" [ref=f10e838]
+              - region [ref=f10e455]:
+                - toolbar [ref=f10e456]:
+                  - button "Create Request" [active] [ref=f10e458] [cursor=pointer]
+                  - button "Switch assignment" [ref=f10e461] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=f10e463]: 
+            - text: " :  * : "
+  - generic [ref=f9e49]:
+    - generic:
+      - generic:
+        - navigation:
+          - tablist "Navigation menu":
+            - generic:
+              - tab "SAP Launchpad" [selected]
+              - tabpanel "SAP Launchpad SAP Launchpad SAP Launchpad Ask a Question Report an Issue Send Us Feedback Get Help":
+                - generic:
+                  - list:
+                    - listitem:
+                      - link "Ask a Question":
+                        - /url: https://sap.stackenterprise.co/questions/ask?tags=launchpad
+                        - generic:
+                          - text: Ask a Question
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Get answers about SAP Launchpad from the Stack@SAP community
+                    - listitem:
+                      - link "Report an Issue":
+                        - /url: /site#unifiedticketing-Display&/create/ZINE/IMAS_CLD_FLP/Issue%20with%20'Launchpad,%20SAP%20Build%20Work%20Zone,%20standard%20edition'/03/null/null/While%20accessing%20the%20app%20via%20the%20Launchpad
+                        - generic:
+                          - text: Report an Issue
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Create a ticket for our SAP Launchpad technical support team
+                    - listitem:
+                      - link "Send Us Feedback":
+                        - /url: /site#feedbackservice-Display&/topic/965e891a-b3e0-4bac-a04d-b7b1bec7ab47
+                        - generic:
+                          - text: Send Us Feedback
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Help us to improve the experience with your constructive feedback
+                    - listitem:
+                      - link "Get Help":
+                        - /url: https://sapit-cloud.int.sap/knowledgebase/processes/landscape/flp
+                        - generic:
+                          - text: Get Help
+                          - generic [aria-hidden]: 
+                        - generic [aria-hidden]: Find help in our SAP Launchpad Knowledge Base
+            - generic:
+              - tab "Platforms"
+            - generic:
+              - tab "Get Support"
+  - generic:
+    - region "Notification"
