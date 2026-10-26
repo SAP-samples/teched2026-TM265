@@ -51,14 +51,23 @@ Log in using the credentials provided. You should land on the **J4C Home screen*
 
 Let us use the Fit To standart prompt to prepare for the customer workshop. 
 
-1. Goto cosole [Prompt Library](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/prompt-library?source=SAP+Teched)
-2. Filter on 'SAP Teched'
+1. Goto cosole by clicking on "Quick Links"  and "Open Prompt Library" 
 
-![Prompt Library](<exercises/Assets/Prompt Lib.jpg>)
+|   |   |   |
+| --- | --- | --- |
+| ![QL](exercises/Assets/QuickLink.png) | => | ![PL](exercises/Assets/PL.png) |
 
-3. Select the first prompt 'Generate a Fit-to-Standard Workshop Invitation'. 
+
+or you can directly go from here -  [Prompt Library](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/prompt-library?source=SAP+Teched)
+
+---
+2. Filter on 'SAP Teched 2026'
+
+![Prompt Library](<exercises/Assets/Prompt Lib.png>)
+
+3. Select the first prompt '1. Fit-to-Standard Pre-Read content'. (_For the ease of this excersise all prompts are numbered from 1 to 5_)
 4. You may read the full prompt, and copy the same. 
-5. Open [Joule for consultant](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/joule) and paste the prompt and execute it. 
+5. Open [Joule for consultant](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/joule) and paste the prompt and execute it or simply click on "Try in Joule" button ![Joule](exercises/Assets/TryInJoule.png)
 6. Notice how an invite template is generated, including formal email template structure. 
 
 
@@ -311,8 +320,12 @@ File upload / attachment is supported in Joule for consultants.
 
 ### Exercise 2.2 — Generate FS/TS using the transcript
 
-1. Run the below prompts in a sequence.
-Optional
+1. Run the below prompts in a sequence. 
+
+---
+
+**🅰️ Below is optional set of prompts**
+
 | S. No | Prompt | Output/Comments |
 |-------|--------|-----------------|
 | 1 | Pick user stories tagged as gaps, list them as a backlog-item to be can be used in sprint planning with actual start and end date, priority, sprint ID. |  Backlog items |
@@ -320,6 +333,8 @@ Optional
 | 3 | Draft a technical specification from above functional specification which can act as reference for development.  Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind. Make sure the technical specification follows clean core principles, Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | Technical specification document|
 | 4 | List unit test steps referencing functional specification & technical specification and user stories. Test steps should have description, Navigation path including transactions or FIORI apps, expected test result & actual test results. | Test script with unit test steps |
 ---
+
+**🅱️ Below is main set of prompts**
 
 | S. No | Prompt | Output/Comments |
 |-------|--------|-----------------|
