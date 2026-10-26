@@ -27,7 +27,7 @@ Every feature is grounded in a real MM consulting scenario on SAP best practice 
 | — | 🔷 **Use Case 1 — Workshop to Specification** | |
 | 1 | Expert Workspace: Create the Fit-to-Standard Workshop Expert | 20 min |
 | 2 | File Upload: Workshop Transcript | 15 min |
-| 3 | Document Generation | 15 min |
+| 3 | Project deliverables Generation | 15 min |
 | — | 🔶 **Use Case 2 — Requirements from BRD to Specification** | |
 | 4 | Custom Knowledge Grounding | 15 min |
 | — | Wrap-up & Q&A | 5 min |
@@ -59,10 +59,10 @@ Let us use the Fit To standart prompt to prepare for the customer workshop.
 3. Select the first prompt 'Generate a Fit-to-Standard Workshop Invitation'. 
 4. You may read the full prompt, and copy the same. 
 5. Open [Joule for consultant](https://internal-event-sap-joule-for-consultants-marcus-1r5l4cxm.eu10.sapj4c.cloud.sap/dashboard/joule) and paste the prompt and execute it. 
-6. Notice how an invite template is generated, including formal email template and document structure. 
+6. Notice how an invite template is generated, including formal email template structure. 
 
 
->Similarly, execute the prompts,**'Create a Fit-to-Standard Pre-Read document.'** and **'Compare Public Cloud versus Private Cloud Fit-to-Standard Workshops'**. 
+>Similarly, execute the prompts,**'Create a Fit-to-Standard Pre-Read content.'** and **'Compare Public Cloud versus Private Cloud Fit-to-Standard Workshops'**. 
 ><br>
 >These prompts help you understand the context of a fit-to-standard workshop and would be helpful for rest of the exercises. 
 
@@ -114,7 +114,7 @@ At SAP Sapphire 2026, SAP introduced three complementary ways to bring customer-
 ---
 
 ## 🔷 Use Case 1 — Workshop to Specification
-*Expert Workspace · File Upload · Document Generation*
+*Expert Workspace · File Upload · Project deliverable Generation*
 
 ---
 
@@ -311,7 +311,15 @@ File upload / attachment is supported in Joule for consultants.
 
 ### Exercise 2.2 — Generate FS/TS using the transcript
 
-1. Run the below prompts in a sequence. 
+1. Run the below prompts in a sequence.
+Optional
+| S. No | Prompt | Output/Comments |
+|-------|--------|-----------------|
+| 1 | Pick user stories tagged as gaps, list them as a backlog-item to be can be used in sprint planning with actual start and end date, priority, sprint ID. |  Backlog items |
+| 2 | Draft a functional specification based on User Stories tagged as gaps. Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind. Structure the response with the following sections: 1. Introduction 2. Purpose of document 3. Why development is required 4. Technical details 5. User stories 6. Test cases. | Functional specification with sections described in prompt. |
+| 3 | Draft a technical specification from above functional specification which can act as reference for development.  Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind. Make sure the technical specification follows clean core principles, Describe the technical design covering data model, integration points, and any ABAP/BTP/HANA components involved. List configuration steps, dependencies, authorizations, and exception handling considerations. | Technical specification document|
+| 4 | List unit test steps referencing functional specification & technical specification and user stories. Test steps should have description, Navigation path including transactions or FIORI apps, expected test result & actual test results. | Test script with unit test steps |
+---
 
 | S. No | Prompt | Output/Comments |
 |-------|--------|-----------------|
@@ -361,11 +369,19 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 
 3. Run **Prompt 2** as a follow-up in the **same conversation**:
 
-   > *"Generate a functional specification clubbing REQ-12, REQ-13 and REQ-09 as they are logically related. The functional specification should have following sections 1. Introduction 2. Purpose of document 3. Why development is required 4. technical details 5.User stories 6. Test cases 7. Document history."*
+   > *"Draft a functional specification that combines REQ-09 and REQ-11, as they are logically related. Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind.
+Structure the response with the following sections:
+
+Introduction
+Purpose of Document
+Why Development is Required
+Technical Details
+User Stories
+Test Cases"*
 
    J4C surfaces the relationships between all three requirements from the BRD and produces a combined functional specification — without the consultant manually cross-referencing them.
 
-> **💡 Why this matters:** Requirements in a BRD are rarely standalone. REQ-09, REQ-12, and REQ-13 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BRD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
+> **💡 Why this matters:** Requirements in a BRD are rarely standalone. REQ-09, REQ-11 may describe related billing rules that belong in a single development object. Grounding lets J4C surface these relationships and cluster them intelligently — work that would take a consultant hours to do manually across a large BRD. The third prompt adds another layer of value: surfacing hidden scope that is easy to miss but critical for future-phase planning.
 
 
 <br>
