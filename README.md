@@ -385,14 +385,14 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 3. Run **Prompt 2** as a follow-up in the **same conversation**:
 
    > *"Draft a functional specification that combines REQ-09 and REQ-11, as they are logically related. Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind.
-Structure the response with the following sections:
-
-Introduction
-Purpose of Document
-Why Development is Required
-Technical Details
-User Stories
-Test Cases"*
+   > Structure the response with the following sections:
+   >
+   > Introduction
+   > Purpose of Document
+   > Why Development is Required
+   > Technical Details
+   > User Stories
+   > Test Cases"*
 
    J4C surfaces the relationships between all three requirements from the BRD and produces a combined functional specification — without the consultant manually cross-referencing them.
 
