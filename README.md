@@ -307,7 +307,7 @@ File upload / attachment is supported in Joule for consultants.
 
 1. Start a **new conversation** in J4C. 
 2. Choose the expert **18J Fit-to-Standard Analyst**, from My Expert picker
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment. The transcript is found here- [Workshop transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx)
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment. The transcript is found here- [Workshop transcript](/exercises/FTS_Workshop_18J_Transcript%20V3%20Final.docx)
 4. Submit:
 
    > *"As a MM consultant, a fit to standard workshop is conducted in procure to pay stream on business process scope item 18J Requisitioning. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
