@@ -307,7 +307,7 @@ File upload / attachment is supported in Joule for consultants.
 
 1. Start a **new conversation** in J4C. 
 2. Choose the expert **18J Fit-to-Standard Analyst**, from My Expert picker
-3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment. The transcript is found here- [Workshop transcript](/exercises/FTS_Workshop_19J_Transcript%20V3%20Final.docx)
+3. Upload **`FTS-18J-Workshop-Transcript.docx`** using the attachment. The transcript is found here- [Workshop transcript](/exercises/FTS_Workshop_18J_Transcript%20V3%20Final.docx)
 4. Submit:
 
    > *"As a MM consultant, a fit to standard workshop is conducted in procure to pay stream on business process scope item 18J Requisitioning. Based on attached fit to standard workshop transcript, extract user stories in a table with list of user stories, Personas and tag user stories as standard or gap."*
@@ -385,14 +385,14 @@ Custom Knowledge Grounding is already enabled for this session's tenant. Start a
 3. Run **Prompt 2** as a follow-up in the **same conversation**:
 
    > *"Draft a functional specification that combines REQ-09 and REQ-11, as they are logically related. Present the entire output directly in the chat — do not generate, save, or attach any file or document of any kind.
-Structure the response with the following sections:
-
-Introduction
-Purpose of Document
-Why Development is Required
-Technical Details
-User Stories
-Test Cases"*
+   > Structure the response with the following sections:
+   >
+   > Introduction
+   > Purpose of Document
+   > Why Development is Required
+   > Technical Details
+   > User Stories
+   > Test Cases"*
 
    J4C surfaces the relationships between all three requirements from the BRD and produces a combined functional specification — without the consultant manually cross-referencing them.
 
